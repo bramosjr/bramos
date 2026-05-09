@@ -1,0 +1,308 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Nome do Projeto - Sua Solução de Produtividade">
+	<nav class="navbar">
+		<div class="container nav-content">
+			<a href="/" class="logo">Logo<span>.</span></a>
+			<div class="nav-links">
+				<a href="#funcionalidades">Funcionalidades</a>
+				<a href="#sobre">Sobre</a>
+				<a href="/docs">Docs</a>
+				<a href="#contato" class="btn btn-primary btn-sm">Contato</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<h1>Transforme sua produtividade com <span class="text-gradient">Inteligência</span></h1>
+					<p class="hero-subtitle">
+						A plataforma definitiva para gerenciar projetos, equipes e metas em um único lugar. Simples, rápido e profissional.
+					</p>
+					<div class="hero-actions">
+						<a href="#contato" class="btn btn-primary">Começar agora — é grátis</a>
+						<a href="#funcionalidades" class="btn btn-secondary">Explorar recursos</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="funcionalidades" class="features bg-alt">
+			<div class="container">
+				<div class="section-header">
+					<h2>Recursos feitos para você</h2>
+					<p>Tudo o que você precisa para escalar sua operação sem complicações.</p>
+				</div>
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="icon">🚀</div>
+						<h3>Velocidade Absoluta</h3>
+						<p>Interface ultra-rápida construída para não interromper seu fluxo de trabalho criativo.</p>
+					</div>
+					<div class="feature-card">
+						<div class="icon">🛡️</div>
+						<h3>Privacidade Total</h3>
+						<p>Seus dados são criptografados de ponta a ponta. Sua segurança é nossa maior prioridade.</p>
+					</div>
+					<div class="feature-card">
+						<div class="icon">📊</div>
+						<h3>Analytics em Tempo Real</h3>
+						<p>Tome decisões baseadas em dados com dashboards claros e fáceis de interpretar.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sobre" class="about">
+			<div class="container">
+				<div class="about-grid">
+					<div class="about-text">
+						<h2>Sobre o Projeto</h2>
+						<p>Nascemos da necessidade de ferramentas mais humanas. Acreditamos que a tecnologia deve servir para liberar seu tempo, não para consumi-lo.</p>
+						<p>Nossa missão é democratizar o acesso a ferramentas de gestão de alto nível, permitindo que pequenos times alcancem resultados extraordinários.</p>
+						<ul class="check-list">
+							<li>Foco total na experiência do usuário</li>
+							<li>Evolução constante baseada em feedback</li>
+							<li>Documentação pública e transparente</li>
+						</ul>
+					</div>
+					<div class="about-image">
+						<div class="placeholder-img">Visual do App</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contato" class="contact bg-alt">
+			<div class="container">
+				<div class="contact-card">
+					<div class="section-header">
+						<h2>Pronto para começar?</h2>
+						<p>Junte-se a milhares de usuários que já otimizaram sua rotina. Entre em contato para uma demonstração personalizada.</p>
+					</div>
+					<form class="contact-form">
+						<div class="form-group">
+							<input type="text" placeholder="Seu nome" required />
+						</div>
+						<div class="form-group">
+							<input type="email" placeholder="seu@email.com" required />
+						</div>
+						<div class="form-group">
+							<textarea placeholder="Como podemos ajudar?" rows="4"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	/* Navbar */
+	.navbar {
+		height: 4.5rem;
+		display: flex;
+		align-items: center;
+		background: rgba(255, 255, 255, 0.8);
+		backdrop-filter: blur(8px);
+		border-bottom: 1px solid var(--border);
+		position: sticky;
+		top: 0;
+		z-index: 100;
+	}
+	.nav-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo {
+		font-size: 1.5rem;
+		font-weight: 800;
+		color: var(--text-main);
+	}
+	.logo span {
+		color: var(--primary);
+	}
+	.nav-links {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+	.nav-links a:not(.btn) {
+		font-size: 0.9375rem;
+		font-weight: 500;
+		color: var(--text-muted);
+	}
+	.nav-links a:hover {
+		color: var(--primary);
+	}
+	.btn-sm {
+		padding: 0.5rem 1rem;
+		font-size: 0.875rem;
+	}
+
+	/* Hero */
+	.hero {
+		padding: 8rem 0;
+		text-align: center;
+	}
+	.hero-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.hero h1 {
+		font-size: clamp(2.5rem, 5vw, 4rem);
+		margin-bottom: 1.5rem;
+		letter-spacing: -0.02em;
+	}
+	.hero-subtitle {
+		font-size: 1.25rem;
+		margin-bottom: 2.5rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	/* Sections General */
+	.bg-alt {
+		background: var(--bg-alt);
+	}
+	.section-header {
+		text-align: center;
+		max-width: 600px;
+		margin: 0 auto 4rem;
+	}
+	.section-header h2 {
+		font-size: 2.25rem;
+		margin-bottom: 1rem;
+	}
+
+	/* Features */
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+	.feature-card {
+		background: var(--bg-main);
+		padding: 2.5rem;
+		border-radius: 1rem;
+		border: 1px solid var(--border);
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+	.feature-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+	}
+	.feature-card .icon {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+	.feature-card h3 {
+		margin-bottom: 1rem;
+	}
+
+	/* About */
+	.about-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+	.about-text h2 {
+		margin-bottom: 1.5rem;
+	}
+	.about-text p {
+		margin-bottom: 1rem;
+	}
+	.check-list {
+		list-style: none;
+		margin-top: 1.5rem;
+	}
+	.check-list li {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-bottom: 0.75rem;
+		font-weight: 500;
+	}
+	.check-list li::before {
+		content: '✓';
+		color: var(--primary);
+		font-weight: 800;
+	}
+	.placeholder-img {
+		background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+		aspect-ratio: 16/10;
+		border-radius: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--secondary);
+		font-weight: 600;
+	}
+
+	/* Contact */
+	.contact-card {
+		background: var(--bg-main);
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 4rem;
+		border-radius: 2rem;
+		border: 1px solid var(--border);
+		box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.05);
+	}
+	.contact-form {
+		display: grid;
+		gap: 1.25rem;
+	}
+	.form-group input, .form-group textarea {
+		width: 100%;
+		padding: 0.75rem 1rem;
+		border: 1px solid var(--border);
+		border-radius: 0.5rem;
+		font-family: inherit;
+		font-size: 1rem;
+		transition: border-color 0.2s;
+	}
+	.form-group input:focus, .form-group textarea:focus {
+		outline: none;
+		border-color: var(--primary);
+		box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+	}
+	.btn-block {
+		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		.nav-links {
+			display: none; /* Simplificação para o exemplo, em real teria um menu mobile */
+		}
+		.hero {
+			padding: 4rem 0;
+		}
+		.hero-actions {
+			flex-direction: column;
+		}
+		.about-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		.about-image {
+			order: -1;
+		}
+		.contact-card {
+			padding: 2rem;
+		}
+	}
+</style>

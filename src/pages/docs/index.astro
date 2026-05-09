@@ -1,0 +1,123 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const docs = await getCollection('docs');
+const sortedDocs = docs.sort((a, b) => a.data.order - b.data.order);
+---
+
+<Layout title="Documentação - Visão Geral">
+	<nav class="navbar">
+		<div class="container nav-content">
+			<a href="/" class="logo">Logo<span>.</span></a>
+			<div class="nav-links">
+				<a href="/">Home</a>
+				<a href="/docs">Documentação</a>
+				<a href="/#contato" class="btn btn-primary btn-sm">Suporte</a>
+			</div>
+		</div>
+	</nav>
+
+	<main class="container docs-index">
+		<header class="page-header">
+			<h1>Documentação Pública</h1>
+			<p>Encontre guias, tutoriais e referências para aproveitar ao máximo nossa plataforma.</p>
+		</header>
+
+		<div class="docs-grid">
+			{sortedDocs.map((doc) => (
+				<a href={`/docs/${doc.slug}`} class="doc-card">
+					<h3>{doc.data.title}</h3>
+					<p>{doc.data.description}</p>
+					<span class="read-more">Ler documento →</span>
+				</a>
+			))}
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.navbar {
+		height: 4.5rem;
+		display: flex;
+		align-items: center;
+		background: white;
+		border-bottom: 1px solid var(--border);
+	}
+	.nav-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo {
+		font-size: 1.5rem;
+		font-weight: 800;
+		color: var(--text-main);
+	}
+	.logo span {
+		color: var(--primary);
+	}
+	.nav-links {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+	.nav-links a:not(.btn) {
+		font-size: 0.9375rem;
+		font-weight: 500;
+		color: var(--text-muted);
+	}
+
+	.docs-index {
+		padding: 5rem 1.5rem;
+	}
+
+	.page-header {
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto 4rem;
+	}
+
+	.page-header h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.docs-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.doc-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 1rem;
+		border: 1px solid var(--border);
+		transition: all 0.2s;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.doc-card:hover {
+		border-color: var(--primary);
+		transform: translateY(-4px);
+		box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+	}
+
+	.doc-card h3 {
+		margin-bottom: 0.75rem;
+	}
+
+	.doc-card p {
+		font-size: 0.9375rem;
+		margin-bottom: 1.5rem;
+		flex-grow: 1;
+	}
+
+	.read-more {
+		font-weight: 600;
+		font-size: 0.875rem;
+		color: var(--primary);
+	}
+</style>
