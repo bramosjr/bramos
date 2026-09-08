@@ -1,0 +1,76 @@
+---
+// PublicRepos.astro
+import analytics from '../data/analytics.json';
+
+const publicRepos = analytics.publicRepositories || [];
+---
+<section id="public-repos" class="scroll-mt-20">
+  <div class="border-b border-borderSubtle pb-4 mb-6">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <div>
+        <span class="text-xs font-semibold text-mintGreen uppercase tracking-widest">🌐 Open Source & Código Aberto</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Repositórios Públicos Rastreados</h2>
+      </div>
+      <a 
+        href={`https://github.com/${analytics.userLogin}?tab=repositories&q=&type=public`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-xs font-mono px-3 py-1.5 rounded-lg bg-surface border border-borderSubtle text-mintGreen hover:text-yellowAccent hover:border-yellowAccent/40 flex items-center gap-1.5 self-start sm:self-auto transition"
+      >
+        <span>Ver no GitHub</span>
+        <span>↗</span>
+      </a>
+    </div>
+    <p class="mt-2 text-sm text-textSecondary">
+      Projetos públicos com código aberto desenvolvidos e mantidos por <strong class="text-textPrimary">@{analytics.userLogin}</strong>. Esta lista é sincronizada dinamicamente a cada pipeline de build.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {publicRepos.length > 0 ? (
+      publicRepos.map((repo: any) => (
+        <div class="bg-surface p-6 rounded-2xl border border-borderSubtle hover:border-mintGreen/50 transition-all shadow-lg flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded border border-mintGreen/30 bg-mintGreen/10 text-mintGreen flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full" style={`background-color: ${repo.languageColor || '#34D399'}`}></span>
+                {repo.primaryLanguage}
+              </span>
+              <div class="flex items-center space-x-2 text-xs font-mono text-textSecondary">
+                <span title="Estrelas no GitHub">★ {repo.stargazerCount}</span>
+                {repo.forkCount > 0 && <span title="Forks">⑂ {repo.forkCount}</span>}
+              </div>
+            </div>
+
+            <h3 class="text-lg font-bold text-textPrimary group-hover:text-mintGreen transition-colors flex items-center gap-2">
+              <span>{repo.name}</span>
+            </h3>
+
+            <p class="text-xs sm:text-sm text-textSecondary mt-2 leading-relaxed">
+              {repo.description}
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-borderSubtle flex items-center justify-between">
+            <span class="text-[11px] font-mono text-textSecondary">
+              {repo.pushedAt ? `Atualizado: ${new Date(repo.pushedAt).toLocaleDateString('pt-BR')}` : 'Ativo'}
+            </span>
+            <a
+              href={repo.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-semibold text-mintGreen hover:text-yellowAccent flex items-center gap-1 transition"
+            >
+              <span>Acessar Código</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      ))
+    ) : (
+      <div class="col-span-full p-8 rounded-2xl bg-surface border border-borderSubtle text-center text-textSecondary text-sm">
+        Nenhum repositório público identificado no momento.
+      </div>
+    )}
+  </div>
+</section>

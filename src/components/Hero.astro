@@ -1,6 +1,12 @@
 ---
 // Hero.astro
 import analytics from '../data/analytics.json';
+
+const totalCommits = analytics.commitTypes.counts.reduce((a, b) => a + b, 0);
+const featCount = analytics.commitTypes.counts[0] || 0;
+const featPercentage = totalCommits > 0 ? Math.round((featCount / totalCommits) * 100) : 60;
+const topLangs = analytics.languages.labels.slice(0, 3).join(' • ');
+const publicReposCount = analytics.publicRepositories?.length || (analytics.totalReposCount - analytics.privateReposCount);
 ---
 <section class="bg-gradient-to-b from-surface/60 to-canvas border-b border-borderSubtle py-10 md:py-14">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,27 +21,34 @@ import analytics from '../data/analytics.json';
         Acompanhe a atividade real, o ritmo de produção e a evolução arquitetural do desenvolvedor <strong class="text-textPrimary">@{analytics.userLogin}</strong> em {analytics.totalReposCount} repositórios, com <strong class="text-yellowAccent">{analytics.privateReposCount} projetos sob protocolo NDA</strong> estritamente higienizados.
       </p>
 
-      <!-- Key Metrics Cards -->
+      <!-- Profile-focused Metrics Cards -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
         <div class="bg-surface p-4 rounded-xl border border-borderSubtle">
-          <div class="text-xs text-textSecondary font-medium">Desempenho no Cliente</div>
-          <div class="text-xl sm:text-2xl font-bold text-yellowAccent font-mono mt-1">0 KB JS</div>
-          <div class="text-[10px] text-textSecondary mt-0.5">Arquitetura de Ilhas (Astro)</div>
+          <div class="text-xs text-textSecondary font-medium">Volume de Entregas</div>
+          <div class="text-xl sm:text-2xl font-bold text-yellowAccent font-mono mt-1">{totalCommits}+ Commits</div>
+          <div class="text-[10px] text-textSecondary mt-0.5">Histórico Ativo Rastreado</div>
+        </div>
+        <div class="bg-surface p-4 rounded-xl border border-borderSubtle hover:border-mintGreen/40 transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-textSecondary font-medium">Projetos Ativos</span>
+              <a href="#public-repos" class="text-[10px] font-mono text-mintGreen hover:text-yellowAccent flex items-center gap-0.5 underline decoration-mintGreen/40 hover:decoration-yellowAccent transition">
+                {publicReposCount} Público{publicReposCount !== 1 ? 's' : ''} ↗
+              </a>
+            </div>
+            <div class="text-xl sm:text-2xl font-bold text-mintGreen font-mono mt-1">{analytics.totalReposCount} Repos</div>
+          </div>
+          <div class="text-[10px] text-mintGreen mt-1">{analytics.privateReposCount} sob Protocolo NDA</div>
         </div>
         <div class="bg-surface p-4 rounded-xl border border-borderSubtle">
-          <div class="text-xs text-textSecondary font-medium">Contraste WCAG 2.1</div>
-          <div class="text-xl sm:text-2xl font-bold text-mintGreen font-mono mt-1">16.8:1</div>
-          <div class="text-[10px] text-mintGreen mt-0.5">Conformidade Nível AAA</div>
+          <div class="text-xs text-textSecondary font-medium">Foco em Soluções</div>
+          <div class="text-xl sm:text-2xl font-bold text-terracotta font-mono mt-1">{featPercentage}% Features</div>
+          <div class="text-[10px] text-textSecondary mt-0.5">Novas Funcionalidades</div>
         </div>
         <div class="bg-surface p-4 rounded-xl border border-borderSubtle">
-          <div class="text-xs text-textSecondary font-medium">Repositórios Privados</div>
-          <div class="text-xl sm:text-2xl font-bold text-terracotta font-mono mt-1">{analytics.privateReposCount} / {analytics.totalReposCount}</div>
-          <div class="text-[10px] text-textSecondary mt-0.5">Sanitização no Pipeline CI</div>
-        </div>
-        <div class="bg-surface p-4 rounded-xl border border-borderSubtle">
-          <div class="text-xs text-textSecondary font-medium">Consulta GraphQL</div>
-          <div class="text-xl sm:text-2xl font-bold text-sandBeige font-mono mt-1">1 Call</div>
-          <div class="text-[10px] text-textSecondary mt-0.5">Otimizado contra Rate Limit</div>
+          <div class="text-xs text-textSecondary font-medium">Stack Principal</div>
+          <div class="text-xl sm:text-2xl font-bold text-sandBeige font-mono mt-1">Multi-Stack</div>
+          <div class="text-[10px] text-textSecondary mt-0.5 truncate">{topLangs}</div>
         </div>
       </div>
     </div>

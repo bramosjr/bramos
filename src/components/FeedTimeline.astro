@@ -1,6 +1,9 @@
 ---
 // FeedTimeline.astro
 import activities from '../data/activities.json';
+import analytics from '../data/analytics.json';
+
+const publicRepos = analytics.publicRepositories || [];
 ---
 <section id="feed-section" class="scroll-mt-20">
   <div class="border-b border-borderSubtle pb-4 mb-6">
@@ -27,15 +30,15 @@ import activities from '../data/activities.json';
   </div>
 
   <!-- Feed Controls Toolbar -->
-  <div class="bg-surface p-4 rounded-xl border border-borderSubtle mb-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-3 items-center">
+  <div class="bg-surface p-4 rounded-xl border border-borderSubtle mb-6 flex flex-wrap items-center gap-3">
     <!-- Search Input -->
-    <div class="sm:col-span-2 md:col-span-4 relative">
+    <div class="relative flex-1 min-w-[200px]">
       <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-textSecondary">🔍</span>
       <input type="text" id="searchInput" placeholder="Pesquisar por termo..." class="w-full pl-9 pr-3 py-2 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
     </div>
 
     <!-- Category Dropdown -->
-    <div class="md:col-span-2">
+    <div class="w-full sm:w-auto min-w-[150px]">
       <select id="categoryFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition cursor-pointer">
         <option value="all">Todas as Categorias</option>
         <option value="feat">Features (feat)</option>
@@ -47,7 +50,7 @@ import activities from '../data/activities.json';
     </div>
 
     <!-- Visibility Dropdown -->
-    <div class="md:col-span-2">
+    <div class="w-full sm:w-auto min-w-[140px]">
       <select id="repoTypeFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition cursor-pointer">
         <option value="all">Todos os Repos</option>
         <option value="private">🔒 Privados (NDA)</option>
@@ -55,8 +58,8 @@ import activities from '../data/activities.json';
       </select>
     </div>
 
-    <!-- Period Filter (Novo Filtro Temporal) -->
-    <div class="md:col-span-2">
+    <!-- Period Filter -->
+    <div class="w-full sm:w-auto min-w-[140px]">
       <select id="timeRangeFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-mintGreen transition cursor-pointer">
         <option value="30">Últimos 30 Dias</option>
         <option value="15">Últimos 15 Dias</option>
@@ -65,8 +68,18 @@ import activities from '../data/activities.json';
       </select>
     </div>
 
+    <!-- Public Repo Filter (Habilitado dinamicamente ao selecionar 'Públicos') -->
+    <div id="publicRepoContainer" class="hidden w-full sm:w-auto min-w-[160px] transition-all">
+      <select id="publicRepoFilter" class="w-full py-2 px-2.5 bg-canvas border border-mintGreen/60 rounded-lg text-xs sm:text-sm text-mintGreen focus:outline-none focus:border-mintGreen transition cursor-pointer">
+        <option value="all">Todos os Públicos ({publicRepos.length})</option>
+        {publicRepos.map((repo: any) => (
+          <option value={repo.name}>{repo.name}</option>
+        ))}
+      </select>
+    </div>
+
     <!-- Counter Badge -->
-    <div class="md:col-span-2 text-right">
+    <div class="ml-auto">
       <span id="resultsCount" class="inline-block text-xs font-mono px-3 py-1.5 rounded-md bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30">
         {activities.length} notícias
       </span>
@@ -113,9 +126,22 @@ import activities from '../data/activities.json';
               {item.summary}
             </p>
             <div class="mt-4 pt-3 border-t border-borderSubtle flex flex-wrap items-center justify-between gap-2">
-              <span class="text-xs font-mono text-sageGreen">
-                📍 {item.repoAlias}
-              </span>
+              <div class="flex items-center gap-3">
+                {item.isPrivate ? (
+                  <span class="text-xs font-mono text-sageGreen">
+                    📍 {item.repoAlias}
+                  </span>
+                ) : (
+                  <a href={item.repoUrl || `https://github.com/${item.repoAlias}`} target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-sageGreen hover:text-yellowAccent flex items-center gap-1 transition">
+                    📍 {item.repoAlias} <span class="text-[10px]">↗</span>
+                  </a>
+                )}
+                {!item.isPrivate && item.commitUrl && (
+                  <a href={item.commitUrl} target="_blank" rel="noopener noreferrer" class="text-[11px] font-mono text-mintGreen hover:text-yellowAccent underline decoration-mintGreen/30 transition">
+                    commit ↗
+                  </a>
+                )}
+              </div>
               <div class="flex flex-wrap gap-1.5">
                 {item.tags.map(tag => (
                   <span class="px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-[10px] font-mono text-textSecondary">#{tag}</span>
@@ -209,9 +235,22 @@ import activities from '../data/activities.json';
             </p>
 
             <div class="mt-4 pt-3 border-t border-borderSubtle flex flex-wrap items-center justify-between gap-2">
-              <span class="text-xs font-mono text-sageGreen">
-                📍 ${item.repoAlias}
-              </span>
+              <div class="flex items-center gap-3">
+                ${item.isPrivate ? `
+                  <span class="text-xs font-mono text-sageGreen">
+                    📍 ${item.repoAlias}
+                  </span>
+                ` : `
+                  <a href="${item.repoUrl || ('https://github.com/' + item.repoAlias)}" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-sageGreen hover:text-yellowAccent flex items-center gap-1 transition">
+                    📍 ${item.repoAlias} <span class="text-[10px]">↗</span>
+                  </a>
+                `}
+                ${!item.isPrivate && item.commitUrl ? `
+                  <a href="${item.commitUrl}" target="_blank" rel="noopener noreferrer" class="text-[11px] font-mono text-mintGreen hover:text-yellowAccent underline decoration-mintGreen/30 transition">
+                    commit ↗
+                  </a>
+                ` : ''}
+              </div>
 
               <div class="flex flex-wrap gap-1.5">
                 ${item.tags.map(tag => `<span class="px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-[10px] font-mono text-textSecondary">#${tag}</span>`).join('')}
@@ -232,11 +271,34 @@ import activities from '../data/activities.json';
     const categorySelect = document.getElementById('categoryFilter') as HTMLSelectElement | null;
     const repoTypeSelect = document.getElementById('repoTypeFilter') as HTMLSelectElement | null;
     const timeRangeSelect = document.getElementById('timeRangeFilter') as HTMLSelectElement | null;
+    const publicRepoSelect = document.getElementById('publicRepoFilter') as HTMLSelectElement | null;
+    const publicRepoContainer = document.getElementById('publicRepoContainer');
 
     const searchTerm = searchInput?.value.toLowerCase().trim() ?? '';
     const category = categorySelect?.value ?? 'all';
     const repoType = repoTypeSelect?.value ?? 'all';
     const timeRange = timeRangeSelect?.value ?? '30';
+    const selectedPublicRepo = publicRepoSelect?.value ?? 'all';
+
+    // Gerenciar visibilidade dinâmica do dropdown de repos públicos
+    if (publicRepoContainer) {
+      if (repoType === 'public') {
+        publicRepoContainer.classList.remove('hidden');
+      } else {
+        publicRepoContainer.classList.add('hidden');
+        if (publicRepoSelect) publicRepoSelect.value = 'all';
+      }
+    }
+
+    // Persistir preferências no localStorage
+    try {
+      localStorage.setItem('gitactivity_feed_category', category);
+      localStorage.setItem('gitactivity_feed_repo_type', repoType);
+      localStorage.setItem('gitactivity_feed_timerange', timeRange);
+      if (repoType === 'public') {
+        localStorage.setItem('gitactivity_feed_public_repo', selectedPublicRepo);
+      }
+    } catch (e) {}
 
     const filtered = activities.filter(item => {
       // Pitch mode filter
@@ -248,6 +310,13 @@ import activities from '../data/activities.json';
       // Repo visibility filter
       if (repoType === 'private' && !item.isPrivate) return false;
       if (repoType === 'public' && item.isPrivate) return false;
+
+      // Public repository specific filter
+      if (repoType === 'public' && selectedPublicRepo !== 'all') {
+        const matchesRepo = (item.repoName && item.repoName.toLowerCase() === selectedPublicRepo.toLowerCase()) ||
+                            (item.repoAlias && item.repoAlias.toLowerCase().includes(selectedPublicRepo.toLowerCase()));
+        if (!matchesRepo) return false;
+      }
 
       // Time range filter
       if (timeRange !== 'all') {
@@ -297,6 +366,10 @@ import activities from '../data/activities.json';
       label.classList.remove('text-yellowAccent');
     }
 
+    try {
+      localStorage.setItem('gitactivity_pitch_mode', String(isPitchModeActive));
+    } catch (e) {}
+
     visibleLimit = 15;
     filterFeed();
   }
@@ -306,14 +379,47 @@ import activities from '../data/activities.json';
     renderFeed(currentFilteredList);
   }
 
+  // Restaurar preferências salvas
+  function restoreFeedPreferences() {
+    try {
+      const savedCategory = localStorage.getItem('gitactivity_feed_category');
+      const savedRepoType = localStorage.getItem('gitactivity_feed_repo_type');
+      const savedTimeRange = localStorage.getItem('gitactivity_feed_timerange');
+      const savedPublicRepo = localStorage.getItem('gitactivity_feed_public_repo');
+      const savedPitchMode = localStorage.getItem('gitactivity_pitch_mode');
+
+      const categorySelect = document.getElementById('categoryFilter') as HTMLSelectElement | null;
+      const repoTypeSelect = document.getElementById('repoTypeFilter') as HTMLSelectElement | null;
+      const timeRangeSelect = document.getElementById('timeRangeFilter') as HTMLSelectElement | null;
+      const publicRepoSelect = document.getElementById('publicRepoFilter') as HTMLSelectElement | null;
+      const publicRepoContainer = document.getElementById('publicRepoContainer');
+
+      if (categorySelect && savedCategory) categorySelect.value = savedCategory;
+      if (repoTypeSelect && savedRepoType) {
+        repoTypeSelect.value = savedRepoType;
+        if (savedRepoType === 'public' && publicRepoContainer) {
+          publicRepoContainer.classList.remove('hidden');
+        }
+      }
+      if (timeRangeSelect && savedTimeRange) timeRangeSelect.value = savedTimeRange;
+      if (publicRepoSelect && savedPublicRepo) publicRepoSelect.value = savedPublicRepo;
+
+      if (savedPitchMode === 'true') {
+        togglePitchMode();
+      }
+    } catch (e) {}
+  }
+
   // Setup Event Listeners
   document.getElementById('searchInput')?.addEventListener('input', () => { visibleLimit = 15; filterFeed(); });
   document.getElementById('categoryFilter')?.addEventListener('change', () => { visibleLimit = 15; filterFeed(); });
   document.getElementById('repoTypeFilter')?.addEventListener('change', () => { visibleLimit = 15; filterFeed(); });
   document.getElementById('timeRangeFilter')?.addEventListener('change', () => { visibleLimit = 15; filterFeed(); });
+  document.getElementById('publicRepoFilter')?.addEventListener('change', () => { visibleLimit = 15; filterFeed(); });
   document.getElementById('pitchModeToggle')?.addEventListener('click', togglePitchMode);
   document.getElementById('loadMoreBtn')?.addEventListener('click', loadMore);
 
-  // Inicializar com filtro padrão de 30 dias
+  // Inicializar com restauração de preferências
+  restoreFeedPreferences();
   filterFeed();
 </script>

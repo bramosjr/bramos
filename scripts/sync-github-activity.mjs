@@ -36,8 +36,11 @@ query {
       nodes {
         name
         isPrivate
+        url
         description
         pushedAt
+        stargazerCount
+        forkCount
         primaryLanguage {
           name
           color
@@ -53,7 +56,7 @@ query {
         defaultBranchRef {
           target {
             ... on Commit {
-              history(first: 30) {
+              history(first: 50) {
                 nodes {
                   oid
                   messageHeadline
@@ -151,6 +154,9 @@ function sanitizeActivity(commit, repo, viewerLogin, id) {
     type,
     category,
     isPrivate: repo.isPrivate,
+    repoName: repo.isPrivate ? null : repo.name,
+    repoUrl: repo.isPrivate ? null : (repo.url || `https://github.com/${viewerLogin}/${repo.name}`),
+    commitUrl: repo.isPrivate ? null : commit.url,
     repoAlias,
     tags,
     date: commitDate.toISOString().split('T')[0],
@@ -202,11 +208,36 @@ async function main() {
     // Ordenar commits por data decrescente
     allCommits.sort((a, b) => new Date(b.commit.committedDate) - new Date(a.commit.committedDate));
 
-    // Coletar até 100 atividades mais recentes para histórico amplo
-    const recentActivities = allCommits.slice(0, 100).map(({ commit, repo }) => {
+    // Garantir que todas as atividades de repositórios públicos sejam incluídas no dataset
+    const publicCommits = allCommits.filter(c => !c.repo.isPrivate);
+    const privateCommits = allCommits.filter(c => c.repo.isPrivate);
+
+    // Mesclar: todos os commits públicos + recentes privados (até 150 no total)
+    const combinedCommits = [
+      ...publicCommits,
+      ...privateCommits.slice(0, Math.max(100, 150 - publicCommits.length))
+    ];
+    combinedCommits.sort((a, b) => new Date(b.commit.committedDate) - new Date(a.commit.committedDate));
+
+    const recentActivities = combinedCommits.map(({ commit, repo }) => {
       const item = sanitizeActivity(commit, repo, viewer.login, idCounter++);
       return item;
     });
+
+    // 1.1 Mapear repositórios públicos dinâmicos com metadados
+    const publicRepositories = repos
+      .filter(r => !r.isPrivate)
+      .map(r => ({
+        name: r.name,
+        fullName: `${viewer.login}/${r.name}`,
+        url: r.url || `https://github.com/${viewer.login}/${r.name}`,
+        description: r.description || 'Projeto de código aberto rastreado no GitHub.',
+        primaryLanguage: r.primaryLanguage?.name || 'Software',
+        languageColor: r.primaryLanguage?.color || '#34D399',
+        stargazerCount: r.stargazerCount || 0,
+        forkCount: r.forkCount || 0,
+        pushedAt: r.pushedAt
+      }));
 
     // 2. Cálculo de métricas analíticas
     // 2.1 Distribuição de linguagens (em bytes)
@@ -253,7 +284,7 @@ async function main() {
       else typeCounts.feat++;
     }
 
-    // 2.3 Cadência de Entregas por períodos pré-calculados (4w, 8w, 12w)
+    // 2.3 Cadência de Entregas por períodos pré-calculados (4w, 8w, 12w, all)
     const now = new Date();
 
     function computeBuckets(numWeeks) {
@@ -272,6 +303,22 @@ async function main() {
     const buckets8w = computeBuckets(8);
     const buckets12w = computeBuckets(12);
 
+    // Calcular período completo ('all') baseado no commit mais antigo
+    let oldestDate = now;
+    for (const { commit } of allCommits) {
+      const cDate = new Date(commit.committedDate);
+      if (cDate < oldestDate) oldestDate = cDate;
+    }
+    const totalHistoryWeeks = Math.max(12, Math.ceil((now - oldestDate) / (1000 * 60 * 60 * 24 * 7)));
+    const bucketsAll = computeBuckets(totalHistoryWeeks);
+
+    const labelsAll = [];
+    for (let i = totalHistoryWeeks - 1; i >= 0; i--) {
+      const d = new Date(now.getTime() - i * 7 * 24 * 60 * 60 * 1000);
+      const mes = d.toLocaleDateString('pt-BR', { month: 'short' }).replace('.', '');
+      labelsAll.push(`${mes} S${Math.ceil(d.getDate() / 7)}`);
+    }
+
     const cadencePeriods = {
       '4w': {
         labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
@@ -284,6 +331,10 @@ async function main() {
       '12w': {
         labels: ['Sem 1', 'Sem 2', 'Sem 3', 'Sem 4', 'Sem 5', 'Sem 6', 'Sem 7', 'Sem 8', 'Sem 9', 'Sem 10', 'Sem 11', 'Sem 12'],
         counts: buckets12w
+      },
+      'all': {
+        labels: labelsAll,
+        counts: bucketsAll
       }
     };
 
@@ -292,6 +343,7 @@ async function main() {
       userLogin: viewer.login,
       totalReposCount: totalRepos,
       privateReposCount: privateRepos,
+      publicRepositories,
       languages: {
         labels: langLabels.length > 0 ? langLabels : ['Python', 'JavaScript', 'Rust', 'Shell', 'Outras'],
         percentages: langPercentages.length > 0 ? langPercentages : [40, 30, 15, 10, 5]

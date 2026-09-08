@@ -1,8 +1,21 @@
 {
-  "updatedAt": "2026-09-08T19:18:37.212Z",
+  "updatedAt": "2026-09-08T19:41:51.179Z",
   "userLogin": "bramosjr",
   "totalReposCount": 20,
   "privateReposCount": 19,
+  "publicRepositories": [
+    {
+      "name": "khat",
+      "fullName": "bramosjr/khat",
+      "url": "https://github.com/bramosjr/khat",
+      "description": "Interface gráfica para MarkItDown",
+      "primaryLanguage": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stargazerCount": 1,
+      "forkCount": 0,
+      "pushedAt": "2026-08-05T06:39:31Z"
+    }
+  ],
   "languages": {
     "labels": [
       "HTML",
@@ -28,11 +41,11 @@
       "docs"
     ],
     "counts": [
-      281,
-      104,
+      380,
+      139,
       3,
-      27,
-      45
+      35,
+      54
     ]
   },
   "weeklyCadence": {
@@ -45,8 +58,8 @@
     "counts": [
       10,
       9,
-      54,
-      71
+      86,
+      86
     ]
   },
   "cadencePeriods": {
@@ -60,8 +73,8 @@
       "counts": [
         10,
         9,
-        54,
-        71
+        86,
+        86
       ]
     },
     "8w": {
@@ -76,14 +89,14 @@
         "Sem 8"
       ],
       "counts": [
-        36,
-        69,
-        0,
-        40,
+        56,
+        71,
+        3,
+        77,
         10,
         9,
-        54,
-        71
+        86,
+        86
       ]
     },
     "12w": {
@@ -105,15 +118,59 @@
         4,
         0,
         0,
-        0,
-        36,
-        69,
-        0,
-        40,
+        12,
+        56,
+        71,
+        3,
+        77,
         10,
         9,
-        54,
-        71
+        86,
+        86
+      ]
+    },
+    "all": {
+      "labels": [
+        "mai S1",
+        "mai S2",
+        "mai S3",
+        "mai S4",
+        "jun S1",
+        "jun S2",
+        "jun S3",
+        "jun S4",
+        "jun S5",
+        "jul S1",
+        "jul S2",
+        "jul S3",
+        "jul S4",
+        "ago S1",
+        "ago S2",
+        "ago S3",
+        "ago S4",
+        "set S1",
+        "set S2"
+      ],
+      "counts": [
+        2,
+        9,
+        7,
+        45,
+        5,
+        51,
+        78,
+        4,
+        0,
+        0,
+        12,
+        56,
+        71,
+        3,
+        77,
+        10,
+        9,
+        86,
+        86
       ]
     }
   }

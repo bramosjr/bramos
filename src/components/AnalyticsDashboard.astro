@@ -59,6 +59,7 @@ import analytics from '../data/analytics.json';
             <option value="4w">Últimas 4 Semanas</option>
             <option value="8w">Últimas 8 Semanas</option>
             <option value="12w">Últimos 3 Meses</option>
+            <option value="all">Todo Período</option>
           </select>
         </div>
       </div>
@@ -164,11 +165,26 @@ import analytics from '../data/analytics.json';
       });
     }
 
-    // Chart 3: Weekly Activity Cadence (Line com filtro dinâmico)
+    // Chart 3: Weekly Activity Cadence (Line com filtro dinâmico e persistente)
     const elCadence = document.getElementById('activityCadenceChart');
     if (elCadence) {
       const ctxCadence = elCadence.getContext('2d');
-      const initialPeriod = cadencePeriods['4w'] || Object.values(cadencePeriods)[0];
+      const periodSelect = document.getElementById('cadencePeriodFilter');
+
+      // Recuperar período persistido no localStorage
+      let savedPeriod = '4w';
+      try {
+        const stored = localStorage.getItem('gitactivity_cadence_period');
+        if (stored && cadencePeriods[stored]) {
+          savedPeriod = stored;
+        }
+      } catch (err) {}
+
+      if (periodSelect) {
+        periodSelect.value = savedPeriod;
+      }
+
+      const initialPeriod = cadencePeriods[savedPeriod] || cadencePeriods['4w'] || Object.values(cadencePeriods)[0];
 
       cadenceChartInstance = new Chart(ctxCadence, {
         type: 'line',
@@ -182,22 +198,31 @@ import analytics from '../data/analytics.json';
             fill: true,
             tension: 0.35,
             pointBackgroundColor: '#FACC15',
-            pointRadius: 5
+            pointRadius: 4
           }]
         },
         options: {
           ...commonOptions,
           scales: {
-            x: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } },
+            x: {
+              ticks: {
+                color: '#9CB0A3',
+                maxTicksLimit: 8,
+                maxRotation: 0
+              },
+              grid: { color: '#254E3E' }
+            },
             y: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } }
           }
         }
       });
 
-      // Listener para filtro de período
-      const periodSelect = document.getElementById('cadencePeriodFilter');
+      // Listener para filtro de período com persistência
       periodSelect?.addEventListener('change', (e) => {
         const val = e.target.value;
+        try {
+          localStorage.setItem('gitactivity_cadence_period', val);
+        } catch (err) {}
         const targetPeriod = cadencePeriods[val];
         if (targetPeriod && cadenceChartInstance) {
           cadenceChartInstance.data.labels = targetPeriod.labels;
