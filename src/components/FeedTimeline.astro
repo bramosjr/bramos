@@ -22,42 +22,52 @@ import activities from '../data/activities.json';
       </div>
     </div>
     <p class="mt-2 text-sm text-textSecondary">
-      Abaixo está uma simulação em tempo real do feed estático compilado pelo GitHub Actions. Teste a pesquisa por palavras-chave, filtros por repositórios públicos ou privados (NDA) e ative o <strong>Pitch Mode</strong> para visualizar apenas entregas de alto impacto.
+      Abaixo está o feed com atividades reais coletadas do GitHub e sanitizadas contra dados confidenciais. Utilize os filtros por termo, categoria, visibilidade ou período temporal.
     </p>
   </div>
 
   <!-- Feed Controls Toolbar -->
-  <div class="bg-surface p-4 rounded-xl border border-borderSubtle mb-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+  <div class="bg-surface p-4 rounded-xl border border-borderSubtle mb-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-3 items-center">
     <!-- Search Input -->
-    <div class="md:col-span-5 relative">
+    <div class="sm:col-span-2 md:col-span-4 relative">
       <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-textSecondary">🔍</span>
-      <input type="text" id="searchInput" placeholder="Pesquisar por termo (ex: api, auth, docker, fix)..." class="w-full pl-9 pr-4 py-2 bg-canvas border border-borderSubtle rounded-lg text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
+      <input type="text" id="searchInput" placeholder="Pesquisar por termo..." class="w-full pl-9 pr-3 py-2 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
     </div>
 
     <!-- Category Dropdown -->
-    <div class="md:col-span-3">
-      <select id="categoryFilter" class="w-full py-2 px-3 bg-canvas border border-borderSubtle rounded-lg text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
+    <div class="md:col-span-2">
+      <select id="categoryFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition cursor-pointer">
         <option value="all">Todas as Categorias</option>
         <option value="feat">Features (feat)</option>
         <option value="fix">Correções (fix)</option>
-        <option value="refactor">Refatoração (refactor)</option>
-        <option value="release">Releases (vX.X)</option>
-        <option value="infra">Infra / DevOps</option>
+        <option value="refactor">Refatoração</option>
+        <option value="release">Releases</option>
+        <option value="infra">Infra / Docs</option>
       </select>
     </div>
 
     <!-- Visibility Dropdown -->
     <div class="md:col-span-2">
-      <select id="repoTypeFilter" class="w-full py-2 px-3 bg-canvas border border-borderSubtle rounded-lg text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
+      <select id="repoTypeFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition cursor-pointer">
         <option value="all">Todos os Repos</option>
         <option value="private">🔒 Privados (NDA)</option>
         <option value="public">🌐 Públicos</option>
       </select>
     </div>
 
+    <!-- Period Filter (Novo Filtro Temporal) -->
+    <div class="md:col-span-2">
+      <select id="timeRangeFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-mintGreen transition cursor-pointer">
+        <option value="30">Últimos 30 Dias</option>
+        <option value="15">Últimos 15 Dias</option>
+        <option value="90">Últimos 90 Dias</option>
+        <option value="all">Todo o Histórico</option>
+      </select>
+    </div>
+
     <!-- Counter Badge -->
     <div class="md:col-span-2 text-right">
-      <span id="resultsCount" class="text-xs font-mono px-3 py-1.5 rounded-md bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30">
+      <span id="resultsCount" class="inline-block text-xs font-mono px-3 py-1.5 rounded-md bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30">
         {activities.length} notícias
       </span>
     </div>
@@ -65,7 +75,7 @@ import activities from '../data/activities.json';
 
   <!-- Feed Timeline Display -->
   <div id="feedTimelineContainer" class="relative pl-6 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-borderSubtle">
-    {activities.map((item) => {
+    {activities.slice(0, 15).map((item) => {
       let badgeColor = 'bg-sageGreen/20 text-sageGreen border-sageGreen/30';
       let icon = '⚡';
       if (item.category === 'release') {
@@ -117,18 +127,29 @@ import activities from '../data/activities.json';
       );
     })}
   </div>
+
+  <!-- Load More Button -->
+  <div id="loadMoreContainer" class="mt-8 text-center">
+    <button id="loadMoreBtn" class="px-6 py-2.5 bg-surface hover:bg-surfaceHover border border-borderSubtle hover:border-yellowAccent text-textPrimary hover:text-yellowAccent rounded-xl text-xs sm:text-sm font-semibold transition-all shadow-md">
+      Carregar Mais Atividades (+15)
+    </button>
+  </div>
 </section>
 
 <script>
   import activities from '../data/activities.json';
 
   let isPitchModeActive = false;
+  let visibleLimit = 15;
+  let currentFilteredList: typeof activities = [];
 
   function renderFeed(items: typeof activities) {
     const container = document.getElementById('feedTimelineContainer');
     const countBadge = document.getElementById('resultsCount');
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
     if (!container || !countBadge) return;
 
+    currentFilteredList = items;
     countBadge.textContent = `${items.length} ${items.length === 1 ? 'notícia' : 'notícias'}`;
 
     if (items.length === 0) {
@@ -136,13 +157,16 @@ import activities from '../data/activities.json';
         <div class="bg-surface p-8 rounded-xl border border-borderSubtle text-center text-textSecondary">
           <span class="text-3xl block mb-2">🔍</span>
           <p class="text-sm font-semibold text-textPrimary">Nenhuma atividade encontrada com os filtros selecionados.</p>
-          <p class="text-xs mt-1">Tente ajustar seus termos de busca ou desativar o Pitch Mode.</p>
+          <p class="text-xs mt-1">Tente ajustar seus termos de busca, o período temporal ou desativar o Pitch Mode.</p>
         </div>
       `;
+      if (loadMoreContainer) loadMoreContainer.style.display = 'none';
       return;
     }
 
-    container.innerHTML = items.map(item => {
+    const visibleItems = items.slice(0, visibleLimit);
+
+    container.innerHTML = visibleItems.map(item => {
       let badgeColor = 'bg-sageGreen/20 text-sageGreen border-sageGreen/30';
       let icon = '⚡';
 
@@ -197,27 +221,41 @@ import activities from '../data/activities.json';
         </div>
       `;
     }).join('');
+
+    if (loadMoreContainer) {
+      loadMoreContainer.style.display = visibleLimit < items.length ? 'block' : 'none';
+    }
   }
 
   function filterFeed() {
     const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
     const categorySelect = document.getElementById('categoryFilter') as HTMLSelectElement | null;
     const repoTypeSelect = document.getElementById('repoTypeFilter') as HTMLSelectElement | null;
+    const timeRangeSelect = document.getElementById('timeRangeFilter') as HTMLSelectElement | null;
 
     const searchTerm = searchInput?.value.toLowerCase().trim() ?? '';
     const category = categorySelect?.value ?? 'all';
     const repoType = repoTypeSelect?.value ?? 'all';
+    const timeRange = timeRangeSelect?.value ?? '30';
 
     const filtered = activities.filter(item => {
-      if (isPitchModeActive && !item.isMajor) {
-        return false;
-      }
-      if (category !== 'all' && item.category !== category) {
-        return false;
-      }
+      // Pitch mode filter
+      if (isPitchModeActive && !item.isMajor) return false;
+
+      // Category filter
+      if (category !== 'all' && item.category !== category) return false;
+
+      // Repo visibility filter
       if (repoType === 'private' && !item.isPrivate) return false;
       if (repoType === 'public' && item.isPrivate) return false;
 
+      // Time range filter
+      if (timeRange !== 'all') {
+        const maxDays = parseInt(timeRange, 10);
+        if (typeof item.diffDays === 'number' && item.diffDays > maxDays) return false;
+      }
+
+      // Search match
       if (searchTerm) {
         const matchTitle = item.title.toLowerCase().includes(searchTerm);
         const matchSummary = item.summary.toLowerCase().includes(searchTerm);
@@ -225,6 +263,7 @@ import activities from '../data/activities.json';
         const matchTags = item.tags.some(t => t.toLowerCase().includes(searchTerm));
         return matchTitle || matchSummary || matchRepo || matchTags;
       }
+
       return true;
     });
 
@@ -258,12 +297,23 @@ import activities from '../data/activities.json';
       label.classList.remove('text-yellowAccent');
     }
 
+    visibleLimit = 15;
     filterFeed();
   }
 
+  function loadMore() {
+    visibleLimit += 15;
+    renderFeed(currentFilteredList);
+  }
+
   // Setup Event Listeners
-  document.getElementById('searchInput')?.addEventListener('input', filterFeed);
-  document.getElementById('categoryFilter')?.addEventListener('change', filterFeed);
-  document.getElementById('repoTypeFilter')?.addEventListener('change', filterFeed);
+  document.getElementById('searchInput')?.addEventListener('input', () => { visibleLimit = 15; filterFeed(); });
+  document.getElementById('categoryFilter')?.addEventListener('change', () => { visibleLimit = 15; filterFeed(); });
+  document.getElementById('repoTypeFilter')?.addEventListener('change', () => { visibleLimit = 15; filterFeed(); });
+  document.getElementById('timeRangeFilter')?.addEventListener('change', () => { visibleLimit = 15; filterFeed(); });
   document.getElementById('pitchModeToggle')?.addEventListener('click', togglePitchMode);
+  document.getElementById('loadMoreBtn')?.addEventListener('click', loadMore);
+
+  // Inicializar com filtro padrão de 30 dias
+  filterFeed();
 </script>

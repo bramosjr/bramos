@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T18:53:51.169Z",
+  "updatedAt": "2026-09-08T19:18:37.212Z",
   "userLogin": "bramosjr",
   "totalReposCount": 20,
   "privateReposCount": 19,
@@ -28,11 +28,11 @@
       "docs"
     ],
     "counts": [
-      106,
-      40,
-      0,
-      9,
-      16
+      281,
+      104,
+      3,
+      27,
+      45
     ]
   },
   "weeklyCadence": {
@@ -43,10 +43,78 @@
       "Semana 4"
     ],
     "counts": [
-      1,
-      5,
-      16,
-      30
+      10,
+      9,
+      54,
+      71
     ]
+  },
+  "cadencePeriods": {
+    "4w": {
+      "labels": [
+        "Semana 1",
+        "Semana 2",
+        "Semana 3",
+        "Semana 4"
+      ],
+      "counts": [
+        10,
+        9,
+        54,
+        71
+      ]
+    },
+    "8w": {
+      "labels": [
+        "Sem 1",
+        "Sem 2",
+        "Sem 3",
+        "Sem 4",
+        "Sem 5",
+        "Sem 6",
+        "Sem 7",
+        "Sem 8"
+      ],
+      "counts": [
+        36,
+        69,
+        0,
+        40,
+        10,
+        9,
+        54,
+        71
+      ]
+    },
+    "12w": {
+      "labels": [
+        "Sem 1",
+        "Sem 2",
+        "Sem 3",
+        "Sem 4",
+        "Sem 5",
+        "Sem 6",
+        "Sem 7",
+        "Sem 8",
+        "Sem 9",
+        "Sem 10",
+        "Sem 11",
+        "Sem 12"
+      ],
+      "counts": [
+        4,
+        0,
+        0,
+        0,
+        36,
+        69,
+        0,
+        40,
+        10,
+        9,
+        54,
+        71
+      ]
+    }
   }
 }

@@ -53,7 +53,7 @@ query {
         defaultBranchRef {
           target {
             ... on Commit {
-              history(first: 10) {
+              history(first: 30) {
                 nodes {
                   oid
                   messageHeadline
@@ -154,6 +154,7 @@ function sanitizeActivity(commit, repo, viewerLogin, id) {
     repoAlias,
     tags,
     date: commitDate.toISOString().split('T')[0],
+    diffDays,
     timeAgo,
     summary: `Registro de atividade técnica sanitizada em repositório ${repo.isPrivate ? 'privado sob protocolo NDA' : 'público'} com foco em entregas contínuas.`,
     isMajor: type === 'release' || type === 'feat'
@@ -201,8 +202,8 @@ async function main() {
     // Ordenar commits por data decrescente
     allCommits.sort((a, b) => new Date(b.commit.committedDate) - new Date(a.commit.committedDate));
 
-    // Pegar as 15 atividades mais recentes
-    const recentActivities = allCommits.slice(0, 15).map(({ commit, repo }) => {
+    // Coletar até 100 atividades mais recentes para histórico amplo
+    const recentActivities = allCommits.slice(0, 100).map(({ commit, repo }) => {
       const item = sanitizeActivity(commit, repo, viewer.login, idCounter++);
       return item;
     });
@@ -236,7 +237,6 @@ async function main() {
       langPercentages.push(totalBytes > 0 ? Math.round((otherBytes / totalBytes) * 100) : 0);
     }
 
-    // Ajustar soma para ~100 se necessário
     const sumPerc = langPercentages.reduce((a, b) => a + b, 0);
     if (sumPerc > 0 && sumPerc !== 100 && langPercentages.length > 0) {
       langPercentages[0] += (100 - sumPerc);
@@ -253,18 +253,39 @@ async function main() {
       else typeCounts.feat++;
     }
 
-    // 2.3 Cadência Semanal (últimas 4 semanas)
+    // 2.3 Cadência de Entregas por períodos pré-calculados (4w, 8w, 12w)
     const now = new Date();
-    const weeklyBuckets = [0, 0, 0, 0];
-    for (const { commit } of allCommits) {
-      const cDate = new Date(commit.committedDate);
-      const diffWeeks = Math.floor((now - cDate) / (1000 * 60 * 60 * 24 * 7));
-      if (diffWeeks >= 0 && diffWeeks < 4) {
-        weeklyBuckets[3 - diffWeeks]++;
+
+    function computeBuckets(numWeeks) {
+      const buckets = new Array(numWeeks).fill(0);
+      for (const { commit } of allCommits) {
+        const cDate = new Date(commit.committedDate);
+        const diffWeeks = Math.floor((now - cDate) / (1000 * 60 * 60 * 24 * 7));
+        if (diffWeeks >= 0 && diffWeeks < numWeeks) {
+          buckets[numWeeks - 1 - diffWeeks]++;
+        }
       }
+      return buckets.map(c => Math.max(c, 0));
     }
-    // Garantir valores mínimos visuais se houver poucos commits
-    const weeklyCounts = weeklyBuckets.map(c => Math.max(c, 1));
+
+    const buckets4w = computeBuckets(4);
+    const buckets8w = computeBuckets(8);
+    const buckets12w = computeBuckets(12);
+
+    const cadencePeriods = {
+      '4w': {
+        labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+        counts: buckets4w
+      },
+      '8w': {
+        labels: ['Sem 1', 'Sem 2', 'Sem 3', 'Sem 4', 'Sem 5', 'Sem 6', 'Sem 7', 'Sem 8'],
+        counts: buckets8w
+      },
+      '12w': {
+        labels: ['Sem 1', 'Sem 2', 'Sem 3', 'Sem 4', 'Sem 5', 'Sem 6', 'Sem 7', 'Sem 8', 'Sem 9', 'Sem 10', 'Sem 11', 'Sem 12'],
+        counts: buckets12w
+      }
+    };
 
     const analyticsData = {
       updatedAt: new Date().toISOString(),
@@ -285,10 +306,8 @@ async function main() {
           typeCounts.docs
         ]
       },
-      weeklyCadence: {
-        labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
-        counts: weeklyCounts
-      }
+      weeklyCadence: cadencePeriods['4w'],
+      cadencePeriods
     };
 
     // Gravação dos arquivos

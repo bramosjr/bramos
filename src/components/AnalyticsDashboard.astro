@@ -18,7 +18,7 @@ import analytics from '../data/analytics.json';
     </p>
   </div>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
     <!-- Chart 1: Language Breakdown -->
     <div class="bg-surface p-5 rounded-2xl border border-borderSubtle flex flex-col">
       <div class="flex items-center justify-between mb-4">
@@ -47,16 +47,23 @@ import analytics from '../data/analytics.json';
       </div>
     </div>
 
-    <!-- Chart 3: Weekly Activity Cadence -->
-    <div class="bg-surface p-5 rounded-2xl border border-borderSubtle flex flex-col">
-      <div class="flex items-center justify-between mb-4">
+    <!-- Chart 3: Weekly Activity Cadence (Full Width Bottom Row) -->
+    <div class="lg:col-span-2 bg-surface p-6 rounded-2xl border border-borderSubtle flex flex-col">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
         <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
           <span class="text-mintGreen">📈</span> Cadência de Entregas Semanais
         </h3>
-        <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Últimas 4 Semanas</span>
+        <div class="flex items-center space-x-2">
+          <label for="cadencePeriodFilter" class="text-xs text-textSecondary font-mono hidden sm:inline">Período:</label>
+          <select id="cadencePeriodFilter" class="text-xs font-mono py-1.5 px-3 bg-canvas border border-borderSubtle rounded-lg text-textPrimary focus:border-mintGreen focus:outline-none transition cursor-pointer hover:border-mintGreen/50">
+            <option value="4w">Últimas 4 Semanas</option>
+            <option value="8w">Últimas 8 Semanas</option>
+            <option value="12w">Últimos 3 Meses</option>
+          </select>
+        </div>
       </div>
-      <p class="text-xs text-textSecondary mb-4">Volume de commits sanitizados por semana recente.</p>
-      <div class="relative w-full h-[280px] md:h-[320px] my-auto">
+      <p class="text-xs text-textSecondary mb-4">Volume de commits sanitizados distribuído ao longo do período selecionado.</p>
+      <div class="relative w-full h-[260px] md:h-[300px]">
         <canvas id="activityCadenceChart"></canvas>
       </div>
     </div>
@@ -67,6 +74,8 @@ import analytics from '../data/analytics.json';
 <script is:inline src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script is:inline>
+  let cadenceChartInstance = null;
+
   function initAnalyticsCharts() {
     if (typeof Chart === 'undefined') {
       setTimeout(initAnalyticsCharts, 100);
@@ -99,10 +108,14 @@ import analytics from '../data/analytics.json';
     const typeLabels = analyticsData.commitTypes?.labels || ['feat', 'fix', 'refactor', 'infra', 'docs'];
     const typeData = analyticsData.commitTypes?.counts || [40, 20, 10, 5, 10];
 
-    const cadenceLabels = analyticsData.weeklyCadence?.labels || ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'];
-    const cadenceData = analyticsData.weeklyCadence?.counts || [5, 10, 15, 20];
+    const cadencePeriods = analyticsData.cadencePeriods || {
+      '4w': {
+        labels: analyticsData.weeklyCadence?.labels || ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+        counts: analyticsData.weeklyCadence?.counts || [5, 10, 15, 20]
+      }
+    };
 
-    // Chart 1: Languages Breakdown (Doughnut)
+    // Chart 1: Languages Breakdown (Doughnut) — sem bordas escuras
     const elLang = document.getElementById('languagesChart');
     if (elLang) {
       const ctxLang = elLang.getContext('2d');
@@ -113,8 +126,8 @@ import analytics from '../data/analytics.json';
           datasets: [{
             data: langData,
             backgroundColor: ['#8CAE99', '#EAB308', '#D4C5A9', '#C88A58', '#34D399'],
-            borderWidth: 2,
-            borderColor: '#132B22'
+            borderWidth: 0,
+            hoverOffset: 6
           }]
         },
         options: {
@@ -151,17 +164,19 @@ import analytics from '../data/analytics.json';
       });
     }
 
-    // Chart 3: Weekly Activity Cadence (Line)
+    // Chart 3: Weekly Activity Cadence (Line com filtro dinâmico)
     const elCadence = document.getElementById('activityCadenceChart');
     if (elCadence) {
       const ctxCadence = elCadence.getContext('2d');
-      new Chart(ctxCadence, {
+      const initialPeriod = cadencePeriods['4w'] || Object.values(cadencePeriods)[0];
+
+      cadenceChartInstance = new Chart(ctxCadence, {
         type: 'line',
         data: {
-          labels: cadenceLabels,
+          labels: initialPeriod.labels,
           datasets: [{
             label: 'Commits Sanitizados',
-            data: cadenceData,
+            data: initialPeriod.counts,
             borderColor: '#34D399',
             backgroundColor: 'rgba(52, 211, 153, 0.12)',
             fill: true,
@@ -176,6 +191,18 @@ import analytics from '../data/analytics.json';
             x: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } },
             y: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } }
           }
+        }
+      });
+
+      // Listener para filtro de período
+      const periodSelect = document.getElementById('cadencePeriodFilter');
+      periodSelect?.addEventListener('change', (e) => {
+        const val = e.target.value;
+        const targetPeriod = cadencePeriods[val];
+        if (targetPeriod && cadenceChartInstance) {
+          cadenceChartInstance.data.labels = targetPeriod.labels;
+          cadenceChartInstance.data.datasets[0].data = targetPeriod.counts;
+          cadenceChartInstance.update();
         }
       });
     }
