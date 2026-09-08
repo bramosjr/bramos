@@ -1,27 +1,28 @@
 [
   {
     "id": 1,
-    "title": "Feat: atualiza favicon, identidade visual, layout de graficos e filtr…",
-    "type": "feat",
-    "category": "feat",
+    "title": "chore: bump versão para 0.2.0",
+    "type": "infra",
+    "category": "infra",
     "isPrivate": true,
     "repoName": null,
     "repoUrl": null,
     "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Astro",
+    "repoAlias": "Projeto Privado: Solução em Python",
     "tags": [
-      "Astro",
+      "Python",
+      "INFRA",
       "NDA"
     ],
     "date": "2026-09-08",
     "diffDays": 0,
     "timeAgo": "hoje",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
+    "isMajor": false
   },
   {
     "id": 2,
-    "title": "Feat: integra ingestao de dados reais do github via graphql com sanit…",
+    "title": "Feat: adiciona vitrine de repositorios publicos, filtros condicionais…",
     "type": "feat",
     "category": "feat",
     "isPrivate": true,
@@ -41,7 +42,7 @@
   },
   {
     "id": 3,
-    "title": "Feat: implementa portal de atividades github e guia arquitetural com …",
+    "title": "Feat: atualiza favicon, identidade visual, layout de graficos e filtr…",
     "type": "feat",
     "category": "feat",
     "isPrivate": true,
@@ -61,6 +62,67 @@
   },
   {
     "id": 4,
+    "title": "docs: documenta --delete-remote-branch nos GITNOW*.md (5 idiomas)",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 5,
+    "title": "Feat: integra ingestao de dados reais do github via graphql com sanit…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Astro",
+    "tags": [
+      "Astro",
+      "NDA"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 6,
+    "title": "Feat: implementa portal de atividades github e guia arquitetural com …",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Astro",
+    "tags": [
+      "Astro",
+      "NDA"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 7,
     "title": "Fix: trata resíduos de ano e marca da issue 197 ",
     "type": "fix",
     "category": "fix",
@@ -80,7 +142,67 @@
     "isMajor": false
   },
   {
-    "id": 5,
+    "id": 8,
+    "title": "feat(gui): checkbox opcional para remover branch remota após o merge",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 9,
+    "title": "feat(cli): adiciona --delete-remote-branch (opt-in, desligado por pad…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 10,
+    "title": "feat(core): run_flow aceita delete_remote_branch opcional (best-effort)",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 11,
     "title": "docs: documenta --issue com múltiplas issues nos GITNOW*.md e README*…",
     "type": "docs",
     "category": "infra",
@@ -101,7 +223,7 @@
     "isMajor": false
   },
   {
-    "id": 6,
+    "id": 12,
     "title": "docs: adiciona plano de implementação da issue #1 (múltiplas issues n…",
     "type": "docs",
     "category": "infra",
@@ -122,7 +244,7 @@
     "isMajor": false
   },
   {
-    "id": 7,
+    "id": 13,
     "title": "fix: resolve final review findings for multi-issue --issue support",
     "type": "fix",
     "category": "fix",
@@ -142,7 +264,7 @@
     "isMajor": false
   },
   {
-    "id": 8,
+    "id": 14,
     "title": "i18n: label_issue indica múltiplos valores separados por vírgula (5 i…",
     "type": "feat",
     "category": "feat",
@@ -162,7 +284,7 @@
     "isMajor": true
   },
   {
-    "id": 9,
+    "id": 15,
     "title": "test(cli): cobre fail-fast quando --issue é inválido antes de rodar o…",
     "type": "feat",
     "category": "feat",
@@ -182,7 +304,7 @@
     "isMajor": true
   },
   {
-    "id": 10,
+    "id": 16,
     "title": "feat(cli): --issue aceita múltiplas issues, com validação fail-fast n…",
     "type": "feat",
     "category": "feat",
@@ -202,7 +324,7 @@
     "isMajor": true
   },
   {
-    "id": 11,
+    "id": 17,
     "title": "test(core): cobre run_flow fechando múltiplas issues no mesmo commit",
     "type": "feat",
     "category": "feat",
@@ -222,7 +344,7 @@
     "isMajor": true
   },
   {
-    "id": 12,
+    "id": 18,
     "title": "feat(core): build_commit_message aceita múltiplas issues separadas po…",
     "type": "feat",
     "category": "feat",
@@ -242,7 +364,7 @@
     "isMajor": true
   },
   {
-    "id": 13,
+    "id": 19,
     "title": "Feat: ícones multirresolução no empacotamento e metadados AppStream",
     "type": "feat",
     "category": "feat",
@@ -262,7 +384,7 @@
     "isMajor": true
   },
   {
-    "id": 14,
+    "id": 20,
     "title": "feat: empacotamento .deb/.rpm (issue #5) — packaging/build.sh, tagnow…",
     "type": "feat",
     "category": "feat",
@@ -282,7 +404,7 @@
     "isMajor": true
   },
   {
-    "id": 15,
+    "id": 21,
     "title": "docs: README em 5 idiomas (pt/en/es/zh/ru), mesmo padrão do Gitnow",
     "type": "docs",
     "category": "infra",
@@ -303,7 +425,7 @@
     "isMajor": false
   },
   {
-    "id": 16,
+    "id": 22,
     "title": "feat: implementa i18n do app nos mesmos 5 idiomas do Gitnow (pt/en/es…",
     "type": "feat",
     "category": "feat",
@@ -323,7 +445,7 @@
     "isMajor": true
   },
   {
-    "id": 17,
+    "id": 23,
     "title": "feat: link do repositório em Sobre vira hiperlink clicável (abre no n…",
     "type": "feat",
     "category": "feat",
@@ -343,7 +465,7 @@
     "isMajor": true
   },
   {
-    "id": 18,
+    "id": 24,
     "title": "feat: renderiza AJUDA.md como Markdown de verdade na janela de Ajuda …",
     "type": "feat",
     "category": "feat",
@@ -363,7 +485,7 @@
     "isMajor": true
   },
   {
-    "id": 19,
+    "id": 25,
     "title": "docs: indica onde encontrar o TAGNOW.md (raiz do repo, caminho instal…",
     "type": "docs",
     "category": "infra",
@@ -384,7 +506,7 @@
     "isMajor": false
   },
   {
-    "id": 20,
+    "id": 26,
     "title": "docs: traz de volta pro AJUDA.md o contexto esclarecedor removido do …",
     "type": "docs",
     "category": "infra",
@@ -405,7 +527,7 @@
     "isMajor": false
   },
   {
-    "id": 21,
+    "id": 27,
     "title": "docs: enxuga TAGNOW.md no mesmo espírito direto do GITNOW.md",
     "type": "docs",
     "category": "infra",
@@ -426,7 +548,7 @@
     "isMajor": false
   },
   {
-    "id": 22,
+    "id": 28,
     "title": "feat: botão 'Baixar TAGNOW.md' em Configuração, com busca em local in…",
     "type": "feat",
     "category": "feat",
@@ -446,7 +568,7 @@
     "isMajor": true
   },
   {
-    "id": 23,
+    "id": 29,
     "title": "feat: menu de Ajuda na GUI, TAGNOW.md (protocolo p/ IA) e AJUDA.md (u…",
     "type": "feat",
     "category": "feat",
@@ -466,7 +588,7 @@
     "isMajor": true
   },
   {
-    "id": 24,
+    "id": 30,
     "title": "fix: adiciona rótulos (Arquivo/Valor a trocar/Placeholder) ao mini-fo…",
     "type": "fix",
     "category": "fix",
@@ -486,7 +608,7 @@
     "isMajor": false
   },
   {
-    "id": 25,
+    "id": 31,
     "title": "fix: correções da revisão final da GUI (plan robusto, log de auditori…",
     "type": "fix",
     "category": "fix",
@@ -506,128 +628,8 @@
     "isMajor": false
   },
   {
-    "id": 26,
-    "title": "feat: telas de Configuração e Sobre, entry point tagnow-gui e docs",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-07",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 27,
-    "title": "feat: fluxo apply() com confirmação, resultado e tratamento de exceções",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-07",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 28,
-    "title": "feat: fluxo plan() com relatório, erro e confirmação de origem na GUI",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-07",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 29,
-    "title": "feat: formulário e tabela de substituições na GUI",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 30,
-    "title": "fix: fixa ttkbootstrap na faixa 1.x para casar com o Gitnow e evitar …",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 31,
-    "title": "feat: App principal com campos de repositório, origem e cliente",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
     "id": 32,
-    "title": "feat: scaffolding da GUI (ttkbootstrap, ícone, funções puras de forma…",
+    "title": "feat: telas de Configuração e Sobre, entry point tagnow-gui e docs",
     "type": "feat",
     "category": "feat",
     "isPrivate": true,
@@ -647,7 +649,7 @@
   },
   {
     "id": 33,
-    "title": "feat: persistência de preferências da GUI (tagnow/config.py)",
+    "title": "feat: fluxo apply() com confirmação, resultado e tratamento de exceções",
     "type": "feat",
     "category": "feat",
     "isPrivate": true,
@@ -667,6 +669,126 @@
   },
   {
     "id": 34,
+    "title": "feat: fluxo plan() com relatório, erro e confirmação de origem na GUI",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-07",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 35,
+    "title": "feat: formulário e tabela de substituições na GUI",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-07",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 36,
+    "title": "fix: fixa ttkbootstrap na faixa 1.x para casar com o Gitnow e evitar …",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-07",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 37,
+    "title": "feat: App principal com campos de repositório, origem e cliente",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-07",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 38,
+    "title": "feat: scaffolding da GUI (ttkbootstrap, ícone, funções puras de forma…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-07",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 39,
+    "title": "feat: persistência de preferências da GUI (tagnow/config.py)",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-07",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 40,
     "title": "chore: ignora .superpowers (workspace do SDD movido para suporte/Tagn…",
     "type": "infra",
     "category": "infra",
@@ -687,7 +809,7 @@
     "isMajor": false
   },
   {
-    "id": 35,
+    "id": 41,
     "title": "Feat: Adiciona o Conectoma Cognitivo 3D (Bloco 2 da issue #13) — pági…",
     "type": "feat",
     "category": "feat",
@@ -707,7 +829,7 @@
     "isMajor": true
   },
   {
-    "id": 36,
+    "id": 42,
     "title": "Feat: Adiciona campo opcional Eixo Cognitivo às 14 seções de lista do…",
     "type": "feat",
     "category": "feat",
@@ -727,7 +849,7 @@
     "isMajor": true
   },
   {
-    "id": 37,
+    "id": 43,
     "title": "Feat: adiciona linha neon amber-400 nos itens do menu de navegacao po…",
     "type": "feat",
     "category": "feat",
@@ -747,7 +869,7 @@
     "isMajor": true
   },
   {
-    "id": 38,
+    "id": 44,
     "title": "Feat: adiciona secao de Ajuda do Sistema no formulario admin (issue #…",
     "type": "feat",
     "category": "feat",
@@ -767,7 +889,7 @@
     "isMajor": true
   },
   {
-    "id": 39,
+    "id": 45,
     "title": "Feat: adiciona exportacao estruturada do curriculo no formulario admi…",
     "type": "feat",
     "category": "feat",
@@ -787,7 +909,7 @@
     "isMajor": true
   },
   {
-    "id": 40,
+    "id": 46,
     "title": "Feat: adiciona menu horizontal de navegacao por secoes no cabecalho d…",
     "type": "feat",
     "category": "feat",
@@ -807,7 +929,7 @@
     "isMajor": true
   },
   {
-    "id": 41,
+    "id": 47,
     "title": "Feat: adiciona importacao do Curriculo Lattes via XML (issue #14): pa…",
     "type": "feat",
     "category": "feat",
@@ -827,7 +949,7 @@
     "isMajor": true
   },
   {
-    "id": 42,
+    "id": 48,
     "title": "Feat: adiciona Orientacoes, Bancas e Citacoes (paridade Lattes, issue…",
     "type": "feat",
     "category": "feat",
@@ -847,7 +969,7 @@
     "isMajor": true
   },
   {
-    "id": 43,
+    "id": 49,
     "title": "Feat: adiciona Propriedade Intelectual, Producao Artistica, Reconheci…",
     "type": "feat",
     "category": "feat",
@@ -867,7 +989,7 @@
     "isMajor": true
   },
   {
-    "id": 44,
+    "id": 50,
     "title": "Feat: adiciona Eventos, Projetos e Producao Bibliografica (paridade L…",
     "type": "feat",
     "category": "feat",
@@ -887,7 +1009,7 @@
     "isMajor": true
   },
   {
-    "id": 45,
+    "id": 51,
     "title": "Feat: Adiciona detalhamento interativo por ano no grafico de Atividad…",
     "type": "feat",
     "category": "feat",
@@ -907,7 +1029,7 @@
     "isMajor": true
   },
   {
-    "id": 46,
+    "id": 52,
     "title": "Feat: Adiciona 9 novos modelos de impressao, modo instantaneo (imprim…",
     "type": "feat",
     "category": "feat",
@@ -927,7 +1049,7 @@
     "isMajor": true
   },
   {
-    "id": 47,
+    "id": 53,
     "title": "Feat: Reestrutura o Formulario com layout Master-Detail: menu lateral…",
     "type": "feat",
     "category": "feat",
@@ -947,7 +1069,7 @@
     "isMajor": true
   },
   {
-    "id": 48,
+    "id": 54,
     "title": "Feat: Adiciona secao 'Aprendizado Autonomo & Pratica Independente' (h…",
     "type": "feat",
     "category": "feat",
@@ -967,7 +1089,7 @@
     "isMajor": true
   },
   {
-    "id": 49,
+    "id": 55,
     "title": "Fix: Traduz modal de créditos/LinkTree (GitHub Profile, Criador do Si…",
     "type": "fix",
     "category": "fix",
@@ -987,7 +1109,7 @@
     "isMajor": false
   },
   {
-    "id": 50,
+    "id": 56,
     "title": "Refactor: Reorganiza curriculo/, formulario/ e banners/ em site/ para…",
     "type": "refactor",
     "category": "refactor",
@@ -1002,13 +1124,13 @@
       "NDA"
     ],
     "date": "2026-09-05",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
+    "diffDays": 3,
+    "timeAgo": "há 3 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 51,
+    "id": 57,
     "title": "Fix: Remove pontos das linhas dos gráficos, alinha cor do slider de i…",
     "type": "fix",
     "category": "fix",
@@ -1022,13 +1144,13 @@
       "NDA"
     ],
     "date": "2026-09-05",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
+    "diffDays": 3,
+    "timeAgo": "há 3 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 52,
+    "id": 58,
     "title": "Feat: Currículo multilíngue com tradução automática em segundo plano …",
     "type": "feat",
     "category": "feat",
@@ -1048,7 +1170,7 @@
     "isMajor": true
   },
   {
-    "id": 53,
+    "id": 59,
     "title": "Feat: Adiciona banner institucional configuravel (catalogo de 12 pres…",
     "type": "feat",
     "category": "feat",
@@ -1068,7 +1190,7 @@
     "isMajor": true
   },
   {
-    "id": 54,
+    "id": 60,
     "title": "Feat: Adiciona modo claro (estilo Anthropic) ao curriculo publico, co…",
     "type": "feat",
     "category": "feat",
@@ -1088,7 +1210,7 @@
     "isMajor": true
   },
   {
-    "id": 55,
+    "id": 61,
     "title": "Feat: Ordena grafico de Dominio Pratico por pontuacao crescente e tor…",
     "type": "feat",
     "category": "feat",
@@ -1108,7 +1230,7 @@
     "isMajor": true
   },
   {
-    "id": 56,
+    "id": 62,
     "title": "Fix: Remove rolagem interna do card Formacao Complementar e ordena cu…",
     "type": "fix",
     "category": "fix",
@@ -1128,7 +1250,7 @@
     "isMajor": false
   },
   {
-    "id": 57,
+    "id": 63,
     "title": "Feat: Adiciona slider de intervalo (dois handles) para delimitar os a…",
     "type": "feat",
     "category": "feat",
@@ -1148,7 +1270,7 @@
     "isMajor": true
   },
   {
-    "id": 58,
+    "id": 64,
     "title": "Feat: Tooltip do grafico de competencias aparece em qualquer ponto da…",
     "type": "feat",
     "category": "feat",
@@ -1168,7 +1290,7 @@
     "isMajor": true
   },
   {
-    "id": 59,
+    "id": 65,
     "title": "Feat: Consolida issue #10: placeholders em botoes de Adicionar (sem v…",
     "type": "feat",
     "category": "feat",
@@ -1188,7 +1310,7 @@
     "isMajor": true
   },
   {
-    "id": 60,
+    "id": 66,
     "title": "Chore: Remove legenda hardcoded do grafico de Distribuicao de Dominio…",
     "type": "infra",
     "category": "infra",
@@ -1209,7 +1331,7 @@
     "isMajor": false
   },
   {
-    "id": 61,
+    "id": 67,
     "title": "fix: cli nunca vaza traceback cru",
     "type": "fix",
     "category": "fix",
@@ -1229,7 +1351,7 @@
     "isMajor": false
   },
   {
-    "id": 62,
+    "id": 68,
     "title": "fix: motor - versiona branch, contenção de path, worktree suja e vali…",
     "type": "fix",
     "category": "fix",
@@ -1249,7 +1371,7 @@
     "isMajor": false
   },
   {
-    "id": 63,
+    "id": 69,
     "title": "docs: adicionar exit codes do apply no README",
     "type": "docs",
     "category": "infra",
@@ -1270,7 +1392,7 @@
     "isMajor": false
   },
   {
-    "id": 64,
+    "id": 70,
     "title": "feat: cli.py com protocolo stdin/stdout e exit codes",
     "type": "feat",
     "category": "feat",
@@ -1290,7 +1412,7 @@
     "isMajor": true
   },
   {
-    "id": 65,
+    "id": 71,
     "title": "Feat: Slider de competencias vai de 0 a 100% com cor dinamica (vermel…",
     "type": "feat",
     "category": "feat",
@@ -1310,7 +1432,7 @@
     "isMajor": true
   },
   {
-    "id": 66,
+    "id": 72,
     "title": "test: adiciona cobertura para guard 3 (SubstitutionNotFoundError) em …",
     "type": "feat",
     "category": "feat",
@@ -1330,7 +1452,7 @@
     "isMajor": true
   },
   {
-    "id": 67,
+    "id": 73,
     "title": "feat: apply() executa o corte completo com push automático",
     "type": "feat",
     "category": "feat",
@@ -1350,7 +1472,7 @@
     "isMajor": true
   },
   {
-    "id": 68,
+    "id": 74,
     "title": "feat: orquestração de plan() com resolução de origem e validação tudo…",
     "type": "feat",
     "category": "feat",
@@ -1370,7 +1492,7 @@
     "isMajor": true
   },
   {
-    "id": 69,
+    "id": 75,
     "title": "feat: nomenclatura de branch/tag com versionamento automático",
     "type": "feat",
     "category": "feat",
@@ -1390,7 +1512,7 @@
     "isMajor": true
   },
   {
-    "id": 70,
+    "id": 76,
     "title": "fix: tratar exceções de I/O em validate_substitutions",
     "type": "fix",
     "category": "fix",
@@ -1410,7 +1532,7 @@
     "isMajor": false
   },
   {
-    "id": 71,
+    "id": 77,
     "title": "Feat: Esconde secoes do curriculo publico sem nenhum dado inserido (M…",
     "type": "feat",
     "category": "feat",
@@ -1430,7 +1552,7 @@
     "isMajor": true
   },
   {
-    "id": 72,
+    "id": 78,
     "title": "feat: validação de substituições e hash do plano",
     "type": "feat",
     "category": "feat",
@@ -1450,7 +1572,7 @@
     "isMajor": true
   },
   {
-    "id": 73,
+    "id": 79,
     "title": "feat: scaffolding do pacote tagnow + helpers Git básicos",
     "type": "feat",
     "category": "feat",
@@ -1470,7 +1592,7 @@
     "isMajor": true
   },
   {
-    "id": 74,
+    "id": 80,
     "title": "Fix: Cabecalho publico deixa de ser fixo (sticky) em telas estreitas,…",
     "type": "fix",
     "category": "fix",
@@ -1490,7 +1612,7 @@
     "isMajor": false
   },
   {
-    "id": 75,
+    "id": 81,
     "title": "Reorganiza: suporte/ e docs/specs ficam no nível do workspace, fora d…",
     "type": "feat",
     "category": "feat",
@@ -1510,7 +1632,7 @@
     "isMajor": true
   },
   {
-    "id": 76,
+    "id": 82,
     "title": "Adiciona spec de arquitetura do Tagnow",
     "type": "feat",
     "category": "feat",
@@ -1530,7 +1652,7 @@
     "isMajor": true
   },
   {
-    "id": 77,
+    "id": 83,
     "title": "Adiciona README e documentos de partida do projeto Tagnow",
     "type": "docs",
     "category": "infra",
@@ -1551,7 +1673,7 @@
     "isMajor": false
   },
   {
-    "id": 78,
+    "id": 84,
     "title": "Fix: Corrige race condition: bloqueia Salvar ate a carga inicial (fet…",
     "type": "fix",
     "category": "fix",
@@ -1571,7 +1693,7 @@
     "isMajor": false
   },
   {
-    "id": 79,
+    "id": 85,
     "title": "Feat: Adiciona aviso de privacidade na pagina publica do curriculo (s…",
     "type": "feat",
     "category": "feat",
@@ -1591,7 +1713,7 @@
     "isMajor": true
   },
   {
-    "id": 80,
+    "id": 86,
     "title": "Chore: Remove jargao tecnico das mensagens, adiciona favicon dinamico…",
     "type": "infra",
     "category": "infra",
@@ -1612,7 +1734,7 @@
     "isMajor": false
   },
   {
-    "id": 81,
+    "id": 87,
     "title": "Fix: Corrige URL da foto de perfil, modal Arvore de Links (site vs it…",
     "type": "fix",
     "category": "fix",
@@ -1632,7 +1754,7 @@
     "isMajor": false
   },
   {
-    "id": 82,
+    "id": 88,
     "title": "Fix: Move botoes de Adicionar para fora do summary, evitando alternar…",
     "type": "fix",
     "category": "fix",
@@ -1652,7 +1774,7 @@
     "isMajor": false
   },
   {
-    "id": 83,
+    "id": 89,
     "title": "Chore: Renomeia Secao 2 do CMS para Outros Contatos e Redes Sociais",
     "type": "infra",
     "category": "infra",
@@ -1673,7 +1795,7 @@
     "isMajor": false
   },
   {
-    "id": 84,
+    "id": 90,
     "title": "Docs: Documenta processo de onboarding de terceiros, corte de versao …",
     "type": "docs",
     "category": "infra",
@@ -1694,7 +1816,7 @@
     "isMajor": false
   },
   {
-    "id": 85,
+    "id": 91,
     "title": "Feat: Adiciona multiplos telefones/emails com rotulo, campo Pais de O…",
     "type": "feat",
     "category": "feat",
@@ -1714,7 +1836,7 @@
     "isMajor": true
   },
   {
-    "id": 86,
+    "id": 92,
     "title": "Feat: Reconstroi templates de impressao fieis aos modelos de referenc…",
     "type": "feat",
     "category": "feat",
@@ -1734,7 +1856,7 @@
     "isMajor": true
   },
   {
-    "id": 87,
+    "id": 93,
     "title": "Feat: adiciona modal fixo de links do criador (LinkedIn, Instagram, D…",
     "type": "feat",
     "category": "feat",
@@ -1754,7 +1876,7 @@
     "isMajor": true
   },
   {
-    "id": 88,
+    "id": 94,
     "title": "Feat: adiciona secao editavel de Especializacoes (Areas de Dominio e …",
     "type": "feat",
     "category": "feat",
@@ -1774,7 +1896,7 @@
     "isMajor": true
   },
   {
-    "id": 89,
+    "id": 95,
     "title": "Feat: unifica os dois Workers Cloudflare em um so (curriculo na raiz,…",
     "type": "feat",
     "category": "feat",
@@ -1794,7 +1916,7 @@
     "isMajor": true
   },
   {
-    "id": 90,
+    "id": 96,
     "title": "Fix: remove dados de exemplo (DEFAULT_RESUME_DATA), corrige bugs de r…",
     "type": "fix",
     "category": "fix",
@@ -1814,7 +1936,7 @@
     "isMajor": false
   },
   {
-    "id": 91,
+    "id": 97,
     "title": "Feat: adiciona Token de Acesso por sessao no formulario (aba oculta n…",
     "type": "feat",
     "category": "feat",
@@ -1834,7 +1956,7 @@
     "isMajor": true
   },
   {
-    "id": 92,
+    "id": 98,
     "title": "Feat: sincroniza formulario e curriculo (leitura dinamica de dados vi…",
     "type": "feat",
     "category": "feat",
@@ -1854,7 +1976,7 @@
     "isMajor": true
   },
   {
-    "id": 93,
+    "id": 99,
     "title": "feat(gas): implementar Gerenciador de Abas e Sidebar inspirados no pr…",
     "type": "feat",
     "category": "feat",
@@ -1874,7 +1996,7 @@
     "isMajor": true
   },
   {
-    "id": 94,
+    "id": 100,
     "title": "feat(gas): implementar CRUD com a Planilha e lógica de salvar imagens…",
     "type": "feat",
     "category": "feat",
@@ -1894,7 +2016,7 @@
     "isMajor": true
   },
   {
-    "id": 95,
+    "id": 101,
     "title": "feat(gas): estruturar diretórios e arquivos do Google Apps Script con…",
     "type": "feat",
     "category": "feat",
@@ -1914,7 +2036,7 @@
     "isMajor": true
   },
   {
-    "id": 96,
+    "id": 102,
     "title": "refatorar: reverter para Opção A (Google Sheets + Apps Script + Cloud…",
     "type": "refactor",
     "category": "refactor",
@@ -1935,7 +2057,7 @@
     "isMajor": false
   },
   {
-    "id": 97,
+    "id": 103,
     "title": "feat: refatorar formulário e currículo para arquitetura Cloudflare R2…",
     "type": "refactor",
     "category": "refactor",
@@ -1950,13 +2072,13 @@
       "NDA"
     ],
     "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
+    "diffDays": 9,
+    "timeAgo": "há 9 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 98,
+    "id": 104,
     "title": "docs: atualizar arquitetura de deploy para utilizar Cloudflare R2 e u…",
     "type": "docs",
     "category": "infra",
@@ -1971,13 +2093,13 @@
       "NDA"
     ],
     "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
+    "diffDays": 9,
+    "timeAgo": "há 9 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 99,
+    "id": 105,
     "title": "Docs: adiciona capturas de tela da GUI ao README (5 idiomas)",
     "type": "docs",
     "category": "infra",
@@ -1998,7 +2120,7 @@
     "isMajor": false
   },
   {
-    "id": 100,
+    "id": 106,
     "title": "Fix: deteccao de branch principal via consulta ao remoto ao vivo; ren…",
     "type": "fix",
     "category": "fix",
@@ -2018,7 +2140,7 @@
     "isMajor": false
   },
   {
-    "id": 101,
+    "id": 107,
     "title": "Feat: adiciona diagramas dos fluxos de operacao (README + Central de …",
     "type": "docs",
     "category": "infra",
@@ -2039,7 +2161,7 @@
     "isMajor": false
   },
   {
-    "id": 102,
+    "id": 108,
     "title": "feat: icone real do app + metadados AppStream (licenca/site no instal…",
     "type": "feat",
     "category": "feat",
@@ -2059,7 +2181,7 @@
     "isMajor": true
   },
   {
-    "id": 103,
+    "id": 109,
     "title": "feat: botao Sobre com licenca MIT e download do AGENTS.md",
     "type": "feat",
     "category": "feat",
@@ -2079,7 +2201,7 @@
     "isMajor": true
   },
   {
-    "id": 104,
+    "id": 110,
     "title": "chore: adiciona .superpowers/ ao gitignore",
     "type": "infra",
     "category": "infra",
@@ -2100,7 +2222,7 @@
     "isMajor": false
   },
   {
-    "id": 105,
+    "id": 111,
     "title": "chore: bump versao para 0.1.1 (correcao dos 2 criticals da revisao fi…",
     "type": "infra",
     "category": "infra",
@@ -2121,7 +2243,7 @@
     "isMajor": false
   },
   {
-    "id": 106,
+    "id": 112,
     "title": "fix: hardening do empacotamento e do nucleo (deps do pacote, --repo n…",
     "type": "fix",
     "category": "fix",
@@ -2141,7 +2263,7 @@
     "isMajor": false
   },
   {
-    "id": 107,
+    "id": 113,
     "title": "fix: gitnow-gui --auto nunca mais trava (excecao generica + watchdog …",
     "type": "fix",
     "category": "fix",
@@ -2161,7 +2283,7 @@
     "isMajor": false
   },
   {
-    "id": 108,
+    "id": 114,
     "title": "docs: instrucoes de build local dos pacotes",
     "type": "docs",
     "category": "infra",
@@ -2182,7 +2304,7 @@
     "isMajor": false
   },
   {
-    "id": 109,
+    "id": 115,
     "title": "docs: traducoes de README e AGENTS.md (en/es/zh/ru)",
     "type": "docs",
     "category": "infra",
@@ -2203,7 +2325,7 @@
     "isMajor": false
   },
   {
-    "id": 110,
+    "id": 116,
     "title": "fix: declara dependencia de python3 no pacote (venv nao e autocontida)",
     "type": "fix",
     "category": "fix",
@@ -2223,7 +2345,7 @@
     "isMajor": false
   },
   {
-    "id": 111,
+    "id": 117,
     "title": "feat: empacotamento .deb/.rpm via fpm com venv vendorizada e AGENTS.md",
     "type": "feat",
     "category": "feat",
@@ -2243,7 +2365,7 @@
     "isMajor": true
   },
   {
-    "id": 112,
+    "id": 118,
     "title": "fix: modo --auto nunca trava em messagebox de validacao (repo/campos …",
     "type": "fix",
     "category": "fix",
@@ -2261,126 +2383,6 @@
     "timeAgo": "há 9 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
-  },
-  {
-    "id": 113,
-    "title": "feat: GUI com i18n (5 idiomas) e modo automatizado (gitnow-gui --auto)",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 114,
-    "title": "feat: internacionalizacao (i18n) - pt/en/es/zh/ru",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 115,
-    "title": "feat: interface de linha de comando com confirmacao de diff (gitnow)",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 116,
-    "title": "feat: deteccao da branch principal (config.get_main_branch)",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 117,
-    "title": "feat: orquestracao completa do fluxo Git com verificacao de diff (run…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 118,
-    "title": "feat: utilitarios base do nucleo (run_git, get_current_branch, excecoes)",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
   },
   {
     "id": 119,
