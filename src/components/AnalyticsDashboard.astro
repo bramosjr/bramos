@@ -1,0 +1,162 @@
+---
+// AnalyticsDashboard.astro
+---
+<section id="analytics-section" class="scroll-mt-20">
+  <div class="border-b border-borderSubtle pb-4 mb-6">
+    <span class="text-xs font-semibold text-mintGreen uppercase tracking-widest">Telemetria Quantitativa</span>
+    <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Dashboard Analítico de Produção</h2>
+    <p class="mt-2 text-sm text-textSecondary">
+      Visualização gráfica com a paleta exigida: Verde-claro/Sage, Dourado/Amarelo, Bege/Areia, Marrom-claro/Argila, Coral/Terracota e Verde-menta.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Chart 1: Language Breakdown -->
+    <div class="bg-surface p-5 rounded-2xl border border-borderSubtle flex flex-col">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
+          <span class="text-yellowAccent">📊</span> Distribuição de Linguagens
+        </h3>
+        <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Total: 100%</span>
+      </div>
+      <p class="text-xs text-textSecondary mb-4">Cores de categorias principais: Sage, Dourado, Bege, Argila e Menta.</p>
+      <div class="relative w-full h-[280px] md:h-[320px] my-auto">
+        <canvas id="languagesChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Chart 2: Commit Types Distribution -->
+    <div class="bg-surface p-5 rounded-2xl border border-borderSubtle flex flex-col">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
+          <span class="text-sageGreen">🏷️</span> Tipos de Alterações (Conventional)
+        </h3>
+        <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Últimos 30 Dias</span>
+      </div>
+      <p class="text-xs text-textSecondary mb-4">Uso de Coral/Terracota para correções (fixes) e Dourado para novas features.</p>
+      <div class="relative w-full h-[280px] md:h-[320px] my-auto">
+        <canvas id="commitTypesChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Chart 3: Weekly Activity Cadence -->
+    <div class="bg-surface p-5 rounded-2xl border border-borderSubtle flex flex-col">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
+          <span class="text-mintGreen">📈</span> Cadência de Entregas Semanais
+        </h3>
+        <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Atividade Recente</span>
+      </div>
+      <p class="text-xs text-textSecondary mb-4">Linha em Verde-menta indicando crescimento positivo de commits sanitizados.</p>
+      <div class="relative w-full h-[280px] md:h-[320px] my-auto">
+        <canvas id="activityCadenceChart"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chart.js CDN -->
+<script is:inline src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script is:inline>
+  function initAnalyticsCharts() {
+    if (typeof Chart === 'undefined') {
+      setTimeout(initAnalyticsCharts, 100);
+      return;
+    }
+
+    const commonOptions = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          labels: { color: '#9CB0A3', font: { size: 11 } }
+        }
+      }
+    };
+
+    // Chart 1: Languages Breakdown (Doughnut)
+    const elLang = document.getElementById('languagesChart');
+    if (elLang) {
+      const ctxLang = elLang.getContext('2d');
+      new Chart(ctxLang, {
+        type: 'doughnut',
+        data: {
+          labels: ['Go', 'TypeScript', 'Rust', 'PostgreSQL / SQL', 'Astro / CSS'],
+          datasets: [{
+            data: [45, 30, 12, 8, 5],
+            backgroundColor: ['#8CAE99', '#EAB308', '#D4C5A9', '#C88A58', '#34D399'],
+            borderWidth: 2,
+            borderColor: '#132B22'
+          }]
+        },
+        options: {
+          ...commonOptions,
+          plugins: {
+            legend: { position: 'bottom', labels: { color: '#9CB0A3', font: { size: 10 } } }
+          }
+        }
+      });
+    }
+
+    // Chart 2: Commit Types (Bar)
+    const elTypes = document.getElementById('commitTypesChart');
+    if (elTypes) {
+      const ctxTypes = elTypes.getContext('2d');
+      new Chart(ctxTypes, {
+        type: 'bar',
+        data: {
+          labels: ['feat', 'fix', 'refactor', 'infra', 'docs'],
+          datasets: [{
+            label: 'Volume de Commits',
+            data: [42, 18, 15, 10, 6],
+            backgroundColor: ['#EAB308', '#E05D43', '#D4C5A9', '#C88A58', '#8CAE99'],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          ...commonOptions,
+          scales: {
+            x: { ticks: { color: '#9CB0A3' }, grid: { display: false } },
+            y: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } }
+          }
+        }
+      });
+    }
+
+    // Chart 3: Weekly Activity Cadence (Line)
+    const elCadence = document.getElementById('activityCadenceChart');
+    if (elCadence) {
+      const ctxCadence = elCadence.getContext('2d');
+      new Chart(ctxCadence, {
+        type: 'line',
+        data: {
+          labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+          datasets: [{
+            label: 'Commits Sanitizados',
+            data: [24, 38, 29, 45],
+            borderColor: '#34D399',
+            backgroundColor: 'rgba(52, 211, 153, 0.12)',
+            fill: true,
+            tension: 0.35,
+            pointBackgroundColor: '#FACC15',
+            pointRadius: 5
+          }]
+        },
+        options: {
+          ...commonOptions,
+          scales: {
+            x: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } },
+            y: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } }
+          }
+        }
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAnalyticsCharts);
+  } else {
+    initAnalyticsCharts();
+  }
+</script>

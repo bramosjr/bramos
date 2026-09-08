@@ -1,0 +1,75 @@
+---
+// SecurityMatrix.astro
+---
+<section id="security-section" class="scroll-mt-20">
+  <div class="border-b border-borderSubtle pb-4 mb-6">
+    <span class="text-xs font-semibold text-terracotta uppercase tracking-widest">Protocolo de Confidencialidade</span>
+    <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Matriz de Higienização de Repositórios Privados</h2>
+    <p class="mt-2 text-sm text-textSecondary">
+      Como a barreira de compilação isola dados sensíveis, garantindo conformidade com acordos de confidencialidade (NDA).
+    </p>
+  </div>
+
+  <!-- REST vs GraphQL comparison cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div class="bg-surface p-5 rounded-xl border border-terracotta/30">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-bold text-textPrimary text-sm flex items-center gap-2">
+          ❌ Ingestão Tradicional REST (Inadequada)
+        </h3>
+        <span class="text-[10px] font-mono px-2 py-0.5 bg-terracotta/20 text-terracotta border border-terracotta/30 rounded">Alto Consumo</span>
+      </div>
+      <p class="text-xs text-textSecondary leading-relaxed">
+        Exige requisições sequenciais a endpoints como <code class="text-textPrimary font-mono">GET /user/repos</code> e <code class="text-textPrimary font-mono">GET /repos/&#123;owner&#125;/&#123;repo&#125;/commits</code>. Causa lentidão na build e risco de atingir o limite de requisições (<em>rate limits</em>).
+      </p>
+    </div>
+
+    <div class="bg-surface p-5 rounded-xl border border-mintGreen/40">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-bold text-textPrimary text-sm flex items-center gap-2">
+          ✅ Ingestão GraphQL v4 (Recomendada)
+        </h3>
+        <span class="text-[10px] font-mono px-2 py-0.5 bg-mintGreen/10 text-mintGreen border border-mintGreen/30 rounded">Transação Única</span>
+      </div>
+      <p class="text-xs text-textSecondary leading-relaxed">
+        Consolida as contribuições através do objeto <code class="text-yellowAccent font-mono">viewer.contributionsCollection</code>. Permite delimitar a janela de datas e extrair a volumetria completa em uma única resposta enxuta.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sanitization Matrix -->
+  <div class="bg-surface rounded-2xl border border-borderSubtle p-6">
+    <h3 class="font-bold text-textPrimary text-base mb-4 flex items-center gap-2">
+      🛡️ Mapeamento de Sanitização de Metadados
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="p-4 rounded-xl bg-canvas border border-borderSubtle hover:border-yellowAccent/50 transition">
+        <div class="text-xs font-bold text-yellowAccent uppercase font-mono">1. Nome do Repo</div>
+        <div class="text-xs text-terracotta font-semibold mt-2">Risco: Fuga NDA</div>
+        <div class="text-xs text-textSecondary mt-1">Tratamento: Mapeamento por categoria genérica.</div>
+        <div class="text-xs font-mono text-sageGreen bg-canvas p-2 rounded mt-3 border border-borderSubtle">Ex: "Projeto Privado: Fintech"</div>
+      </div>
+
+      <div class="p-4 rounded-xl bg-canvas border border-borderSubtle hover:border-yellowAccent/50 transition">
+        <div class="text-xs font-bold text-yellowAccent uppercase font-mono">2. Mensagem Git</div>
+        <div class="text-xs text-terracotta font-semibold mt-2">Risco: Lógica Comercial</div>
+        <div class="text-xs text-textSecondary mt-1">Tratamento: Filtragem por Conventional Commits.</div>
+        <div class="text-xs font-mono text-sageGreen bg-canvas p-2 rounded mt-3 border border-borderSubtle">Ex: "feat(api): idempotência"</div>
+      </div>
+
+      <div class="p-4 rounded-xl bg-canvas border border-borderSubtle hover:border-yellowAccent/50 transition">
+        <div class="text-xs font-bold text-yellowAccent uppercase font-mono">3. Paths de Arquivos</div>
+        <div class="text-xs text-terracotta font-semibold mt-2">Risco: Topologia Interna</div>
+        <div class="text-xs text-textSecondary mt-1">Tratamento: Descarte total de nomes de pastas e rotas.</div>
+        <div class="text-xs font-mono text-sageGreen bg-canvas p-2 rounded mt-3 border border-borderSubtle">Ex: Badge "TypeScript / Node"</div>
+      </div>
+
+      <div class="p-4 rounded-xl bg-canvas border border-borderSubtle hover:border-yellowAccent/50 transition">
+        <div class="text-xs font-bold text-yellowAccent uppercase font-mono">4. Commit SHAs & URLs</div>
+        <div class="text-xs text-terracotta font-semibold mt-2">Risco: Links 404 / Hashes</div>
+        <div class="text-xs text-textSecondary mt-1">Tratamento: Omissão de hiperlinks externos privados.</div>
+        <div class="text-xs font-mono text-sageGreen bg-canvas p-2 rounded mt-3 border border-borderSubtle">Ex: Elemento estático seguro</div>
+      </div>
+    </div>
+  </div>
+</section>

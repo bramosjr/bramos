@@ -1,0 +1,116 @@
+---
+// SsgComparison.astro
+---
+<section id="architecture-section" class="scroll-mt-20">
+  <div class="border-b border-borderSubtle pb-4 mb-6">
+    <span class="text-xs font-semibold text-yellowAccent uppercase tracking-widest">Fundação Tecnológica</span>
+    <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Arquitetura SSG & Pipeline GitHub Actions</h2>
+    <p class="mt-2 text-sm text-textSecondary">
+      Comparativo técnico entre geradores estáticos e a esteira de compilação automatizada no GitHub Pages com autenticação OIDC.
+    </p>
+  </div>
+
+  <!-- SSG Comparison Table Component -->
+  <div class="bg-surface rounded-2xl border border-borderSubtle overflow-hidden mb-8">
+    <div class="p-5 border-b border-borderSubtle bg-surface/50">
+      <h3 class="font-bold text-textPrimary text-lg">Análise Comparativa de Geradores Estáticos</h3>
+      <p class="text-xs text-textSecondary mt-1">Por que a arquitetura de ilhas (Astro) oferece o melhor equilíbrio para sites no GitHub Pages.</p>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left text-xs sm:text-sm">
+        <thead class="bg-canvas text-textSecondary uppercase font-mono text-[11px] border-b border-borderSubtle">
+          <tr>
+            <th class="py-3 px-4">Vetor de Análise</th>
+            <th class="py-3 px-4 text-yellowAccent">Astro (Solução Ótima)</th>
+            <th class="py-3 px-4">Hugo</th>
+            <th class="py-3 px-4">Jekyll</th>
+            <th class="py-3 px-4">Next.js (SSG)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-borderSubtle text-textSecondary font-sans">
+          <tr class="hover:bg-surfaceHover/50 transition">
+            <td class="py-3.5 px-4 font-semibold text-textPrimary">Arquitetura de Saída</td>
+            <td class="py-3.5 px-4 text-yellowAccent font-medium bg-yellowAccent/5">Ilhas de Interatividade (Islands)</td>
+            <td class="py-3.5 px-4">Monolítico HTML/CSS</td>
+            <td class="py-3.5 px-4">Liquid Templates</td>
+            <td class="py-3.5 px-4">Hidratação JS Global</td>
+          </tr>
+          <tr class="hover:bg-surfaceHover/50 transition">
+            <td class="py-3.5 px-4 font-semibold text-textPrimary">Overhead JS no Cliente</td>
+            <td class="py-3.5 px-4 text-mintGreen font-bold bg-yellowAccent/5">0 KB por Omissão</td>
+            <td class="py-3.5 px-4 text-mintGreen">0 KB por Omissão</td>
+            <td class="py-3.5 px-4 text-mintGreen">0 KB por Omissão</td>
+            <td class="py-3.5 px-4 text-terracotta">Elevado (Runtime React)</td>
+          </tr>
+          <tr class="hover:bg-surfaceHover/50 transition">
+            <td class="py-3.5 px-4 font-semibold text-textPrimary">Ingestão de JSON</td>
+            <td class="py-3.5 px-4 text-sageGreen font-medium bg-yellowAccent/5">Content Collections Nativas</td>
+            <td class="py-3.5 px-4">Funções Go Internas</td>
+            <td class="py-3.5 px-4">Pasta _data estática</td>
+            <td class="py-3.5 px-4">Mapeamento getStaticProps</td>
+          </tr>
+          <tr class="hover:bg-surfaceHover/50 transition">
+            <td class="py-3.5 px-4 font-semibold text-textPrimary">Adequação ao Projeto</td>
+            <td class="py-3.5 px-4 text-yellowAccent font-bold bg-yellowAccent/5">⭐ Excelente (Equilíbrio Ótimo)</td>
+            <td class="py-3.5 px-4">Boa (Filtros mais rígidos)</td>
+            <td class="py-3.5 px-4">Suficiente (Lento em volume)</td>
+            <td class="py-3.5 px-4 text-terracotta">Excessiva (Complexidade alta)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Pipeline Execution Steps -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-surface p-6 rounded-2xl border border-borderSubtle">
+      <div class="flex items-center space-x-3 mb-4">
+        <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-yellowAccent/20 text-yellowAccent font-bold font-mono text-sm">1</span>
+        <h3 class="font-bold text-textPrimary text-base">Estágio 1: Extração & Compilação (CI)</h3>
+      </div>
+      <ul class="space-y-3 text-xs text-textSecondary leading-relaxed">
+        <li class="flex items-start gap-2">
+          <span class="text-yellowAccent font-bold">•</span>
+          <span>O GitHub Actions é disparado em push na branch principal ou via agendamento cronológico (<code>schedule</code>).</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-yellowAccent font-bold">•</span>
+          <span>Executa o script de ingestão GraphQL utilizando o token privado de segredo (<code>PRIVATE_ACTIVITY_TOKEN</code>).</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-yellowAccent font-bold">•</span>
+          <span>Aplica o filtro de despersonalização gerando o arquivo estático seguro <code class="text-sageGreen font-mono">activity.json</code>.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-yellowAccent font-bold">•</span>
+          <span>Compila o site estático e faz o upload com <code class="text-yellowAccent font-mono">actions/upload-pages-artifact</code>.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-surface p-6 rounded-2xl border border-borderSubtle">
+      <div class="flex items-center space-x-3 mb-4">
+        <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-mintGreen/20 text-mintGreen font-bold font-mono text-sm">2</span>
+        <h3 class="font-bold text-textPrimary text-base">Estágio 2: Implantação Segura (OIDC)</h3>
+      </div>
+      <ul class="space-y-3 text-xs text-textSecondary leading-relaxed">
+        <li class="flex items-start gap-2">
+          <span class="text-mintGreen font-bold">•</span>
+          <span>Valida a autenticação federada OpenID Connect (OIDC) via permissões <code>id-token: write</code> e <code>pages: write</code>.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-mintGreen font-bold">•</span>
+          <span>O comando <code class="text-sandBeige font-mono">actions/deploy-pages@v4</code> faz a transição atômica no GitHub Pages.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-mintGreen font-bold">•</span>
+          <span>Zero downtime nos servidores e sem expor branchs públicas com histórico bruto de commits.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-mintGreen font-bold">•</span>
+          <span>O visitante da página consome exclusivamente os dados higienizados e pré-processados.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

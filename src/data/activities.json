@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "release(v2.4.0): Lançamento da Nova API de Microsserviços",
+    "type": "release",
+    "category": "release",
+    "isPrivate": true,
+    "repoAlias": "Projeto Privado: Plataforma Financeira",
+    "tags": ["Go", "Docker", "API"],
+    "date": "2026-09-02",
+    "timeAgo": "há 1 dia",
+    "summary": "Publicação da versão estável com otimização de latência e suporte a idempotência em requisições concorrentes.",
+    "isMajor": true
+  },
+  {
+    "id": 2,
+    "title": "feat(api): implementação do mecanismo de idempotência",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoAlias": "Projeto Privado: Plataforma Financeira",
+    "tags": ["Go", "Redis"],
+    "date": "2026-08-30",
+    "timeAgo": "há 4 dias",
+    "summary": "Adicionado middleware de validação de chaves únicas utilizando armazenamento chave-valor de alta performance.",
+    "isMajor": true
+  },
+  {
+    "id": 3,
+    "title": "fix(auth): correção de vulnerabilidade de renovação de token JWT",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoAlias": "github-user/auth-express-starter",
+    "tags": ["TypeScript", "Security"],
+    "date": "2026-08-28",
+    "timeAgo": "há 6 dias",
+    "summary": "Mitigação de condições de corrida na expiração de tokens de refresh em sessões simultâneas.",
+    "isMajor": true
+  },
+  {
+    "id": 4,
+    "title": "refactor(db): otimização de índices e consultas em PostgreSQL",
+    "type": "refactor",
+    "category": "refactor",
+    "isPrivate": true,
+    "repoAlias": "Projeto Privado: Logística Integrada",
+    "tags": ["PostgreSQL", "SQL"],
+    "date": "2026-08-25",
+    "timeAgo": "há 9 dias",
+    "summary": "Redução do tempo de resposta de relatórios analíticos de 1.4s para 180ms através de índices parciais.",
+    "isMajor": false
+  },
+  {
+    "id": 5,
+    "title": "infra(ci): migration para pipelines em GitHub Actions com OIDC",
+    "type": "infra",
+    "category": "infra",
+    "isPrivate": false,
+    "repoAlias": "github-user/devops-templates",
+    "tags": ["GitHub Actions", "Security"],
+    "date": "2026-08-20",
+    "timeAgo": "há 14 dias",
+    "summary": "Substituição de credenciais estáticas por tokens temporários de acesso federado via protocolo OpenID Connect.",
+    "isMajor": true
+  },
+  {
+    "id": 6,
+    "title": "feat(ui): inclusão de suporte a busca difusa (Fuzzy Search)",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoAlias": "github-user/activity-feed-astro",
+    "tags": ["Astro", "JavaScript"],
+    "date": "2026-08-15",
+    "timeAgo": "há 19 dias",
+    "summary": "Integração do Fuse.js no lado do cliente para pesquisas instantâneas resilientes a erros de digitação.",
+    "isMajor": true
+  },
+  {
+    "id": 7,
+    "title": "docs(readme): atualização da documentação de deploy no Pages",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": false,
+    "repoAlias": "github-user/activity-feed-astro",
+    "tags": ["Markdown"],
+    "date": "2026-08-10",
+    "timeAgo": "há 24 dias",
+    "summary": "Adicionado guia passo a passo para configuração de segredos de repositório e permissões de OIDC.",
+    "isMajor": false
+  }
+]

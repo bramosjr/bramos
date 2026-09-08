@@ -1,0 +1,38 @@
+---
+// Navbar.astro
+---
+<header class="sticky top-0 z-50 bg-canvas/90 backdrop-blur-md border-b border-borderSubtle">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-yellowAccent via-mintGreen to-surface flex items-center justify-center font-bold text-lg text-canvas shadow-lg shadow-yellowAccent/20">
+          🌿
+        </div>
+        <div>
+          <span class="font-bold text-lg text-textPrimary tracking-tight">GitActivity<span class="text-yellowAccent">News</span></span>
+          <span class="hidden sm:inline-block ml-2 text-xs px-2 py-0.5 rounded border border-yellowAccent/40 bg-yellowAccent/10 text-yellowAccent font-mono">Dark Forest v3.0</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-1 lg:space-x-2 text-sm font-medium">
+        <a href="#feed-section" class="px-3 py-2 rounded-md hover:bg-surface text-textPrimary hover:text-yellowAccent transition">Feed Interativo</a>
+        <a href="#analytics-section" class="px-3 py-2 rounded-md hover:bg-surface text-textSecondary hover:text-mintGreen transition">Analytics</a>
+        <a href="#architecture-section" class="px-3 py-2 rounded-md hover:bg-surface text-textSecondary hover:text-mintGreen transition">Arquitetura SSG</a>
+        <a href="#security-section" class="px-3 py-2 rounded-md hover:bg-surface text-textSecondary hover:text-mintGreen transition">Segurança</a>
+        <a href="#design-section" class="px-3 py-2 rounded-md hover:bg-surface text-textSecondary hover:text-mintGreen transition">Design System</a>
+        <a href="#ai-section" class="px-3 py-2 rounded-md hover:bg-surface text-textSecondary hover:text-mintGreen transition">Recursos IA</a>
+        <a href="/docs" class="px-3 py-2 rounded-md bg-yellowAccent/10 border border-yellowAccent/30 text-yellowAccent hover:bg-yellowAccent/20 transition">Docs</a>
+      </nav>
+
+      <!-- Quick Status Widget -->
+      <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-2 px-3 py-1.5 rounded-full bg-surface border border-borderSubtle text-xs">
+          <span class="w-2 h-2 rounded-full bg-mintGreen animate-pulse"></span>
+          <span class="text-textSecondary font-mono hidden sm:inline">CI/CD: Ativo</span>
+          <span class="text-yellowAccent font-semibold font-mono">28 Privados</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

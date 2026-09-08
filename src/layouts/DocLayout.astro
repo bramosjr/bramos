@@ -1,180 +1,97 @@
 ---
 import Layout from './Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
 const { frontmatter, headings } = Astro.props;
 ---
 
 <Layout title={`${frontmatter.title} - Documentação`} description={frontmatter.description}>
-	<nav class="navbar">
-		<div class="container nav-content">
-			<a href="/" class="logo">Logo<span>.</span></a>
-			<div class="nav-links">
-				<a href="/">Home</a>
-				<a href="/docs">Documentação</a>
-				<a href="/#contato" class="btn btn-primary btn-sm">Suporte</a>
-			</div>
-		</div>
-	</nav>
+	<Navbar />
 
-	<div class="container doc-layout">
-		<aside class="sidebar">
-			<nav>
-				<h4>Sumário</h4>
-				<ul>
-					{headings.map((h) => (
-						<li class={`depth-${h.depth}`}>
-							<a href={`#${h.slug}`}>{h.text}</a>
-						</li>
-					))}
-				</ul>
-			</nav>
-		</aside>
-		
-		<main class="content">
-			<header class="doc-header">
-				<h1>{frontmatter.title}</h1>
-				{frontmatter.description && <p class="lead">{frontmatter.description}</p>}
-			</header>
-			<hr />
-			<div class="prose">
-				<slot />
-			</div>
-		</main>
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow">
+		<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+			<aside class="lg:col-span-3">
+				<div class="sticky top-24 bg-surface p-5 rounded-2xl border border-borderSubtle">
+					<h4 class="text-xs font-mono uppercase text-yellowAccent tracking-wider mb-4 font-bold">Sumário</h4>
+					<ul class="space-y-2 text-xs">
+						{headings && headings.map((h: { depth: number; slug: string; text: string }) => (
+							<li class={h.depth === 3 ? "pl-3 text-textSecondary" : "font-medium text-textPrimary"}>
+								<a href={`#${h.slug}`} class="hover:text-yellowAccent transition-colors block py-0.5">
+									{h.text}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			</aside>
+			
+			<main class="lg:col-span-9 bg-surface p-6 sm:p-10 rounded-2xl border border-borderSubtle">
+				<header class="mb-6 pb-6 border-b border-borderSubtle">
+					<span class="text-xs font-mono uppercase text-sageGreen tracking-wider font-bold">Documentação Técnica</span>
+					<h1 class="text-3xl sm:text-4xl font-extrabold text-textPrimary mt-2 mb-3">{frontmatter.title}</h1>
+					{frontmatter.description && <p class="text-textSecondary text-sm sm:text-base leading-relaxed">{frontmatter.description}</p>}
+				</header>
+				
+				<div class="doc-content prose prose-invert max-w-none text-textSecondary text-sm leading-relaxed space-y-4">
+					<slot />
+				</div>
+			</main>
+		</div>
 	</div>
+
+	<Footer />
 </Layout>
 
-<style>
-	.navbar {
-		height: 4.5rem;
-		display: flex;
-		align-items: center;
-		background: white;
-		border-bottom: 1px solid var(--border);
-		position: sticky;
-		top: 0;
-		z-index: 100;
-	}
-	.nav-content {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.logo {
+<style is:global>
+	.doc-content h2 {
 		font-size: 1.5rem;
-		font-weight: 800;
-		color: var(--text-main);
+		font-weight: 700;
+		color: #F7F4EA;
+		margin-top: 2rem;
+		margin-bottom: 0.75rem;
+		border-bottom: 1px solid #254E3E;
+		padding-bottom: 0.5rem;
 	}
-	.logo span {
-		color: var(--primary);
-	}
-	.nav-links {
-		display: flex;
-		align-items: center;
-		gap: 2rem;
-	}
-	.nav-links a:not(.btn) {
-		font-size: 0.9375rem;
-		font-weight: 500;
-		color: var(--text-muted);
-	}
-
-	.doc-layout {
-		display: grid;
-		grid-template-columns: 250px 1fr;
-		gap: 4rem;
-		padding-top: 3rem;
-		padding-bottom: 5rem;
-	}
-
-	.sidebar {
-		position: sticky;
-		top: 7.5rem;
-		height: fit-content;
-	}
-
-	.sidebar h4 {
-		font-size: 0.875rem;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		margin-bottom: 1rem;
-		color: var(--secondary);
-	}
-
-	.sidebar ul {
-		list-style: none;
-	}
-
-	.sidebar li {
+	.doc-content h3 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: #FACC15;
+		margin-top: 1.5rem;
 		margin-bottom: 0.5rem;
 	}
-
-	.sidebar a {
-		font-size: 0.9375rem;
-		color: var(--text-muted);
-	}
-
-	.sidebar .depth-3 {
-		padding-left: 1rem;
-		font-size: 0.875rem;
-	}
-
-	.doc-header h1 {
-		font-size: 3rem;
+	.doc-content p {
 		margin-bottom: 1rem;
+		color: #9CB0A3;
 	}
-
-	.lead {
-		font-size: 1.25rem;
-		margin-bottom: 2rem;
-	}
-
-	hr {
-		border: 0;
-		border-top: 1px solid var(--border);
-		margin: 2rem 0;
-	}
-
-	/* Prose/Markdown Styles */
-	.prose :global(h2) {
-		font-size: 1.875rem;
-		margin: 2.5rem 0 1rem;
-	}
-	.prose :global(h3) {
-		font-size: 1.5rem;
-		margin: 2rem 0 1rem;
-	}
-	.prose :global(p) {
-		margin-bottom: 1.25rem;
-		line-height: 1.7;
-	}
-	.prose :global(ul), .prose :global(ol) {
-		margin-bottom: 1.25rem;
+	.doc-content ul, .doc-content ol {
+		margin-bottom: 1rem;
 		padding-left: 1.5rem;
 	}
-	.prose :global(li) {
-		margin-bottom: 0.5rem;
+	.doc-content li {
+		margin-bottom: 0.35rem;
 	}
-	.prose :global(code) {
-		background: var(--bg-alt);
+	.doc-content code {
+		background: #091A13;
+		color: #8CAE99;
 		padding: 0.2rem 0.4rem;
 		border-radius: 0.25rem;
-		font-size: 0.9em;
+		font-family: monospace;
+		font-size: 0.875em;
+		border: 1px solid #254E3E;
 	}
-	.prose :global(pre) {
-		background: #1e293b;
-		color: white;
-		padding: 1.5rem;
+	.doc-content pre {
+		background: #091A13;
+		border: 1px solid #254E3E;
+		padding: 1rem;
 		border-radius: 0.75rem;
-		margin-bottom: 1.5rem;
 		overflow-x: auto;
+		margin-bottom: 1.25rem;
 	}
-
-	@media (max-width: 768px) {
-		.doc-layout {
-			grid-template-columns: 1fr;
-			gap: 2rem;
-		}
-		.sidebar {
-			display: none;
-		}
+	.doc-content pre code {
+		background: transparent;
+		border: none;
+		padding: 0;
+		color: #F7F4EA;
 	}
 </style>

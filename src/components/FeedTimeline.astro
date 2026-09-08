@@ -1,0 +1,269 @@
+---
+// FeedTimeline.astro
+import activities from '../data/activities.json';
+---
+<section id="feed-section" class="scroll-mt-20">
+  <div class="border-b border-borderSubtle pb-4 mb-6">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <span class="text-xs font-semibold text-yellowAccent uppercase tracking-widest">Demonstração Interativa</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Feed de Notícias de Atividades Recentes</h2>
+      </div>
+
+      <!-- Pitch Mode Toggle -->
+      <div class="flex items-center space-x-3 bg-surface p-2 rounded-xl border border-borderSubtle">
+        <span class="text-xs font-medium text-textSecondary flex items-center gap-1">
+          🎯 <strong class="text-textPrimary">Modo Apresentação (Pitch Mode):</strong>
+        </span>
+        <button id="pitchModeToggle" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-borderSubtle transition-colors duration-200 ease-in-out focus:outline-none" role="switch" aria-checked="false">
+          <span id="pitchModeKnob" class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-textSecondary shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+        </button>
+        <span id="pitchModeLabel" class="text-xs text-textSecondary font-mono">Desativado</span>
+      </div>
+    </div>
+    <p class="mt-2 text-sm text-textSecondary">
+      Abaixo está uma simulação em tempo real do feed estático compilado pelo GitHub Actions. Teste a pesquisa por palavras-chave, filtros por repositórios públicos ou privados (NDA) e ative o <strong>Pitch Mode</strong> para visualizar apenas entregas de alto impacto.
+    </p>
+  </div>
+
+  <!-- Feed Controls Toolbar -->
+  <div class="bg-surface p-4 rounded-xl border border-borderSubtle mb-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+    <!-- Search Input -->
+    <div class="md:col-span-5 relative">
+      <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-textSecondary">🔍</span>
+      <input type="text" id="searchInput" placeholder="Pesquisar por termo (ex: api, auth, docker, fix)..." class="w-full pl-9 pr-4 py-2 bg-canvas border border-borderSubtle rounded-lg text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
+    </div>
+
+    <!-- Category Dropdown -->
+    <div class="md:col-span-3">
+      <select id="categoryFilter" class="w-full py-2 px-3 bg-canvas border border-borderSubtle rounded-lg text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
+        <option value="all">Todas as Categorias</option>
+        <option value="feat">Features (feat)</option>
+        <option value="fix">Correções (fix)</option>
+        <option value="refactor">Refatoração (refactor)</option>
+        <option value="release">Releases (vX.X)</option>
+        <option value="infra">Infra / DevOps</option>
+      </select>
+    </div>
+
+    <!-- Visibility Dropdown -->
+    <div class="md:col-span-2">
+      <select id="repoTypeFilter" class="w-full py-2 px-3 bg-canvas border border-borderSubtle rounded-lg text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
+        <option value="all">Todos os Repos</option>
+        <option value="private">🔒 Privados (NDA)</option>
+        <option value="public">🌐 Públicos</option>
+      </select>
+    </div>
+
+    <!-- Counter Badge -->
+    <div class="md:col-span-2 text-right">
+      <span id="resultsCount" class="text-xs font-mono px-3 py-1.5 rounded-md bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30">
+        {activities.length} notícias
+      </span>
+    </div>
+  </div>
+
+  <!-- Feed Timeline Display -->
+  <div id="feedTimelineContainer" class="relative pl-6 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-borderSubtle">
+    {activities.map((item) => {
+      let badgeColor = 'bg-sageGreen/20 text-sageGreen border-sageGreen/30';
+      let icon = '⚡';
+      if (item.category === 'release') {
+        badgeColor = 'bg-yellowAccent/20 text-yellowAccent border-yellowAccent/40';
+        icon = '🚀';
+      } else if (item.category === 'fix') {
+        badgeColor = 'bg-terracotta/20 text-terracotta border-terracotta/40';
+        icon = '🛠️';
+      } else if (item.category === 'infra') {
+        badgeColor = 'bg-mintGreen/20 text-mintGreen border-mintGreen/30';
+        icon = '⚙️';
+      }
+
+      return (
+        <div class="relative group">
+          <div class={`absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 border-canvas ${item.isPrivate ? 'bg-yellowAccent' : 'bg-mintGreen'} group-hover:scale-125 transition-transform`}></div>
+          <div class="bg-surface p-5 rounded-2xl border border-borderSubtle hover:border-yellowAccent/50 transition-all shadow-lg">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <div class="flex items-center space-x-2">
+                <span class={`px-2.5 py-1 rounded-md text-xs font-mono font-bold border flex items-center gap-1 ${badgeColor}`}>
+                  {icon} {item.type.toUpperCase()}
+                </span>
+                {item.isPrivate ? (
+                  <span class="px-2 py-0.5 rounded bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30 text-[10px] font-mono flex items-center gap-1">🔒 Privado (NDA)</span>
+                ) : (
+                  <span class="px-2 py-0.5 rounded bg-mintGreen/10 text-mintGreen border border-mintGreen/30 text-[10px] font-mono flex items-center gap-1">🌐 Público</span>
+                )}
+              </div>
+              <span class="text-xs font-mono text-textSecondary">{item.timeAgo} ({item.date})</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-textPrimary group-hover:text-yellowAccent transition-colors">
+              {item.title}
+            </h3>
+            <p class="text-xs sm:text-sm text-textSecondary mt-2 leading-relaxed">
+              {item.summary}
+            </p>
+            <div class="mt-4 pt-3 border-t border-borderSubtle flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs font-mono text-sageGreen">
+                📍 {item.repoAlias}
+              </span>
+              <div class="flex flex-wrap gap-1.5">
+                {item.tags.map(tag => (
+                  <span class="px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-[10px] font-mono text-textSecondary">#{tag}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</section>
+
+<script>
+  import activities from '../data/activities.json';
+
+  let isPitchModeActive = false;
+
+  function renderFeed(items: typeof activities) {
+    const container = document.getElementById('feedTimelineContainer');
+    const countBadge = document.getElementById('resultsCount');
+    if (!container || !countBadge) return;
+
+    countBadge.textContent = `${items.length} ${items.length === 1 ? 'notícia' : 'notícias'}`;
+
+    if (items.length === 0) {
+      container.innerHTML = `
+        <div class="bg-surface p-8 rounded-xl border border-borderSubtle text-center text-textSecondary">
+          <span class="text-3xl block mb-2">🔍</span>
+          <p class="text-sm font-semibold text-textPrimary">Nenhuma atividade encontrada com os filtros selecionados.</p>
+          <p class="text-xs mt-1">Tente ajustar seus termos de busca ou desativar o Pitch Mode.</p>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = items.map(item => {
+      let badgeColor = 'bg-sageGreen/20 text-sageGreen border-sageGreen/30';
+      let icon = '⚡';
+
+      if (item.category === 'release') {
+        badgeColor = 'bg-yellowAccent/20 text-yellowAccent border-yellowAccent/40';
+        icon = '🚀';
+      } else if (item.category === 'fix') {
+        badgeColor = 'bg-terracotta/20 text-terracotta border-terracotta/40';
+        icon = '🛠️';
+      } else if (item.category === 'infra') {
+        badgeColor = 'bg-mintGreen/20 text-mintGreen border-mintGreen/30';
+        icon = '⚙️';
+      }
+
+      const visibilityBadge = item.isPrivate 
+        ? `<span class="px-2 py-0.5 rounded bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30 text-[10px] font-mono flex items-center gap-1">🔒 Privado (NDA)</span>`
+        : `<span class="px-2 py-0.5 rounded bg-mintGreen/10 text-mintGreen border border-mintGreen/30 text-[10px] font-mono flex items-center gap-1">🌐 Público</span>`;
+
+      return `
+        <div class="relative group">
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 border-canvas ${item.isPrivate ? 'bg-yellowAccent' : 'bg-mintGreen'} group-hover:scale-125 transition-transform"></div>
+
+          <div class="bg-surface p-5 rounded-2xl border border-borderSubtle hover:border-yellowAccent/50 transition-all shadow-lg">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <div class="flex items-center space-x-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-bold border flex items-center gap-1 ${badgeColor}">
+                  ${icon} ${item.type.toUpperCase()}
+                </span>
+                ${visibilityBadge}
+              </div>
+              <span class="text-xs font-mono text-textSecondary">${item.timeAgo} (${item.date})</span>
+            </div>
+
+            <h3 class="text-base sm:text-lg font-bold text-textPrimary group-hover:text-yellowAccent transition-colors">
+              ${item.title}
+            </h3>
+
+            <p class="text-xs sm:text-sm text-textSecondary mt-2 leading-relaxed">
+              ${item.summary}
+            </p>
+
+            <div class="mt-4 pt-3 border-t border-borderSubtle flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs font-mono text-sageGreen">
+                📍 ${item.repoAlias}
+              </span>
+
+              <div class="flex flex-wrap gap-1.5">
+                ${item.tags.map(tag => `<span class="px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-[10px] font-mono text-textSecondary">#${tag}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function filterFeed() {
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
+    const categorySelect = document.getElementById('categoryFilter') as HTMLSelectElement | null;
+    const repoTypeSelect = document.getElementById('repoTypeFilter') as HTMLSelectElement | null;
+
+    const searchTerm = searchInput?.value.toLowerCase().trim() ?? '';
+    const category = categorySelect?.value ?? 'all';
+    const repoType = repoTypeSelect?.value ?? 'all';
+
+    const filtered = activities.filter(item => {
+      if (isPitchModeActive && !item.isMajor) {
+        return false;
+      }
+      if (category !== 'all' && item.category !== category) {
+        return false;
+      }
+      if (repoType === 'private' && !item.isPrivate) return false;
+      if (repoType === 'public' && item.isPrivate) return false;
+
+      if (searchTerm) {
+        const matchTitle = item.title.toLowerCase().includes(searchTerm);
+        const matchSummary = item.summary.toLowerCase().includes(searchTerm);
+        const matchRepo = item.repoAlias.toLowerCase().includes(searchTerm);
+        const matchTags = item.tags.some(t => t.toLowerCase().includes(searchTerm));
+        return matchTitle || matchSummary || matchRepo || matchTags;
+      }
+      return true;
+    });
+
+    renderFeed(filtered);
+  }
+
+  function togglePitchMode() {
+    isPitchModeActive = !isPitchModeActive;
+    const knob = document.getElementById('pitchModeKnob');
+    const toggle = document.getElementById('pitchModeToggle');
+    const label = document.getElementById('pitchModeLabel');
+    if (!knob || !toggle || !label) return;
+
+    if (isPitchModeActive) {
+      knob.classList.remove('translate-x-0');
+      knob.classList.add('translate-x-5');
+      knob.classList.remove('bg-textSecondary');
+      knob.classList.add('bg-yellowAccent');
+      toggle.classList.remove('bg-borderSubtle');
+      toggle.classList.add('bg-surfaceHover');
+      label.textContent = "Ativo (Releases & Feats)";
+      label.classList.add('text-yellowAccent');
+    } else {
+      knob.classList.remove('translate-x-5');
+      knob.classList.add('translate-x-0');
+      knob.classList.remove('bg-yellowAccent');
+      knob.classList.add('bg-textSecondary');
+      toggle.classList.remove('bg-surfaceHover');
+      toggle.classList.add('bg-borderSubtle');
+      label.textContent = "Desativado";
+      label.classList.remove('text-yellowAccent');
+    }
+
+    filterFeed();
+  }
+
+  // Setup Event Listeners
+  document.getElementById('searchInput')?.addEventListener('input', filterFeed);
+  document.getElementById('categoryFilter')?.addEventListener('change', filterFeed);
+  document.getElementById('repoTypeFilter')?.addEventListener('change', filterFeed);
+  document.getElementById('pitchModeToggle')?.addEventListener('click', togglePitchMode);
+</script>

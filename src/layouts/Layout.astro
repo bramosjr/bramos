@@ -1,18 +1,21 @@
 ---
 interface Props {
-	title: string;
+	title?: string;
 	description?: string;
 }
 
-const { title, description = "Site Institucional - Landing Page Comercial e Documentação" } = Astro.props;
+const { 
+	title = "Portal de Atividades GitHub & Guia Arquitetural", 
+	description = "Centralize a telemetria da sua conta do GitHub sem vazar segredos ou códigos confidenciais sob NDA." 
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,135 +23,25 @@ const { title, description = "Site Institucional - Landing Page Comercial e Docu
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-canvas text-textPrimary font-sans antialiased min-h-screen flex flex-col selection:bg-yellowAccent selection:text-canvas">
 		<slot />
-		<footer class="site-footer">
-			<div class="container">
-				<p>&copy; {new Date().getFullYear()} Nome do Projeto. Todos os direitos reservados.</p>
-			</div>
-		</footer>
 	</body>
 </html>
+
 <style is:global>
-	:root {
-		--primary: #2563eb;
-		--primary-hover: #1d4ed8;
-		--secondary: #64748b;
-		--text-main: #0f172a;
-		--text-muted: #475569;
-		--bg-main: #ffffff;
-		--bg-alt: #f8fafc;
-		--border: #e2e8f0;
-		--max-width: 1200px;
+	/* Custom Scrollbar */
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
 	}
-
-	* {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
+	::-webkit-scrollbar-track {
+		background: #091A13;
 	}
-
-	html {
-		font-family: 'Inter', system-ui, sans-serif;
-		background: var(--bg-main);
-		color: var(--text-main);
-		scroll-behavior: smooth;
+	::-webkit-scrollbar-thumb {
+		background: #254E3E;
+		border-radius: 4px;
 	}
-
-	body {
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-	}
-
-	.container {
-		width: 100%;
-		max-width: var(--max-width);
-		margin: 0 auto;
-		padding: 0 1.5rem;
-	}
-
-	h1, h2, h3, h4 {
-		font-weight: 800;
-		line-height: 1.2;
-		color: var(--text-main);
-	}
-
-	p {
-		line-height: 1.6;
-		color: var(--text-muted);
-	}
-
-	a {
-		color: var(--primary);
-		text-decoration: none;
-		transition: color 0.2s;
-	}
-
-	a:hover {
-		color: var(--primary-hover);
-	}
-
-	.site-footer {
-		margin-top: auto;
-		padding: 3rem 0;
-		border-top: 1px solid var(--border);
-		background: var(--bg-alt);
-		text-align: center;
-		font-size: 0.875rem;
-	}
-
-	/* Utility Classes */
-	.text-gradient {
-		background: linear-gradient(135deg, var(--primary), #9333ea);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		display: inline-block;
-	}
-
-	.btn {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0.75rem 1.5rem;
-		border-radius: 0.5rem;
-		font-weight: 600;
-		font-size: 1rem;
-		transition: all 0.2s;
-		cursor: pointer;
-		border: none;
-	}
-
-	.btn-primary {
-		background: var(--primary);
-		color: white;
-	}
-
-	.btn-primary:hover {
-		background: var(--primary-hover);
-		color: white;
-		transform: translateY(-1px);
-		box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-	}
-
-	.btn-secondary {
-		background: white;
-		color: var(--text-main);
-		border: 1px solid var(--border);
-	}
-
-	.btn-secondary:hover {
-		background: var(--bg-alt);
-		border-color: var(--secondary);
-	}
-
-	section {
-		padding: 5rem 0;
-	}
-
-	@media (max-width: 768px) {
-		section {
-			padding: 3.5rem 0;
-		}
+	::-webkit-scrollbar-thumb:hover {
+		background: #34D399;
 	}
 </style>
