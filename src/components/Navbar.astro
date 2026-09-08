@@ -1,5 +1,6 @@
 ---
 // Navbar.astro
+import analytics from '../data/analytics.json';
 ---
 <header class="sticky top-0 z-50 bg-canvas/90 backdrop-blur-md border-b border-borderSubtle">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,7 +31,7 @@
         <div class="flex items-center space-x-2 px-3 py-1.5 rounded-full bg-surface border border-borderSubtle text-xs">
           <span class="w-2 h-2 rounded-full bg-mintGreen animate-pulse"></span>
           <span class="text-textSecondary font-mono hidden sm:inline">CI/CD: Ativo</span>
-          <span class="text-yellowAccent font-semibold font-mono">28 Privados</span>
+          <span class="text-yellowAccent font-semibold font-mono">{analytics.privateReposCount} Privados</span>
         </div>
       </div>
     </div>

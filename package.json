@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "sync:activity": "node scripts/sync-github-activity.mjs",
+    "prebuild": "npm run sync:activity",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

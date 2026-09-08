@@ -1,5 +1,6 @@
 ---
 // Hero.astro
+import analytics from '../data/analytics.json';
 ---
 <section class="bg-gradient-to-b from-surface/60 to-canvas border-b border-borderSubtle py-10 md:py-14">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +12,7 @@
         Transforme Commits Privados em um <span class="bg-gradient-to-r from-yellowAccent via-sageGreen to-mintGreen bg-clip-text text-transparent">Portal de Notícias Técnico</span>
       </h1>
       <p class="mt-4 text-base sm:text-lg text-textSecondary leading-relaxed">
-        Centralize a telemetria da sua conta do GitHub sem vazar segredos ou códigos confidenciais. Uma solução estática em modo escuro elegante nos tons <strong class="text-textPrimary">Verde-escuro, Marfim e Amarelo</strong> com total conformidade visual.
+        Centralize a telemetria da conta <strong class="text-textPrimary">@{analytics.userLogin}</strong> sem vazar segredos ou códigos confidenciais. Uma esteira estática com <strong class="text-yellowAccent">{analytics.privateReposCount} repositórios sob protocolo NDA</strong> totalmente higienizados.
       </p>
 
       <!-- Key Metrics Cards -->
@@ -27,8 +28,8 @@
           <div class="text-[10px] text-mintGreen mt-0.5">Conformidade Nível AAA</div>
         </div>
         <div class="bg-surface p-4 rounded-xl border border-borderSubtle">
-          <div class="text-xs text-textSecondary font-medium">Proteção de Dados</div>
-          <div class="text-xl sm:text-2xl font-bold text-terracotta font-mono mt-1">100%</div>
+          <div class="text-xs text-textSecondary font-medium">Repositórios Privados</div>
+          <div class="text-xl sm:text-2xl font-bold text-terracotta font-mono mt-1">{analytics.privateReposCount} / {analytics.totalReposCount}</div>
           <div class="text-[10px] text-textSecondary mt-0.5">Sanitização no Pipeline CI</div>
         </div>
         <div class="bg-surface p-4 rounded-xl border border-borderSubtle">

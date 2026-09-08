@@ -1,0 +1,52 @@
+{
+  "updatedAt": "2026-09-08T18:53:51.169Z",
+  "userLogin": "bramosjr",
+  "totalReposCount": 20,
+  "privateReposCount": 19,
+  "languages": {
+    "labels": [
+      "HTML",
+      "JavaScript",
+      "Rust",
+      "Shell",
+      "Outras"
+    ],
+    "percentages": [
+      37,
+      36,
+      10,
+      7,
+      10
+    ]
+  },
+  "commitTypes": {
+    "labels": [
+      "feat",
+      "fix",
+      "refactor",
+      "infra",
+      "docs"
+    ],
+    "counts": [
+      106,
+      40,
+      0,
+      9,
+      16
+    ]
+  },
+  "weeklyCadence": {
+    "labels": [
+      "Semana 1",
+      "Semana 2",
+      "Semana 3",
+      "Semana 4"
+    ],
+    "counts": [
+      1,
+      5,
+      16,
+      30
+    ]
+  }
+}

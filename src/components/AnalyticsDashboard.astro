@@ -1,12 +1,20 @@
 ---
 // AnalyticsDashboard.astro
+import analytics from '../data/analytics.json';
 ---
-<section id="analytics-section" class="scroll-mt-20">
+<section id="analytics-section" class="scroll-mt-20" data-analytics={JSON.stringify(analytics)}>
   <div class="border-b border-borderSubtle pb-4 mb-6">
-    <span class="text-xs font-semibold text-mintGreen uppercase tracking-widest">Telemetria Quantitativa</span>
-    <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Dashboard Analítico de Produção</h2>
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+      <div>
+        <span class="text-xs font-semibold text-mintGreen uppercase tracking-widest">Telemetria Quantitativa</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Dashboard Analítico de Produção</h2>
+      </div>
+      <span class="text-xs font-mono px-2.5 py-1 rounded bg-surface border border-borderSubtle text-textSecondary self-start sm:self-auto">
+        Atualizado: {new Date(analytics.updatedAt).toLocaleDateString('pt-BR')}
+      </span>
+    </div>
     <p class="mt-2 text-sm text-textSecondary">
-      Visualização gráfica com a paleta exigida: Verde-claro/Sage, Dourado/Amarelo, Bege/Areia, Marrom-claro/Argila, Coral/Terracota e Verde-menta.
+      Visualização gráfica com dados extraídos via GitHub GraphQL e paleta calibrada: Sage, Dourado, Bege, Argila, Coral e Menta.
     </p>
   </div>
 
@@ -19,7 +27,7 @@
         </h3>
         <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Total: 100%</span>
       </div>
-      <p class="text-xs text-textSecondary mb-4">Cores de categorias principais: Sage, Dourado, Bege, Argila e Menta.</p>
+      <p class="text-xs text-textSecondary mb-4">Baseada no volume de código (bytes) em todos os {analytics.totalReposCount} repositórios.</p>
       <div class="relative w-full h-[280px] md:h-[320px] my-auto">
         <canvas id="languagesChart"></canvas>
       </div>
@@ -31,9 +39,9 @@
         <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
           <span class="text-sageGreen">🏷️</span> Tipos de Alterações (Conventional)
         </h3>
-        <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Últimos 30 Dias</span>
+        <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Commits Reais</span>
       </div>
-      <p class="text-xs text-textSecondary mb-4">Uso de Coral/Terracota para correções (fixes) e Dourado para novas features.</p>
+      <p class="text-xs text-textSecondary mb-4">Distribuição semântica dos commits analisados no pipeline.</p>
       <div class="relative w-full h-[280px] md:h-[320px] my-auto">
         <canvas id="commitTypesChart"></canvas>
       </div>
@@ -45,9 +53,9 @@
         <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
           <span class="text-mintGreen">📈</span> Cadência de Entregas Semanais
         </h3>
-        <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Atividade Recente</span>
+        <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Últimas 4 Semanas</span>
       </div>
-      <p class="text-xs text-textSecondary mb-4">Linha em Verde-menta indicando crescimento positivo de commits sanitizados.</p>
+      <p class="text-xs text-textSecondary mb-4">Volume de commits sanitizados por semana recente.</p>
       <div class="relative w-full h-[280px] md:h-[320px] my-auto">
         <canvas id="activityCadenceChart"></canvas>
       </div>
@@ -65,6 +73,16 @@
       return;
     }
 
+    const sectionEl = document.getElementById('analytics-section');
+    if (!sectionEl) return;
+
+    let analyticsData;
+    try {
+      analyticsData = JSON.parse(sectionEl.dataset.analytics || '{}');
+    } catch (e) {
+      analyticsData = {};
+    }
+
     const commonOptions = {
       responsive: true,
       maintainAspectRatio: false,
@@ -75,6 +93,15 @@
       }
     };
 
+    const langLabels = analyticsData.languages?.labels || ['HTML', 'JavaScript', 'Rust', 'Shell', 'Outras'];
+    const langData = analyticsData.languages?.percentages || [35, 30, 15, 10, 10];
+
+    const typeLabels = analyticsData.commitTypes?.labels || ['feat', 'fix', 'refactor', 'infra', 'docs'];
+    const typeData = analyticsData.commitTypes?.counts || [40, 20, 10, 5, 10];
+
+    const cadenceLabels = analyticsData.weeklyCadence?.labels || ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'];
+    const cadenceData = analyticsData.weeklyCadence?.counts || [5, 10, 15, 20];
+
     // Chart 1: Languages Breakdown (Doughnut)
     const elLang = document.getElementById('languagesChart');
     if (elLang) {
@@ -82,9 +109,9 @@
       new Chart(ctxLang, {
         type: 'doughnut',
         data: {
-          labels: ['Go', 'TypeScript', 'Rust', 'PostgreSQL / SQL', 'Astro / CSS'],
+          labels: langLabels,
           datasets: [{
-            data: [45, 30, 12, 8, 5],
+            data: langData,
             backgroundColor: ['#8CAE99', '#EAB308', '#D4C5A9', '#C88A58', '#34D399'],
             borderWidth: 2,
             borderColor: '#132B22'
@@ -106,10 +133,10 @@
       new Chart(ctxTypes, {
         type: 'bar',
         data: {
-          labels: ['feat', 'fix', 'refactor', 'infra', 'docs'],
+          labels: typeLabels,
           datasets: [{
             label: 'Volume de Commits',
-            data: [42, 18, 15, 10, 6],
+            data: typeData,
             backgroundColor: ['#EAB308', '#E05D43', '#D4C5A9', '#C88A58', '#8CAE99'],
             borderRadius: 6
           }]
@@ -131,10 +158,10 @@
       new Chart(ctxCadence, {
         type: 'line',
         data: {
-          labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+          labels: cadenceLabels,
           datasets: [{
             label: 'Commits Sanitizados',
-            data: [24, 38, 29, 45],
+            data: cadenceData,
             borderColor: '#34D399',
             backgroundColor: 'rgba(52, 211, 153, 0.12)',
             fill: true,
