@@ -3,6 +3,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://bramosjr.github.io',
+  base: '/bramos/',
   output: 'static',
   integrations: [tailwind()],
 });

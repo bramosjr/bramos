@@ -2,14 +2,14 @@
 // Navbar.astro
 import analytics from '../data/analytics.json';
 
-const isDocs = Astro.url.pathname.startsWith('/docs');
+const isDocs = Astro.url.pathname.startsWith(`${import.meta.env.BASE_URL}docs`);
 ---
 <header class="sticky top-0 z-50 bg-canvas/90 backdrop-blur-md border-b border-borderSubtle">
   <div class="w-full px-4 sm:px-8 lg:px-12">
     <div class="flex items-center justify-between h-16">
-      <a href="/" class="flex items-center space-x-3 group">
+      <a href={import.meta.env.BASE_URL} class="flex items-center space-x-3 group">
         <div class="w-9 h-9 rounded-lg bg-surface border border-borderSubtle flex items-center justify-center p-1.5 shadow-lg shadow-mintGreen/10 group-hover:border-yellowAccent/40 transition">
-          <img src="/logo.png" alt="Logo" class="w-full h-full object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" class="w-full h-full object-contain" />
         </div>
         <div>
           <span class="font-bold text-lg text-textPrimary tracking-tight group-hover:text-yellowAccent transition">GitActivity<span class="text-yellowAccent">News</span></span>
@@ -27,7 +27,7 @@ const isDocs = Astro.url.pathname.startsWith('/docs');
             <a href="#security-section" class="px-3 py-2 rounded-md hover:bg-surface text-textSecondary hover:text-mintGreen transition">Segurança</a>
             <a href="#design-section" class="px-3 py-2 rounded-md hover:bg-surface text-textSecondary hover:text-mintGreen transition">Design System</a>
             <a href="#ai-section" class="px-3 py-2 rounded-md hover:bg-surface text-textSecondary hover:text-mintGreen transition">Recursos IA</a>
-            <a href="/docs" class="px-3 py-2 rounded-md bg-yellowAccent/10 border border-yellowAccent/30 text-yellowAccent hover:bg-yellowAccent/20 transition">Docs</a>
+            <a href={`${import.meta.env.BASE_URL}docs`} class="px-3 py-2 rounded-md bg-yellowAccent/10 border border-yellowAccent/30 text-yellowAccent hover:bg-yellowAccent/20 transition">Docs</a>
           </nav>
 
           <!-- Quick Status Widget -->
