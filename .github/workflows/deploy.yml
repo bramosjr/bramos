@@ -13,7 +13,6 @@ permissions:
   id-token: write
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   PRIVATE_ACTIVITY_TOKEN: ${{ secrets.PRIVATE_ACTIVITY_TOKEN || secrets.GITHUB_TOKEN }}
 
 jobs:
@@ -21,10 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install, build, and upload with Astro
-        uses: withastro/action@v3
+        uses: withastro/action@v6
         with:
           node-version: 24
 
@@ -37,4 +36,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
