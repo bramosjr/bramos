@@ -6,7 +6,7 @@ import analytics from '../data/analytics.json';
   <div class="border-b border-borderSubtle pb-4 mb-6">
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
       <div>
-        <span class="text-xs font-semibold text-mintGreen uppercase tracking-widest">Telemetria Quantitativa</span>
+        <span class="text-xs font-semibold text-success uppercase tracking-widest">Telemetria Quantitativa</span>
         <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Dashboard Analítico de Produção</h2>
       </div>
       <span class="text-xs font-mono px-2.5 py-1 rounded bg-surface border border-borderSubtle text-textSecondary self-start sm:self-auto">
@@ -14,7 +14,7 @@ import analytics from '../data/analytics.json';
       </span>
     </div>
     <p class="mt-2 text-sm text-textSecondary">
-      Visualização gráfica com dados extraídos via GitHub GraphQL e paleta calibrada: Sage, Dourado, Bege, Argila, Coral e Menta.
+      Visualização gráfica com dados extraídos via GitHub GraphQL e paleta categórica validada para contraste e daltonismo (protanopia/deuteranopia), harmonizada com a identidade Terracota + Carvão.
     </p>
   </div>
 
@@ -23,7 +23,7 @@ import analytics from '../data/analytics.json';
     <div class="bg-surface p-5 rounded-2xl border border-borderSubtle flex flex-col">
       <div class="flex items-center justify-between mb-4">
         <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
-          <span class="text-yellowAccent">📊</span> Distribuição de Linguagens
+          <span class="text-accent">📊</span> Distribuição de Linguagens
         </h3>
         <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Total: 100%</span>
       </div>
@@ -37,7 +37,7 @@ import analytics from '../data/analytics.json';
     <div class="bg-surface p-5 rounded-2xl border border-borderSubtle flex flex-col">
       <div class="flex items-center justify-between mb-4">
         <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
-          <span class="text-sageGreen">🏷️</span> Tipos de Alterações (Conventional)
+          <span class="text-textSecondary">🏷️</span> Tipos de Alterações (Conventional)
         </h3>
         <span class="text-[10px] uppercase font-mono px-2 py-0.5 bg-canvas border border-borderSubtle rounded text-textSecondary">Commits Reais</span>
       </div>
@@ -51,11 +51,11 @@ import analytics from '../data/analytics.json';
     <div class="lg:col-span-2 bg-surface p-6 rounded-2xl border border-borderSubtle flex flex-col">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
         <h3 class="font-bold text-textPrimary text-base flex items-center gap-2">
-          <span class="text-mintGreen">📈</span> Cadência de Entregas Semanais
+          <span class="text-success">📈</span> Cadência de Entregas Semanais
         </h3>
         <div class="flex items-center space-x-2">
           <label for="cadencePeriodFilter" class="text-xs text-textSecondary font-mono hidden sm:inline">Período:</label>
-          <select id="cadencePeriodFilter" class="text-xs font-mono py-1.5 px-3 bg-canvas border border-borderSubtle rounded-lg text-textPrimary focus:border-mintGreen focus:outline-none transition cursor-pointer hover:border-mintGreen/50">
+          <select id="cadencePeriodFilter" class="text-xs font-mono py-1.5 px-3 bg-canvas border border-borderSubtle rounded-lg text-textPrimary focus:border-success focus:outline-none transition cursor-pointer hover:border-success/50">
             <option value="4w">Últimas 4 Semanas</option>
             <option value="8w">Últimas 8 Semanas</option>
             <option value="12w">Últimos 3 Meses</option>
@@ -98,10 +98,13 @@ import analytics from '../data/analytics.json';
       maintainAspectRatio: false,
       plugins: {
         legend: {
-          labels: { color: '#9CB0A3', font: { size: 11 } }
+          labels: { color: '#D8CFC0', font: { size: 11 } }
         }
       }
     };
+
+    // Paleta categórica validada (contraste + protanopia/deuteranopia) contra a superfície escura #1A1A1A
+    const categoricalPalette = ['#3987e5', '#d95926', '#199e70', '#c98500', '#d55181'];
 
     const langLabels = analyticsData.languages?.labels || ['HTML', 'JavaScript', 'Rust', 'Shell', 'Outras'];
     const langData = analyticsData.languages?.percentages || [35, 30, 15, 10, 10];
@@ -116,25 +119,30 @@ import analytics from '../data/analytics.json';
       }
     };
 
-    // Chart 1: Languages Breakdown (Doughnut) — sem bordas escuras
+    // Chart 1: Languages Breakdown (Barra horizontal — evita colisão de cor entre fatias não-adjacentes de um doughnut com 5 categorias)
     const elLang = document.getElementById('languagesChart');
     if (elLang) {
       const ctxLang = elLang.getContext('2d');
       new Chart(ctxLang, {
-        type: 'doughnut',
+        type: 'bar',
         data: {
           labels: langLabels,
           datasets: [{
+            label: '% do Código',
             data: langData,
-            backgroundColor: ['#8CAE99', '#EAB308', '#D4C5A9', '#C88A58', '#34D399'],
-            borderWidth: 0,
-            hoverOffset: 6
+            backgroundColor: categoricalPalette,
+            borderRadius: 6
           }]
         },
         options: {
           ...commonOptions,
+          indexAxis: 'y',
           plugins: {
-            legend: { position: 'bottom', labels: { color: '#9CB0A3', font: { size: 10 } } }
+            legend: { display: false }
+          },
+          scales: {
+            x: { ticks: { color: '#D8CFC0' }, grid: { color: '#4A332B' } },
+            y: { ticks: { color: '#D8CFC0' }, grid: { display: false } }
           }
         }
       });
@@ -151,15 +159,18 @@ import analytics from '../data/analytics.json';
           datasets: [{
             label: 'Volume de Commits',
             data: typeData,
-            backgroundColor: ['#EAB308', '#E05D43', '#D4C5A9', '#C88A58', '#8CAE99'],
+            backgroundColor: categoricalPalette,
             borderRadius: 6
           }]
         },
         options: {
           ...commonOptions,
+          plugins: {
+            legend: { display: false }
+          },
           scales: {
-            x: { ticks: { color: '#9CB0A3' }, grid: { display: false } },
-            y: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } }
+            x: { ticks: { color: '#D8CFC0' }, grid: { display: false } },
+            y: { ticks: { color: '#D8CFC0' }, grid: { color: '#4A332B' } }
           }
         }
       });
@@ -197,7 +208,7 @@ import analytics from '../data/analytics.json';
             backgroundColor: 'rgba(52, 211, 153, 0.12)',
             fill: true,
             tension: 0.35,
-            pointBackgroundColor: '#FACC15',
+            pointBackgroundColor: '#E68770',
             pointRadius: 4
           }]
         },
@@ -206,13 +217,13 @@ import analytics from '../data/analytics.json';
           scales: {
             x: {
               ticks: {
-                color: '#9CB0A3',
+                color: '#D8CFC0',
                 maxTicksLimit: 8,
                 maxRotation: 0
               },
-              grid: { color: '#254E3E' }
+              grid: { color: '#4A332B' }
             },
-            y: { ticks: { color: '#9CB0A3' }, grid: { color: '#254E3E' } }
+            y: { ticks: { color: '#D8CFC0' }, grid: { color: '#4A332B' } }
           }
         }
       });

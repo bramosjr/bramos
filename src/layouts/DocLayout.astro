@@ -13,11 +13,11 @@ const { frontmatter, headings } = Astro.props;
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
 			<aside class="lg:col-span-3">
 				<div class="sticky top-24 bg-surface p-5 rounded-2xl border border-borderSubtle">
-					<h4 class="text-xs font-mono uppercase text-yellowAccent tracking-wider mb-4 font-bold">Sumário</h4>
+					<h4 class="text-xs font-mono uppercase text-accent tracking-wider mb-4 font-bold">Sumário</h4>
 					<ul class="space-y-2 text-xs">
 						{headings && headings.map((h: { depth: number; slug: string; text: string }) => (
 							<li class={h.depth === 3 ? "pl-3 text-textSecondary" : "font-medium text-textPrimary"}>
-								<a href={`#${h.slug}`} class="hover:text-yellowAccent transition-colors block py-0.5">
+								<a href={`#${h.slug}`} class="hover:text-accent transition-colors block py-0.5">
 									{h.text}
 								</a>
 							</li>
@@ -28,7 +28,7 @@ const { frontmatter, headings } = Astro.props;
 			
 			<main class="lg:col-span-9 bg-surface p-6 sm:p-10 rounded-2xl border border-borderSubtle">
 				<header class="mb-6 pb-6 border-b border-borderSubtle">
-					<span class="text-xs font-mono uppercase text-sageGreen tracking-wider font-bold">Documentação Técnica</span>
+					<span class="text-xs font-mono uppercase text-textSecondary tracking-wider font-bold">Documentação Técnica</span>
 					<h1 class="text-3xl sm:text-4xl font-extrabold text-textPrimary mt-2 mb-3">{frontmatter.title}</h1>
 					{frontmatter.description && <p class="text-textSecondary text-sm sm:text-base leading-relaxed">{frontmatter.description}</p>}
 				</header>
@@ -47,22 +47,22 @@ const { frontmatter, headings } = Astro.props;
 	.doc-content h2 {
 		font-size: 1.5rem;
 		font-weight: 700;
-		color: #F7F4EA;
+		color: #FFFCE4;
 		margin-top: 2rem;
 		margin-bottom: 0.75rem;
-		border-bottom: 1px solid #254E3E;
+		border-bottom: 1px solid #4A332B;
 		padding-bottom: 0.5rem;
 	}
 	.doc-content h3 {
 		font-size: 1.25rem;
 		font-weight: 600;
-		color: #FACC15;
+		color: #E68770;
 		margin-top: 1.5rem;
 		margin-bottom: 0.5rem;
 	}
 	.doc-content p {
 		margin-bottom: 1rem;
-		color: #9CB0A3;
+		color: #D8CFC0;
 	}
 	.doc-content ul, .doc-content ol {
 		margin-bottom: 1rem;
@@ -72,17 +72,17 @@ const { frontmatter, headings } = Astro.props;
 		margin-bottom: 0.35rem;
 	}
 	.doc-content code {
-		background: #091A13;
-		color: #8CAE99;
+		background: #37211B;
+		color: #D8CFC0;
 		padding: 0.2rem 0.4rem;
 		border-radius: 0.25rem;
 		font-family: monospace;
 		font-size: 0.875em;
-		border: 1px solid #254E3E;
+		border: 1px solid #4A332B;
 	}
 	.doc-content pre {
-		background: #091A13;
-		border: 1px solid #254E3E;
+		background: #37211B;
+		border: 1px solid #4A332B;
 		padding: 1rem;
 		border-radius: 0.75rem;
 		overflow-x: auto;
@@ -92,6 +92,6 @@ const { frontmatter, headings } = Astro.props;
 		background: transparent;
 		border: none;
 		padding: 0;
-		color: #F7F4EA;
+		color: #FFFCE4;
 	}
 </style>

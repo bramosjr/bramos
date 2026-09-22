@@ -11,14 +11,14 @@ const publicReposCount = analytics.publicRepositories?.length || (analytics.tota
 <section class="bg-gradient-to-b from-surface/60 to-canvas border-b border-borderSubtle py-10 md:py-14">
   <div class="w-full px-4 sm:px-8 lg:px-12">
     <div class="max-w-5xl">
-      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-yellowAccent/10 border border-yellowAccent/30 text-yellowAccent text-xs font-semibold uppercase tracking-wider mb-4">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/30 text-accent text-xs font-semibold uppercase tracking-wider mb-4">
         💻 Portfólio Técnico & Telemetria Contínua
       </div>
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-textPrimary leading-tight">
-        Engenharia de Software & Entregas Técnicas <span class="bg-gradient-to-r from-yellowAccent via-sageGreen to-mintGreen bg-clip-text text-transparent">Rastreadas no GitHub</span>
+        Engenharia de Software & Entregas Técnicas <span class="bg-gradient-to-r from-accent via-textSecondary to-success bg-clip-text text-transparent">Rastreadas no GitHub</span>
       </h1>
       <p class="mt-4 text-base sm:text-lg text-textSecondary leading-relaxed">
-        Acompanhe a atividade real, o ritmo de produção e a evolução arquitetural do desenvolvedor <strong class="text-textPrimary">@{analytics.userLogin}</strong> em {analytics.totalReposCount} repositórios, com <strong class="text-yellowAccent">{analytics.privateReposCount} projetos sob protocolo NDA</strong> estritamente higienizados.
+        Acompanhe a atividade real, o ritmo de produção e a evolução arquitetural do desenvolvedor <strong class="text-textPrimary">@{analytics.userLogin}</strong> em {analytics.totalReposCount} repositórios, com <strong class="text-accent">{analytics.privateReposCount} projetos sob protocolo NDA</strong> estritamente higienizados.
       </p>
     </div>
 
@@ -26,29 +26,29 @@ const publicReposCount = analytics.publicRepositories?.length || (analytics.tota
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 w-full">
       <div class="bg-surface p-4 rounded-xl border border-borderSubtle">
         <div class="text-xs text-textSecondary font-medium">Volume de Entregas</div>
-        <div class="text-xl sm:text-2xl font-bold text-yellowAccent font-mono mt-1">{totalCommits}+ Commits</div>
+        <div class="text-xl sm:text-2xl font-bold text-accent font-mono mt-1">{totalCommits}+ Commits</div>
         <div class="text-[10px] text-textSecondary mt-0.5">Histórico Ativo Rastreado</div>
       </div>
-      <div class="bg-surface p-4 rounded-xl border border-borderSubtle hover:border-mintGreen/40 transition flex flex-col justify-between">
+      <div class="bg-surface p-4 rounded-xl border border-borderSubtle hover:border-success/40 transition flex flex-col justify-between">
         <div>
           <div class="flex items-center justify-between">
             <span class="text-xs text-textSecondary font-medium">Projetos Ativos</span>
-            <a href="#public-repos" class="text-[10px] font-mono text-mintGreen hover:text-yellowAccent flex items-center gap-0.5 underline decoration-mintGreen/40 hover:decoration-yellowAccent transition">
+            <a href="#public-repos" class="text-[10px] font-mono text-success hover:text-accent flex items-center gap-0.5 underline decoration-success/40 hover:decoration-accent transition">
               {publicReposCount} Público{publicReposCount !== 1 ? 's' : ''} ↗
             </a>
           </div>
-          <div class="text-xl sm:text-2xl font-bold text-mintGreen font-mono mt-1">{analytics.totalReposCount} Repos</div>
+          <div class="text-xl sm:text-2xl font-bold text-success font-mono mt-1">{analytics.totalReposCount} Repos</div>
         </div>
-        <div class="text-[10px] text-mintGreen mt-1">{analytics.privateReposCount} sob Protocolo NDA</div>
+        <div class="text-[10px] text-success mt-1">{analytics.privateReposCount} sob Protocolo NDA</div>
       </div>
       <div class="bg-surface p-4 rounded-xl border border-borderSubtle">
         <div class="text-xs text-textSecondary font-medium">Foco em Soluções</div>
-        <div class="text-xl sm:text-2xl font-bold text-terracotta font-mono mt-1">{featPercentage}% Features</div>
+        <div class="text-xl sm:text-2xl font-bold text-accent font-mono mt-1">{featPercentage}% Features</div>
         <div class="text-[10px] text-textSecondary mt-0.5">Novas Funcionalidades</div>
       </div>
       <div class="bg-surface p-4 rounded-xl border border-borderSubtle">
         <div class="text-xs text-textSecondary font-medium">Stack Principal</div>
-        <div class="text-xl sm:text-2xl font-bold text-sandBeige font-mono mt-1">Multi-Stack</div>
+        <div class="text-xl sm:text-2xl font-bold text-textPrimary font-mono mt-1">Multi-Stack</div>
         <div class="text-[10px] text-textSecondary mt-0.5 truncate">{topLangs}</div>
       </div>
     </div>

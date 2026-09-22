@@ -9,7 +9,7 @@ const publicRepos = analytics.publicRepositories || [];
   <div class="border-b border-borderSubtle pb-4 mb-6">
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
       <div>
-        <span class="text-xs font-semibold text-yellowAccent uppercase tracking-widest">Demonstração Interativa</span>
+        <span class="text-xs font-semibold text-accent uppercase tracking-widest">Demonstração Interativa</span>
         <h2 class="text-2xl sm:text-3xl font-bold text-textPrimary mt-1">Feed de Notícias de Atividades Recentes</h2>
       </div>
 
@@ -34,12 +34,12 @@ const publicRepos = analytics.publicRepositories || [];
     <!-- Search Input -->
     <div class="relative flex-1 min-w-[200px]">
       <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-textSecondary">🔍</span>
-      <input type="text" id="searchInput" placeholder="Pesquisar por termo..." class="w-full pl-9 pr-3 py-2 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition">
+      <input type="text" id="searchInput" placeholder="Pesquisar por termo..." class="w-full pl-9 pr-3 py-2 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-accent transition">
     </div>
 
     <!-- Category Dropdown -->
     <div class="w-full sm:w-auto min-w-[150px]">
-      <select id="categoryFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition cursor-pointer">
+      <select id="categoryFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-accent transition cursor-pointer">
         <option value="all">Todas as Categorias</option>
         <option value="feat">Features (feat)</option>
         <option value="fix">Correções (fix)</option>
@@ -51,7 +51,7 @@ const publicRepos = analytics.publicRepositories || [];
 
     <!-- Visibility Dropdown -->
     <div class="w-full sm:w-auto min-w-[140px]">
-      <select id="repoTypeFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-yellowAccent transition cursor-pointer">
+      <select id="repoTypeFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-accent transition cursor-pointer">
         <option value="all">Todos os Repos</option>
         <option value="private">🔒 Privados (NDA)</option>
         <option value="public">🌐 Públicos</option>
@@ -60,7 +60,7 @@ const publicRepos = analytics.publicRepositories || [];
 
     <!-- Period Filter -->
     <div class="w-full sm:w-auto min-w-[140px]">
-      <select id="timeRangeFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-mintGreen transition cursor-pointer">
+      <select id="timeRangeFilter" class="w-full py-2 px-2.5 bg-canvas border border-borderSubtle rounded-lg text-xs sm:text-sm text-textPrimary focus:outline-none focus:border-success transition cursor-pointer">
         <option value="30">Últimos 30 Dias</option>
         <option value="15">Últimos 15 Dias</option>
         <option value="90">Últimos 90 Dias</option>
@@ -70,7 +70,7 @@ const publicRepos = analytics.publicRepositories || [];
 
     <!-- Public Repo Filter (Habilitado dinamicamente ao selecionar 'Públicos') -->
     <div id="publicRepoContainer" class="hidden w-full sm:w-auto min-w-[160px] transition-all">
-      <select id="publicRepoFilter" class="w-full py-2 px-2.5 bg-canvas border border-mintGreen/60 rounded-lg text-xs sm:text-sm text-mintGreen focus:outline-none focus:border-mintGreen transition cursor-pointer">
+      <select id="publicRepoFilter" class="w-full py-2 px-2.5 bg-canvas border border-success/60 rounded-lg text-xs sm:text-sm text-success focus:outline-none focus:border-success transition cursor-pointer">
         <option value="all">Todos os Públicos ({publicRepos.length})</option>
         {publicRepos.map((repo: any) => (
           <option value={repo.name}>{repo.name}</option>
@@ -80,7 +80,7 @@ const publicRepos = analytics.publicRepositories || [];
 
     <!-- Counter Badge -->
     <div class="ml-auto">
-      <span id="resultsCount" class="inline-block text-xs font-mono px-3 py-1.5 rounded-md bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30">
+      <span id="resultsCount" class="inline-block text-xs font-mono px-3 py-1.5 rounded-md bg-accent/10 text-accent border border-accent/30">
         {activities.length} notícias
       </span>
     </div>
@@ -89,37 +89,37 @@ const publicRepos = analytics.publicRepositories || [];
   <!-- Feed Timeline Display -->
   <div id="feedTimelineContainer" class="relative pl-6 space-y-6 before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-borderSubtle">
     {activities.slice(0, 15).map((item) => {
-      let badgeColor = 'bg-sageGreen/20 text-sageGreen border-sageGreen/30';
+      let badgeColor = 'bg-textSecondary/20 text-textSecondary border-textSecondary/30';
       let icon = '⚡';
       if (item.category === 'release') {
-        badgeColor = 'bg-yellowAccent/20 text-yellowAccent border-yellowAccent/40';
+        badgeColor = 'bg-accent/20 text-accent border-accent/40';
         icon = '🚀';
       } else if (item.category === 'fix') {
-        badgeColor = 'bg-terracotta/20 text-terracotta border-terracotta/40';
+        badgeColor = 'bg-danger/20 text-danger border-danger/40';
         icon = '🛠️';
       } else if (item.category === 'infra') {
-        badgeColor = 'bg-mintGreen/20 text-mintGreen border-mintGreen/30';
+        badgeColor = 'bg-success/20 text-success border-success/30';
         icon = '⚙️';
       }
 
       return (
         <div class="relative group">
-          <div class={`absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 border-canvas ${item.isPrivate ? 'bg-yellowAccent' : 'bg-mintGreen'} group-hover:scale-125 transition-transform`}></div>
-          <div class="bg-surface p-5 rounded-2xl border border-borderSubtle hover:border-yellowAccent/50 transition-all shadow-lg">
+          <div class={`absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 border-canvas ${item.isPrivate ? 'bg-accent' : 'bg-success'} group-hover:scale-125 transition-transform`}></div>
+          <div class="bg-surface p-5 rounded-2xl border border-borderSubtle hover:border-accent/50 transition-all shadow-lg">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <div class="flex items-center space-x-2">
                 <span class={`px-2.5 py-1 rounded-md text-xs font-mono font-bold border flex items-center gap-1 ${badgeColor}`}>
                   {icon} {item.type.toUpperCase()}
                 </span>
                 {item.isPrivate ? (
-                  <span class="px-2 py-0.5 rounded bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30 text-[10px] font-mono flex items-center gap-1">🔒 Privado (NDA)</span>
+                  <span class="px-2 py-0.5 rounded bg-accent/10 text-accent border border-accent/30 text-[10px] font-mono flex items-center gap-1">🔒 Privado (NDA)</span>
                 ) : (
-                  <span class="px-2 py-0.5 rounded bg-mintGreen/10 text-mintGreen border border-mintGreen/30 text-[10px] font-mono flex items-center gap-1">🌐 Público</span>
+                  <span class="px-2 py-0.5 rounded bg-success/10 text-success border border-success/30 text-[10px] font-mono flex items-center gap-1">🌐 Público</span>
                 )}
               </div>
               <span class="text-xs font-mono text-textSecondary">{item.timeAgo} ({item.date})</span>
             </div>
-            <h3 class="text-base sm:text-lg font-bold text-textPrimary group-hover:text-yellowAccent transition-colors">
+            <h3 class="text-base sm:text-lg font-bold text-textPrimary group-hover:text-accent transition-colors">
               {item.title}
             </h3>
             <p class="text-xs sm:text-sm text-textSecondary mt-2 leading-relaxed">
@@ -128,16 +128,16 @@ const publicRepos = analytics.publicRepositories || [];
             <div class="mt-4 pt-3 border-t border-borderSubtle flex flex-wrap items-center justify-between gap-2">
               <div class="flex items-center gap-3">
                 {item.isPrivate ? (
-                  <span class="text-xs font-mono text-sageGreen">
+                  <span class="text-xs font-mono text-textSecondary">
                     📍 {item.repoAlias}
                   </span>
                 ) : (
-                  <a href={item.repoUrl || `https://github.com/${item.repoAlias}`} target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-sageGreen hover:text-yellowAccent flex items-center gap-1 transition">
+                  <a href={item.repoUrl || `https://github.com/${item.repoAlias}`} target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-textSecondary hover:text-accent flex items-center gap-1 transition">
                     📍 {item.repoAlias} <span class="text-[10px]">↗</span>
                   </a>
                 )}
                 {!item.isPrivate && item.commitUrl && (
-                  <a href={item.commitUrl} target="_blank" rel="noopener noreferrer" class="text-[11px] font-mono text-mintGreen hover:text-yellowAccent underline decoration-mintGreen/30 transition">
+                  <a href={item.commitUrl} target="_blank" rel="noopener noreferrer" class="text-[11px] font-mono text-success hover:text-accent underline decoration-success/30 transition">
                     commit ↗
                   </a>
                 )}
@@ -156,7 +156,7 @@ const publicRepos = analytics.publicRepositories || [];
 
   <!-- Load More Button -->
   <div id="loadMoreContainer" class="mt-8 text-center">
-    <button id="loadMoreBtn" class="px-6 py-2.5 bg-surface hover:bg-surfaceHover border border-borderSubtle hover:border-yellowAccent text-textPrimary hover:text-yellowAccent rounded-xl text-xs sm:text-sm font-semibold transition-all shadow-md">
+    <button id="loadMoreBtn" class="px-6 py-2.5 bg-surface hover:bg-surfaceHover border border-borderSubtle hover:border-accent text-textPrimary hover:text-accent rounded-xl text-xs sm:text-sm font-semibold transition-all shadow-md">
       Carregar Mais Atividades (+15)
     </button>
   </div>
@@ -193,29 +193,29 @@ const publicRepos = analytics.publicRepositories || [];
     const visibleItems = items.slice(0, visibleLimit);
 
     container.innerHTML = visibleItems.map(item => {
-      let badgeColor = 'bg-sageGreen/20 text-sageGreen border-sageGreen/30';
+      let badgeColor = 'bg-textSecondary/20 text-textSecondary border-textSecondary/30';
       let icon = '⚡';
 
       if (item.category === 'release') {
-        badgeColor = 'bg-yellowAccent/20 text-yellowAccent border-yellowAccent/40';
+        badgeColor = 'bg-accent/20 text-accent border-accent/40';
         icon = '🚀';
       } else if (item.category === 'fix') {
-        badgeColor = 'bg-terracotta/20 text-terracotta border-terracotta/40';
+        badgeColor = 'bg-danger/20 text-danger border-danger/40';
         icon = '🛠️';
       } else if (item.category === 'infra') {
-        badgeColor = 'bg-mintGreen/20 text-mintGreen border-mintGreen/30';
+        badgeColor = 'bg-success/20 text-success border-success/30';
         icon = '⚙️';
       }
 
       const visibilityBadge = item.isPrivate 
-        ? `<span class="px-2 py-0.5 rounded bg-yellowAccent/10 text-yellowAccent border border-yellowAccent/30 text-[10px] font-mono flex items-center gap-1">🔒 Privado (NDA)</span>`
-        : `<span class="px-2 py-0.5 rounded bg-mintGreen/10 text-mintGreen border border-mintGreen/30 text-[10px] font-mono flex items-center gap-1">🌐 Público</span>`;
+        ? `<span class="px-2 py-0.5 rounded bg-accent/10 text-accent border border-accent/30 text-[10px] font-mono flex items-center gap-1">🔒 Privado (NDA)</span>`
+        : `<span class="px-2 py-0.5 rounded bg-success/10 text-success border border-success/30 text-[10px] font-mono flex items-center gap-1">🌐 Público</span>`;
 
       return `
         <div class="relative group">
-          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 border-canvas ${item.isPrivate ? 'bg-yellowAccent' : 'bg-mintGreen'} group-hover:scale-125 transition-transform"></div>
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 border-canvas ${item.isPrivate ? 'bg-accent' : 'bg-success'} group-hover:scale-125 transition-transform"></div>
 
-          <div class="bg-surface p-5 rounded-2xl border border-borderSubtle hover:border-yellowAccent/50 transition-all shadow-lg">
+          <div class="bg-surface p-5 rounded-2xl border border-borderSubtle hover:border-accent/50 transition-all shadow-lg">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <div class="flex items-center space-x-2">
                 <span class="px-2.5 py-1 rounded-md text-xs font-mono font-bold border flex items-center gap-1 ${badgeColor}">
@@ -226,7 +226,7 @@ const publicRepos = analytics.publicRepositories || [];
               <span class="text-xs font-mono text-textSecondary">${item.timeAgo} (${item.date})</span>
             </div>
 
-            <h3 class="text-base sm:text-lg font-bold text-textPrimary group-hover:text-yellowAccent transition-colors">
+            <h3 class="text-base sm:text-lg font-bold text-textPrimary group-hover:text-accent transition-colors">
               ${item.title}
             </h3>
 
@@ -237,16 +237,16 @@ const publicRepos = analytics.publicRepositories || [];
             <div class="mt-4 pt-3 border-t border-borderSubtle flex flex-wrap items-center justify-between gap-2">
               <div class="flex items-center gap-3">
                 ${item.isPrivate ? `
-                  <span class="text-xs font-mono text-sageGreen">
+                  <span class="text-xs font-mono text-textSecondary">
                     📍 ${item.repoAlias}
                   </span>
                 ` : `
-                  <a href="${item.repoUrl || ('https://github.com/' + item.repoAlias)}" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-sageGreen hover:text-yellowAccent flex items-center gap-1 transition">
+                  <a href="${item.repoUrl || ('https://github.com/' + item.repoAlias)}" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-textSecondary hover:text-accent flex items-center gap-1 transition">
                     📍 ${item.repoAlias} <span class="text-[10px]">↗</span>
                   </a>
                 `}
                 ${!item.isPrivate && item.commitUrl ? `
-                  <a href="${item.commitUrl}" target="_blank" rel="noopener noreferrer" class="text-[11px] font-mono text-mintGreen hover:text-yellowAccent underline decoration-mintGreen/30 transition">
+                  <a href="${item.commitUrl}" target="_blank" rel="noopener noreferrer" class="text-[11px] font-mono text-success hover:text-accent underline decoration-success/30 transition">
                     commit ↗
                   </a>
                 ` : ''}
@@ -350,20 +350,20 @@ const publicRepos = analytics.publicRepositories || [];
       knob.classList.remove('translate-x-0');
       knob.classList.add('translate-x-5');
       knob.classList.remove('bg-textSecondary');
-      knob.classList.add('bg-yellowAccent');
+      knob.classList.add('bg-accent');
       toggle.classList.remove('bg-borderSubtle');
       toggle.classList.add('bg-surfaceHover');
       label.textContent = "Ativo (Releases & Feats)";
-      label.classList.add('text-yellowAccent');
+      label.classList.add('text-accent');
     } else {
       knob.classList.remove('translate-x-5');
       knob.classList.add('translate-x-0');
-      knob.classList.remove('bg-yellowAccent');
+      knob.classList.remove('bg-accent');
       knob.classList.add('bg-textSecondary');
       toggle.classList.remove('bg-surfaceHover');
       toggle.classList.add('bg-borderSubtle');
       label.textContent = "Desativado";
-      label.classList.remove('text-yellowAccent');
+      label.classList.remove('text-accent');
     }
 
     try {

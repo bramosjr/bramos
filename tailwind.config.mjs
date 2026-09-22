@@ -5,19 +5,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        canvas: '#091A13',         // Verde-escuro profundo (Fundo)
-        surface: '#132B22',        // Cartões em Verde-escuro
-        surfaceHover: '#1B3E31',   // Hover em cartões
-        borderSubtle: '#254E3E',   // Divisores e bordas
-        textPrimary: '#F7F4EA',    // Marfim (Ivory)
-        textSecondary: '#9CB0A3',  // Marfim/Sage suave
-        yellowAccent: '#FACC15',   // Amarelo Destaque
-        yellowDark: '#715D08',
-        sageGreen: '#8CAE99',      // Verde-claro / Sage
-        sandBeige: '#D4C5A9',      // Bege / Areia
-        clayBrown: '#C88A58',      // Marrom-claro / Argila
-        terracotta: '#E05D43',     // Coral / Terracota (Alertas)
-        mintGreen: '#34D399'       // Verde-menta (Crescimento/Foco)
+        canvas: '#37211B',         // Argila Escura (Fundo, terracota dessaturada)
+        surface: '#1A1A1A',        // Carvão Intenso (Cartões)
+        surfaceHover: '#332822',   // Carvão aquecido (Hover em cartões)
+        borderSubtle: '#4A332B',   // Divisores e bordas
+        textPrimary: '#FFFCE4',    // Off-White Puro
+        textSecondary: '#D8CFC0',  // Off-White dessaturado (texto de apoio)
+        accent: '#E68770',         // Terracota Luz (Destaque/CTA)
+        success: '#34D399',        // Verde-menta (status positivo/crescimento)
+        danger: '#FCA5A5'          // Vermelho de alerta (status de risco, distinto da marca)
       }
     },
   },

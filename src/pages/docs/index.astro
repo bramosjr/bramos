@@ -13,19 +13,19 @@ const sortedDocs = docs.sort((a, b) => a.data.order - b.data.order);
 
 	<main class="w-full px-4 sm:px-8 lg:px-12 py-12 flex-grow">
 		<header class="text-center max-w-2xl mx-auto mb-12">
-			<span class="text-xs font-semibold text-yellowAccent uppercase tracking-widest">Base de Conhecimento</span>
+			<span class="text-xs font-semibold text-accent uppercase tracking-widest">Base de Conhecimento</span>
 			<h1 class="text-3xl sm:text-4xl font-extrabold text-textPrimary mt-2 mb-4">Documentação Pública</h1>
 			<p class="text-textSecondary text-sm sm:text-base">Encontre guias, tutoriais e referências para entender a arquitetura do portal e integração CI/CD.</p>
 		</header>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			{sortedDocs.map((doc) => (
-				<a href={`${import.meta.env.BASE_URL}docs/${doc.slug}`} class="bg-surface p-6 rounded-2xl border border-borderSubtle hover:border-yellowAccent/50 transition-all shadow-lg flex flex-col justify-between group">
+				<a href={`${import.meta.env.BASE_URL}docs/${doc.slug}`} class="bg-surface p-6 rounded-2xl border border-borderSubtle hover:border-accent/50 transition-all shadow-lg flex flex-col justify-between group">
 					<div>
-						<h3 class="text-lg font-bold text-textPrimary group-hover:text-yellowAccent transition-colors mb-2">{doc.data.title}</h3>
+						<h3 class="text-lg font-bold text-textPrimary group-hover:text-accent transition-colors mb-2">{doc.data.title}</h3>
 						<p class="text-xs sm:text-sm text-textSecondary leading-relaxed">{doc.data.description}</p>
 					</div>
-					<div class="mt-6 pt-3 border-t border-borderSubtle flex items-center justify-between text-xs font-semibold text-yellowAccent">
+					<div class="mt-6 pt-3 border-t border-borderSubtle flex items-center justify-between text-xs font-semibold text-accent">
 						<span>Ler documento</span>
 						<span>→</span>
 					</div>
