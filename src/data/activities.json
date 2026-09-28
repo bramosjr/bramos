@@ -1,6 +1,1980 @@
 [
   {
     "id": 1,
+    "title": "docs: plano de implementacao da Issue #2 (armazenamento sqlite)",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 2,
+    "title": "docs: design de instalacao limpa, varredura, relato de erros e logotipos",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 3,
+    "title": "feat(pacote): metainfo AppStream com descricao, capturas de tela e de…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 4,
+    "title": "docs(painel): DEV-16 aponta para o pacote 0.0.1",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 5,
+    "title": "chore: versao do pacote 0.0.1",
+    "type": "infra",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "INFRA",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 6,
+    "title": "fix(chat): escrita nao bloqueante no agente, texto do Claude sem perd…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 7,
+    "title": "feat(chat): opcao 'Enviar com Enter' e aviso claro para limite de uso…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 8,
+    "title": "fix(chat): encerramento seguro do grupo, leitor robusto, guarda de co…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 9,
+    "title": "docs: README avisa que a edicao da interface pelo chat nao funciona n…",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 10,
+    "title": "docs(painel): atualiza carimbo, Projetos, Manutencao e Historico ate …",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 11,
+    "title": "feat(chat): markdown, streaming e ferramentas na interface do chat",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 12,
+    "title": "feat(chat): streaming do Claude, eventos de ferramenta, um agente por…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 13,
+    "title": "feat(chat): agentes editam a interface; encerrar derruba so o grupo d…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 14,
+    "title": "feat(chat): bolhas com gradiente da marca; UI reinicia quando o agent…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-27",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 15,
+    "title": "fix(chat): shutdown grava transcripts, item_id, botao encerrar, PATH …",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-27",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 16,
+    "title": "fix(chat): revisao final -- Origin check, conversa presa quando o pro…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-27",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 17,
+    "title": "fix(chat): unifica preferencia de layout do chat entre os dois agentes",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-27",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 18,
+    "title": "fix(chat): botao \"perguntar\" nao funcionava; add favicon; novo icone",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-27",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 19,
+    "title": "feat(chat): interface do chat embutido -- bolhas, janela, streaming, …",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-27",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 20,
+    "title": "fix(chat): AgentProcess nunca capturava o conversation_id real",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-27",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 21,
+    "title": "feat(chat): rotas /api/chat/status e websocket /ws/chat/{agent}",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-27",
+    "diffDays": 1,
+    "timeAgo": "há 1 dia",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 22,
+    "title": "feat(chat): ChatManager -- uma conversa ativa por agente, historico e…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-25",
+    "diffDays": 3,
+    "timeAgo": "há 3 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 23,
+    "title": "feat(chat): grava transcript de conversas encerradas em ~/.local/shar…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-25",
+    "diffDays": 3,
+    "timeAgo": "há 3 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 24,
+    "title": "feat(chat): AgentProcess -- subprocesso vivo com thread leitora norma…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-25",
+    "diffDays": 3,
+    "timeAgo": "há 3 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 25,
+    "title": "feat(chat): protocolo de comando e normalizacao de eventos por agente",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-25",
+    "diffDays": 3,
+    "timeAgo": "há 3 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 26,
+    "title": "Fix: corrige pagina de artigo de docs (docs/[slug]) que renderizava s…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/66357eabb7e46a93027bf01aa2caebb8ebb5ff17",
+    "repoAlias": "bramosjr/bramos",
+    "tags": [
+      "Astro"
+    ],
+    "date": "2026-09-22",
+    "diffDays": 6,
+    "timeAgo": "há 6 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 27,
+    "title": "Fix: atualiza Astro 4.16.18 para 7.3.3 e migra Tailwind 3 para 4 (via…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/a73d41ea46c37004581294e1e7be3c835883772f",
+    "repoAlias": "bramosjr/bramos",
+    "tags": [
+      "Astro"
+    ],
+    "date": "2026-09-22",
+    "diffDays": 6,
+    "timeAgo": "há 6 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 28,
+    "title": "Fix: atualiza actions do deploy para versoes com suporte nativo a Nod…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/6783aafe6a13aa19a30bac8cdc2076b61d81251b",
+    "repoAlias": "bramosjr/bramos",
+    "tags": [
+      "Astro"
+    ],
+    "date": "2026-09-22",
+    "diffDays": 6,
+    "timeAgo": "há 6 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 29,
+    "title": "Feat: implementa nova identidade cromatica terracota + carvao (issue …",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/deaa2e1624e235c160962920e1f32e6684399eae",
+    "repoAlias": "bramosjr/bramos",
+    "tags": [
+      "Astro"
+    ],
+    "date": "2026-09-22",
+    "diffDays": 6,
+    "timeAgo": "há 6 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 30,
+    "title": "Fix: renomeia repositorio para bramos, torna publico, habilita GitHub…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/1423d3d51f02b4dc946ca8ac30fbc6edf848e71b",
+    "repoAlias": "bramosjr/bramos",
+    "tags": [
+      "Astro"
+    ],
+    "date": "2026-09-21",
+    "diffDays": 6,
+    "timeAgo": "há 6 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 31,
+    "title": "Atualiza caminhos antigos de /mnt/2TBML para ~/Projetos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 32,
+    "title": "Atualiza caminhos antigos de /mnt/2TBML para ~/Projetos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Software",
+    "tags": [
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 33,
+    "title": "Atualiza caminhos antigos de /mnt/2TBML para ~/Projetos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Software",
+    "tags": [
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 34,
+    "title": "Atualiza caminhos antigos de /mnt/2TBML para ~/Projetos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Rust",
+    "tags": [
+      "Rust",
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 35,
+    "title": "Atualiza caminhos de /mnt/HD320 para ~/Projetos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 36,
+    "title": "Atualiza caminhos de /mnt/HD320 para ~/Projetos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 37,
+    "title": "Atualiza caminhos de /mnt/HD320 para ~/Projetos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 38,
+    "title": "Script de início usa o pm2 do próprio projeto",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em JavaScript",
+    "tags": [
+      "JavaScript",
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 39,
+    "title": "Corrige caminhos do atalho e do script de início após a mudança de pasta",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em JavaScript",
+    "tags": [
+      "JavaScript",
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 40,
+    "title": "Usa ~/Projetos como raiz padrão em vez do antigo /mnt/HD320",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 41,
+    "title": "Ignora suporte/ e arquivos de apoio dos agentes",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em JavaScript",
+    "tags": [
+      "JavaScript",
+      "NDA"
+    ],
+    "date": "2026-09-16",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 42,
+    "title": "Ignora suporte/, adiciona entrada e atalho do SyncEscriba e move imag…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-16",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 43,
+    "title": "Adiciona plano de implementação e .gitignore",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Software",
+    "tags": [
+      "NDA"
+    ],
+    "date": "2026-09-16",
+    "diffDays": 12,
+    "timeAgo": "há 12 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 44,
+    "title": "Commit inicial do Pesquisa de Preços (Google Apps Script)",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em JavaScript",
+    "tags": [
+      "JavaScript",
+      "NDA"
+    ],
+    "date": "2026-09-16",
+    "diffDays": 12,
+    "timeAgo": "há 12 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 45,
+    "title": "Commit inicial do TuDum (Rust + GTK4)",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Rust",
+    "tags": [
+      "Rust",
+      "NDA"
+    ],
+    "date": "2026-09-16",
+    "diffDays": 12,
+    "timeAgo": "há 12 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 46,
+    "title": "Adiciona código-fonte, testes e empacotamento do CanopiSync (Python)",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-16",
+    "diffDays": 12,
+    "timeAgo": "há 12 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 47,
+    "title": "Docs: reestrutura e sanitiza guia de deploy no README com notas de ro…",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-11",
+    "diffDays": 17,
+    "timeAgo": "há 17 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 48,
+    "title": "Fix: ajusta banner superior e reposiciona foto no Modelo 5 de exporta…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 17,
+    "timeAgo": "há 17 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 49,
+    "title": "Fix: imuniza capas contra adblock, corrige persistencia de BannerId n…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 50,
+    "title": "Feat: ajusta escala e cantos arredondados da foto de perfil no banner…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 51,
+    "title": "Fix: desacopla rolagem da sidebar e fixa no viewport em /adform (Clos…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 52,
+    "title": "Fix: adiciona metadados AppStream e copyright DEP-5 para exibição de …",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/9a0956b083586eb62f0693bd1a0ea68cbe6241ca",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 53,
+    "title": "Feat: Scaffolding inicial do Auditnow e da Norma Excellentiae",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 54,
+    "title": "Initial commit",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 55,
+    "title": "fix(packaging): canonical hicolor icons, WM_CLASS sync and MIT license",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/aebe9258a5aeb19da22c05223948a2f48a28e5ad",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 56,
+    "title": "chore(release): bump versão para 0.1.0",
+    "type": "infra",
+    "category": "infra",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/a6265d411c2d0d1582bbd9c46953db1f07ab4bac",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "INFRA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 57,
+    "title": "Feat: novo icone do aplicativo baseado no Conceito C",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/c34fd874b150d5c78da9e2a4ba90caca90c1fea9",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 58,
+    "title": "Feat: adiciona suporte a multiplos provedores llm e parsers offline",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/3635973ce920a54d013cf94933156602d27be7ac",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 59,
+    "title": "feat: tela Sobre com versão do app e do markitdown",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/5aad8fa30af94683551b9bc89d799e46fb88b5a7",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "RELEASE"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 60,
+    "title": "feat: banner de atualização disponível do markitdown",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/c01eb33f3b932db0b3640b8e1caf7abc5db27590",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 61,
+    "title": "feat: hook useUpdateStatus para consumir versão e status de atualização",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/6578d09c7bbecc23ab3dc7e11a5b0700d73f521c",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "RELEASE"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 62,
+    "title": "feat: expor versão e status de atualização do markitdown no preload",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/1af04ddf35f1f26a4962289af6695ec90d5c8fac",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "RELEASE"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 63,
+    "title": "feat: checagem de atualização do markitdown e IPC no processo principal",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/2164a80a088eba7628a836db1664e8788ceb20ed",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 64,
+    "title": "feat: checagem semanal de atualização do markitdown via PyPI",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/426558280fa919564996899e6077aba05a10458d",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 65,
+    "title": "feat: comparador de versão semver para checagem de atualização",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/ec3c3a4c5b85284b1f2367f3bb386c780e1f2b17",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "RELEASE"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 66,
+    "title": "feat: fixar versão do markitdown e gerar version-info.json no build",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/0c7ba67417f39bb366135d947f3208d9abda1034",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "RELEASE"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 67,
+    "title": "chore: ignorar diretorio .worktrees/ usado para isolamento de trabalho",
+    "type": "infra",
+    "category": "infra",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/97af6e0dbf569ad7204eae80004bdb3713646d62",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "INFRA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 68,
+    "title": "chore(release): bump versão para 0.1.4",
+    "type": "infra",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "INFRA",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 69,
+    "title": "feat: contornar main_branch checked-out em outro worktree no run_flow",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 70,
+    "title": "chore: ignorar diretorio .worktrees/ usado para isolamento de trabalho",
+    "type": "infra",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "INFRA",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 71,
+    "title": "Feat: preenche descrição do AppStream (GNOME Software) e sobe para v0…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 72,
+    "title": "feat(appstream): screenshots, categorias, keywords e content_rating p…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 73,
+    "title": "feat(packaging): cross-build para arm64/aarch64 (.deb/.rpm/.pkg.tar.zst)",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 74,
+    "title": "feat(packaging): gera pacote Arch/pacman (.pkg.tar.zst) além de .deb/…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 75,
+    "title": "fix(gui): janela redimensionável com tamanho dinâmico (corta conteúdo)",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 76,
+    "title": "Merge branch 'worktree-fix-issue-2-aviso-nova-versao'",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 77,
+    "title": "fix: address final review findings for update-check feature (issue #2)",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 78,
+    "title": "docs: adiciona plano de implementação da issue #2 (aviso de nova versão)",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 79,
+    "title": "feat(gui): banner de nova versão disponível + toggle de opt-out no Sobre",
+    "type": "release",
+    "category": "release",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "RELEASE",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 80,
+    "title": "fix: adicionar autor na tela Sobre e script de teste no package.json",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/007f986a630dfced8d000b2e9764db4927735eea",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 81,
+    "title": "feat(update_check): estado persistido (opt-out, intervalo, versão dis…",
+    "type": "release",
+    "category": "release",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "RELEASE",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 82,
+    "title": "fix(update_check): handle UnicodeDecodeError and http.client.HTTPExce…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 83,
+    "title": "feat(update_check): parsing/comparação de versão e chamada HTTP injet…",
+    "type": "release",
+    "category": "release",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "RELEASE",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 84,
+    "title": "fix: reservar espaço do banner para os dois botões de toggle",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/b4388f88978c3b55f1d4c6d6076f55ddf9c46f1c",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 85,
+    "title": "chore: corrige versão para 0.1.3 (0.2.0 foi enviado por engano)",
+    "type": "infra",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "INFRA",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 86,
+    "title": "fix(i18n): usa settings.py compartilhado, corrige overwrite de settin…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 87,
+    "title": "feat: tela Sobre com versão do app e do markitdown",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/7652cd5aecd3c9a56e4bfaf3382c73a2d5173875",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript",
+      "RELEASE"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 88,
+    "title": "feat(settings): módulo de configuração local compartilhada, merge-safe",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 89,
+    "title": "docs(appstream): preenche histórico de releases (0.1.0 a 0.2.0) no me…",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "DOCS",
+      "NDA"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 90,
+    "title": "feat: banner de atualização disponível do markitdown",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/810ddb995c382564c7e8d3429404f428fec094c4",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript"
+    ],
+    "date": "2026-09-09",
+    "diffDays": 19,
+    "timeAgo": "há 19 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 91,
+    "title": "feat: hook useUpdateStatus para consumir versão e status de atualização",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/b75b42473cdf512a788af4f2bb91c65feb9e00e8",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript",
+      "RELEASE"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 92,
+    "title": "Feat: aviso de nova versão disponível (CLI stderr + banner GUI, checa…",
+    "type": "release",
+    "category": "release",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Python",
+    "tags": [
+      "Python",
+      "RELEASE",
+      "NDA"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 93,
+    "title": "feat: expor versão e status de atualização do markitdown no preload",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/82a800cbf21c9ff85dade15db7c64c6bbf11b621",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript",
+      "RELEASE"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 94,
+    "title": "feat: checagem de atualização do markitdown e IPC no processo principal",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/26fb60129d0628fce48f96d610c8c40f4b9484de",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 95,
+    "title": "fix: preservar sinal de atualização do cache quando o fetch falha",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/d37a44ade94251558999147dee4e6f4e0f483a1f",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 96,
+    "title": "feat: checagem semanal de atualização do markitdown via PyPI",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/e99a7afdc66c5d56a7253126b24b8bd026b8b650",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 97,
+    "title": "Style: expande layout para ocupar toda a largura da tela com paddings…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/8543f4d6436fc5ee91d678c37f18c54f697a549f",
+    "repoAlias": "bramosjr/bramos",
+    "tags": [
+      "Astro"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 98,
+    "title": "feat: comparador de versão semver para checagem de atualização",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/fc8db8c354911defb734d7ac6bdda5d80147b9b0",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript",
+      "RELEASE"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 99,
+    "title": "feat: fixar versão do markitdown e gerar version-info.json no build",
+    "type": "release",
+    "category": "release",
+    "isPrivate": false,
+    "repoName": "khat",
+    "repoUrl": "https://github.com/bramosjr/khat",
+    "commitUrl": "https://github.com/bramosjr/khat/commit/b7392a6c3037e7eab119fc23ee2e7464b912ed60",
+    "repoAlias": "bramosjr/khat",
+    "tags": [
+      "JavaScript",
+      "RELEASE"
+    ],
+    "date": "2026-09-08",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 100,
     "title": "chore: bump versão para 0.2.0",
     "type": "infra",
     "category": "infra",
@@ -15,53 +1989,51 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 2,
+    "id": 101,
     "title": "Feat: adiciona vitrine de repositorios publicos, filtros condicionais…",
     "type": "feat",
     "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Astro",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/60b8bfb1cf2372d71dbfa000308448528d14e4e5",
+    "repoAlias": "bramosjr/bramos",
     "tags": [
-      "Astro",
-      "NDA"
+      "Astro"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 3,
+    "id": 102,
     "title": "Feat: atualiza favicon, identidade visual, layout de graficos e filtr…",
     "type": "feat",
     "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Astro",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/2d47014739a81eb90ed824da889fa3b6226c05a7",
+    "repoAlias": "bramosjr/bramos",
     "tags": [
-      "Astro",
-      "NDA"
+      "Astro"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 4,
+    "id": 103,
     "title": "docs: documenta --delete-remote-branch nos GITNOW*.md (5 idiomas)",
     "type": "docs",
     "category": "infra",
@@ -76,53 +2048,51 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 5,
+    "id": 104,
     "title": "Feat: integra ingestao de dados reais do github via graphql com sanit…",
     "type": "feat",
     "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Astro",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/a12da4cc6c52676092802bb57a26220de5800298",
+    "repoAlias": "bramosjr/bramos",
     "tags": [
-      "Astro",
-      "NDA"
+      "Astro"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 6,
+    "id": 105,
     "title": "Feat: implementa portal de atividades github e guia arquitetural com …",
     "type": "feat",
     "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Astro",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/dcb44a24140761ccdd86caa1610ea3066a8960b1",
+    "repoAlias": "bramosjr/bramos",
     "tags": [
-      "Astro",
-      "NDA"
+      "Astro"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 7,
+    "id": 106,
     "title": "Fix: trata resíduos de ano e marca da issue 197 ",
     "type": "fix",
     "category": "fix",
@@ -136,13 +2106,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 8,
+    "id": 107,
     "title": "feat(gui): checkbox opcional para remover branch remota após o merge",
     "type": "feat",
     "category": "feat",
@@ -156,13 +2126,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 9,
+    "id": 108,
     "title": "feat(cli): adiciona --delete-remote-branch (opt-in, desligado por pad…",
     "type": "feat",
     "category": "feat",
@@ -176,13 +2146,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 10,
+    "id": 109,
     "title": "feat(core): run_flow aceita delete_remote_branch opcional (best-effort)",
     "type": "feat",
     "category": "feat",
@@ -196,13 +2166,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 11,
+    "id": 110,
     "title": "docs: documenta --issue com múltiplas issues nos GITNOW*.md e README*…",
     "type": "docs",
     "category": "infra",
@@ -217,154 +2187,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 12,
-    "title": "docs: adiciona plano de implementação da issue #1 (múltiplas issues n…",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 13,
-    "title": "fix: resolve final review findings for multi-issue --issue support",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 14,
-    "title": "i18n: label_issue indica múltiplos valores separados por vírgula (5 i…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 15,
-    "title": "test(cli): cobre fail-fast quando --issue é inválido antes de rodar o…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 16,
-    "title": "feat(cli): --issue aceita múltiplas issues, com validação fail-fast n…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 17,
-    "title": "test(core): cobre run_flow fechando múltiplas issues no mesmo commit",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 18,
-    "title": "feat(core): build_commit_message aceita múltiplas issues separadas po…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 19,
+    "id": 111,
     "title": "Feat: ícones multirresolução no empacotamento e metadados AppStream",
     "type": "feat",
     "category": "feat",
@@ -378,13 +2207,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 20,
+    "id": 112,
     "title": "feat: empacotamento .deb/.rpm (issue #5) — packaging/build.sh, tagnow…",
     "type": "feat",
     "category": "feat",
@@ -398,13 +2227,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 21,
+    "id": 113,
     "title": "docs: README em 5 idiomas (pt/en/es/zh/ru), mesmo padrão do Gitnow",
     "type": "docs",
     "category": "infra",
@@ -419,13 +2248,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 22,
+    "id": 114,
     "title": "feat: implementa i18n do app nos mesmos 5 idiomas do Gitnow (pt/en/es…",
     "type": "feat",
     "category": "feat",
@@ -439,13 +2268,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 23,
+    "id": 115,
     "title": "feat: link do repositório em Sobre vira hiperlink clicável (abre no n…",
     "type": "feat",
     "category": "feat",
@@ -459,13 +2288,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 24,
+    "id": 116,
     "title": "feat: renderiza AJUDA.md como Markdown de verdade na janela de Ajuda …",
     "type": "feat",
     "category": "feat",
@@ -479,13 +2308,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 25,
+    "id": 117,
     "title": "docs: indica onde encontrar o TAGNOW.md (raiz do repo, caminho instal…",
     "type": "docs",
     "category": "infra",
@@ -500,13 +2329,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 26,
+    "id": 118,
     "title": "docs: traz de volta pro AJUDA.md o contexto esclarecedor removido do …",
     "type": "docs",
     "category": "infra",
@@ -521,13 +2350,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 27,
+    "id": 119,
     "title": "docs: enxuga TAGNOW.md no mesmo espírito direto do GITNOW.md",
     "type": "docs",
     "category": "infra",
@@ -542,13 +2371,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 28,
+    "id": 120,
     "title": "feat: botão 'Baixar TAGNOW.md' em Configuração, com busca em local in…",
     "type": "feat",
     "category": "feat",
@@ -562,13 +2391,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 29,
+    "id": 121,
     "title": "feat: menu de Ajuda na GUI, TAGNOW.md (protocolo p/ IA) e AJUDA.md (u…",
     "type": "feat",
     "category": "feat",
@@ -582,13 +2411,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 30,
+    "id": 122,
     "title": "fix: adiciona rótulos (Arquivo/Valor a trocar/Placeholder) ao mini-fo…",
     "type": "fix",
     "category": "fix",
@@ -602,13 +2431,13 @@
       "NDA"
     ],
     "date": "2026-09-08",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 31,
+    "id": 123,
     "title": "fix: correções da revisão final da GUI (plan robusto, log de auditori…",
     "type": "fix",
     "category": "fix",
@@ -622,13 +2451,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 0,
-    "timeAgo": "hoje",
+    "diffDays": 20,
+    "timeAgo": "há 20 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 32,
+    "id": 124,
     "title": "feat: telas de Configuração e Sobre, entry point tagnow-gui e docs",
     "type": "feat",
     "category": "feat",
@@ -642,13 +2471,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 33,
+    "id": 125,
     "title": "feat: fluxo apply() com confirmação, resultado e tratamento de exceções",
     "type": "feat",
     "category": "feat",
@@ -662,13 +2491,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 34,
+    "id": 126,
     "title": "feat: fluxo plan() com relatório, erro e confirmação de origem na GUI",
     "type": "feat",
     "category": "feat",
@@ -682,13 +2511,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 35,
+    "id": 127,
     "title": "feat: formulário e tabela de substituições na GUI",
     "type": "feat",
     "category": "feat",
@@ -702,13 +2531,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 36,
+    "id": 128,
     "title": "fix: fixa ttkbootstrap na faixa 1.x para casar com o Gitnow e evitar …",
     "type": "fix",
     "category": "fix",
@@ -722,13 +2551,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 37,
+    "id": 129,
     "title": "feat: App principal com campos de repositório, origem e cliente",
     "type": "feat",
     "category": "feat",
@@ -742,13 +2571,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 38,
+    "id": 130,
     "title": "feat: scaffolding da GUI (ttkbootstrap, ícone, funções puras de forma…",
     "type": "feat",
     "category": "feat",
@@ -762,13 +2591,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 39,
+    "id": 131,
     "title": "feat: persistência de preferências da GUI (tagnow/config.py)",
     "type": "feat",
     "category": "feat",
@@ -782,13 +2611,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 40,
+    "id": 132,
     "title": "chore: ignora .superpowers (workspace do SDD movido para suporte/Tagn…",
     "type": "infra",
     "category": "infra",
@@ -803,13 +2632,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 41,
+    "id": 133,
     "title": "Feat: Adiciona o Conectoma Cognitivo 3D (Bloco 2 da issue #13) — pági…",
     "type": "feat",
     "category": "feat",
@@ -823,13 +2652,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 42,
+    "id": 134,
     "title": "Feat: Adiciona campo opcional Eixo Cognitivo às 14 seções de lista do…",
     "type": "feat",
     "category": "feat",
@@ -843,13 +2672,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 43,
+    "id": 135,
     "title": "Feat: adiciona linha neon amber-400 nos itens do menu de navegacao po…",
     "type": "feat",
     "category": "feat",
@@ -863,1529 +2692,33 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 44,
-    "title": "Feat: adiciona secao de Ajuda do Sistema no formulario admin (issue #…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 45,
-    "title": "Feat: adiciona exportacao estruturada do curriculo no formulario admi…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-07",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 46,
-    "title": "Feat: adiciona menu horizontal de navegacao por secoes no cabecalho d…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-06",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 47,
-    "title": "Feat: adiciona importacao do Curriculo Lattes via XML (issue #14): pa…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-06",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 48,
-    "title": "Feat: adiciona Orientacoes, Bancas e Citacoes (paridade Lattes, issue…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-06",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 49,
-    "title": "Feat: adiciona Propriedade Intelectual, Producao Artistica, Reconheci…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-06",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 50,
-    "title": "Feat: adiciona Eventos, Projetos e Producao Bibliografica (paridade L…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-06",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 51,
-    "title": "Feat: Adiciona detalhamento interativo por ano no grafico de Atividad…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-06",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 52,
-    "title": "Feat: Adiciona 9 novos modelos de impressao, modo instantaneo (imprim…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-06",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 53,
-    "title": "Feat: Reestrutura o Formulario com layout Master-Detail: menu lateral…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-05",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 54,
-    "title": "Feat: Adiciona secao 'Aprendizado Autonomo & Pratica Independente' (h…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-05",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 55,
-    "title": "Fix: Traduz modal de créditos/LinkTree (GitHub Profile, Criador do Si…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-05",
-    "diffDays": 2,
-    "timeAgo": "há 2 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 56,
-    "title": "Refactor: Reorganiza curriculo/, formulario/ e banners/ em site/ para…",
-    "type": "refactor",
-    "category": "refactor",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "REFACTOR",
-      "NDA"
-    ],
-    "date": "2026-09-05",
-    "diffDays": 3,
-    "timeAgo": "há 3 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 57,
-    "title": "Fix: Remove pontos das linhas dos gráficos, alinha cor do slider de i…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-05",
-    "diffDays": 3,
-    "timeAgo": "há 3 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 58,
-    "title": "Feat: Currículo multilíngue com tradução automática em segundo plano …",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-05",
-    "diffDays": 3,
-    "timeAgo": "há 3 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 59,
-    "title": "Feat: Adiciona banner institucional configuravel (catalogo de 12 pres…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-04",
-    "diffDays": 4,
-    "timeAgo": "há 4 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 60,
-    "title": "Feat: Adiciona modo claro (estilo Anthropic) ao curriculo publico, co…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-04",
-    "diffDays": 4,
-    "timeAgo": "há 4 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 61,
-    "title": "Feat: Ordena grafico de Dominio Pratico por pontuacao crescente e tor…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-04",
-    "diffDays": 4,
-    "timeAgo": "há 4 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 62,
-    "title": "Fix: Remove rolagem interna do card Formacao Complementar e ordena cu…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-04",
-    "diffDays": 4,
-    "timeAgo": "há 4 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 63,
-    "title": "Feat: Adiciona slider de intervalo (dois handles) para delimitar os a…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-04",
-    "diffDays": 4,
-    "timeAgo": "há 4 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 64,
-    "title": "Feat: Tooltip do grafico de competencias aparece em qualquer ponto da…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-03",
-    "diffDays": 5,
-    "timeAgo": "há 5 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 65,
-    "title": "Feat: Consolida issue #10: placeholders em botoes de Adicionar (sem v…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-03",
-    "diffDays": 5,
-    "timeAgo": "há 5 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 66,
-    "title": "Chore: Remove legenda hardcoded do grafico de Distribuicao de Dominio…",
+    "id": 136,
+    "title": "chore: remove traces of old repository url",
     "type": "infra",
     "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/5b81c7ea01e3c45a3b82335977ecd051fbc07990",
+    "repoAlias": "bramosjr/khat-mark-and-json",
     "tags": [
-      "HTML",
-      "INFRA",
-      "NDA"
+      "Shell",
+      "INFRA"
     ],
-    "date": "2026-09-03",
-    "diffDays": 5,
-    "timeAgo": "há 5 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "date": "2026-08-05",
+    "diffDays": 54,
+    "timeAgo": "há 54 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 67,
-    "title": "fix: cli nunca vaza traceback cru",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-03",
-    "diffDays": 5,
-    "timeAgo": "há 5 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 68,
-    "title": "fix: motor - versiona branch, contenção de path, worktree suja e vali…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-03",
-    "diffDays": 5,
-    "timeAgo": "há 5 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 69,
-    "title": "docs: adicionar exit codes do apply no README",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 5,
-    "timeAgo": "há 5 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 70,
-    "title": "feat: cli.py com protocolo stdin/stdout e exit codes",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 5,
-    "timeAgo": "há 5 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 71,
-    "title": "Feat: Slider de competencias vai de 0 a 100% com cor dinamica (vermel…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 72,
-    "title": "test: adiciona cobertura para guard 3 (SubstitutionNotFoundError) em …",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 73,
-    "title": "feat: apply() executa o corte completo com push automático",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 74,
-    "title": "feat: orquestração de plan() com resolução de origem e validação tudo…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 75,
-    "title": "feat: nomenclatura de branch/tag com versionamento automático",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 76,
-    "title": "fix: tratar exceções de I/O em validate_substitutions",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 77,
-    "title": "Feat: Esconde secoes do curriculo publico sem nenhum dado inserido (M…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 78,
-    "title": "feat: validação de substituições e hash do plano",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 79,
-    "title": "feat: scaffolding do pacote tagnow + helpers Git básicos",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 80,
-    "title": "Fix: Cabecalho publico deixa de ser fixo (sticky) em telas estreitas,…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 81,
-    "title": "Reorganiza: suporte/ e docs/specs ficam no nível do workspace, fora d…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 82,
-    "title": "Adiciona spec de arquitetura do Tagnow",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 83,
-    "title": "Adiciona README e documentos de partida do projeto Tagnow",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 84,
-    "title": "Fix: Corrige race condition: bloqueia Salvar ate a carga inicial (fet…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 85,
-    "title": "Feat: Adiciona aviso de privacidade na pagina publica do curriculo (s…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 86,
-    "title": "Chore: Remove jargao tecnico das mensagens, adiciona favicon dinamico…",
-    "type": "infra",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "INFRA",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 87,
-    "title": "Fix: Corrige URL da foto de perfil, modal Arvore de Links (site vs it…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 88,
-    "title": "Fix: Move botoes de Adicionar para fora do summary, evitando alternar…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 89,
-    "title": "Chore: Renomeia Secao 2 do CMS para Outros Contatos e Redes Sociais",
-    "type": "infra",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "INFRA",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 90,
-    "title": "Docs: Documenta processo de onboarding de terceiros, corte de versao …",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 91,
-    "title": "Feat: Adiciona multiplos telefones/emails com rotulo, campo Pais de O…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 92,
-    "title": "Feat: Reconstroi templates de impressao fieis aos modelos de referenc…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-02",
-    "diffDays": 6,
-    "timeAgo": "há 6 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 93,
-    "title": "Feat: adiciona modal fixo de links do criador (LinkedIn, Instagram, D…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-31",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 94,
-    "title": "Feat: adiciona secao editavel de Especializacoes (Areas de Dominio e …",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-31",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 95,
-    "title": "Feat: unifica os dois Workers Cloudflare em um so (curriculo na raiz,…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-31",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 96,
-    "title": "Fix: remove dados de exemplo (DEFAULT_RESUME_DATA), corrige bugs de r…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 97,
-    "title": "Feat: adiciona Token de Acesso por sessao no formulario (aba oculta n…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 98,
-    "title": "Feat: sincroniza formulario e curriculo (leitura dinamica de dados vi…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 99,
-    "title": "feat(gas): implementar Gerenciador de Abas e Sidebar inspirados no pr…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 100,
-    "title": "feat(gas): implementar CRUD com a Planilha e lógica de salvar imagens…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 101,
-    "title": "feat(gas): estruturar diretórios e arquivos do Google Apps Script con…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 102,
-    "title": "refatorar: reverter para Opção A (Google Sheets + Apps Script + Cloud…",
-    "type": "refactor",
-    "category": "refactor",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "REFACTOR",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 8,
-    "timeAgo": "há 8 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 103,
-    "title": "feat: refatorar formulário e currículo para arquitetura Cloudflare R2…",
-    "type": "refactor",
-    "category": "refactor",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "REFACTOR",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 104,
-    "title": "docs: atualizar arquitetura de deploy para utilizar Cloudflare R2 e u…",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 105,
-    "title": "Docs: adiciona capturas de tela da GUI ao README (5 idiomas)",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 106,
-    "title": "Fix: deteccao de branch principal via consulta ao remoto ao vivo; ren…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 107,
-    "title": "Feat: adiciona diagramas dos fluxos de operacao (README + Central de …",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em JavaScript",
-    "tags": [
-      "JavaScript",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 108,
-    "title": "feat: icone real do app + metadados AppStream (licenca/site no instal…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 109,
-    "title": "feat: botao Sobre com licenca MIT e download do AGENTS.md",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 110,
-    "title": "chore: adiciona .superpowers/ ao gitignore",
-    "type": "infra",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "INFRA",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 111,
-    "title": "chore: bump versao para 0.1.1 (correcao dos 2 criticals da revisao fi…",
-    "type": "infra",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "INFRA",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 112,
-    "title": "fix: hardening do empacotamento e do nucleo (deps do pacote, --repo n…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 113,
-    "title": "fix: gitnow-gui --auto nunca mais trava (excecao generica + watchdog …",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 114,
-    "title": "docs: instrucoes de build local dos pacotes",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 115,
-    "title": "docs: traducoes de README e AGENTS.md (en/es/zh/ru)",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "DOCS",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 116,
-    "title": "fix: declara dependencia de python3 no pacote (venv nao e autocontida)",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 117,
-    "title": "feat: empacotamento .deb/.rpm via fpm com venv vendorizada e AGENTS.md",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 118,
-    "title": "fix: modo --auto nunca trava em messagebox de validacao (repo/campos …",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Python",
-    "tags": [
-      "Python",
-      "NDA"
-    ],
-    "date": "2026-08-30",
-    "diffDays": 9,
-    "timeAgo": "há 9 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 119,
+    "id": 137,
     "title": "fix: bust github image cache",
     "type": "fix",
     "category": "fix",
@@ -2398,13 +2731,51 @@
       "JavaScript"
     ],
     "date": "2026-08-05",
-    "diffDays": 34,
-    "timeAgo": "há 34 dias",
+    "diffDays": 54,
+    "timeAgo": "há 54 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 120,
+    "id": 138,
+    "title": "Update UI layout, add JSON support, and update screenshots",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/60bee82605f83fd63d16d7d30c943bbadc5f812c",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-08-05",
+    "diffDays": 54,
+    "timeAgo": "há 54 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 139,
+    "title": "security: Pass tag/repo via env vars in release.yml to avoid template…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/ddccd33b90bbe027efc7a7fb80338a6da6875d58",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-07-18",
+    "diffDays": 71,
+    "timeAgo": "há 71 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 140,
     "title": "security: Pass tag/repo via env vars in release.yml to avoid template…",
     "type": "feat",
     "category": "feat",
@@ -2417,13 +2788,32 @@
       "JavaScript"
     ],
     "date": "2026-07-18",
-    "diffDays": 51,
-    "timeAgo": "há 51 dias",
+    "diffDays": 71,
+    "timeAgo": "há 71 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 121,
+    "id": 141,
+    "title": "fix: Prevent duplicate draft releases in matrix build",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/74d9983931a2b2b8bce4a5063af1e92879326ded",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-07-18",
+    "diffDays": 71,
+    "timeAgo": "há 71 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 142,
     "title": "fix: Prevent duplicate draft releases in matrix build",
     "type": "fix",
     "category": "fix",
@@ -2436,13 +2826,52 @@
       "JavaScript"
     ],
     "date": "2026-07-18",
-    "diffDays": 51,
-    "timeAgo": "há 51 dias",
+    "diffDays": 71,
+    "timeAgo": "há 71 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 122,
+    "id": 143,
+    "title": "chore: bump version to 1.2.5",
+    "type": "infra",
+    "category": "infra",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/540a3b615d714ebbb2fc2095debd12d697bf4ccb",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "INFRA"
+    ],
+    "date": "2026-07-18",
+    "diffDays": 72,
+    "timeAgo": "há 72 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 144,
+    "title": "feat: disable sandbox for Linux development and remove white backgrou…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/d16f489516fe2d93275f5ac0fcdac6d7664962bd",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-07-18",
+    "diffDays": 72,
+    "timeAgo": "há 72 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 145,
     "title": "chore: bump version to 1.2.5",
     "type": "infra",
     "category": "infra",
@@ -2456,13 +2885,13 @@
       "INFRA"
     ],
     "date": "2026-07-18",
-    "diffDays": 52,
-    "timeAgo": "há 52 dias",
+    "diffDays": 72,
+    "timeAgo": "há 72 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 123,
+    "id": 146,
     "title": "feat: disable sandbox for Linux development and remove white backgrou…",
     "type": "feat",
     "category": "feat",
@@ -2475,13 +2904,33 @@
       "JavaScript"
     ],
     "date": "2026-07-18",
-    "diffDays": 52,
-    "timeAgo": "há 52 dias",
+    "diffDays": 72,
+    "timeAgo": "há 72 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 124,
+    "id": 147,
+    "title": "Atualizar o README.md",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/2b2a95d944217ca5d6de162728ab3ca1e1d01cb3",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "DOCS"
+    ],
+    "date": "2026-06-17",
+    "diffDays": 103,
+    "timeAgo": "há 103 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 148,
     "title": "Atualizar o README.md",
     "type": "docs",
     "category": "infra",
@@ -2495,13 +2944,32 @@
       "DOCS"
     ],
     "date": "2026-06-17",
-    "diffDays": 83,
-    "timeAgo": "há 83 dias",
+    "diffDays": 103,
+    "timeAgo": "há 103 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 125,
+    "id": 149,
+    "title": "fix: Collect magika ML models and markitdown internal data for PyInst…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/a4bf8c21087dc3c29f3ab77ccc8a2de31b80bab2",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-06-16",
+    "diffDays": 104,
+    "timeAgo": "há 104 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 150,
     "title": "fix: Collect magika ML models and markitdown internal data for PyInst…",
     "type": "fix",
     "category": "fix",
@@ -2514,13 +2982,32 @@
       "JavaScript"
     ],
     "date": "2026-06-16",
-    "diffDays": 84,
-    "timeAgo": "há 84 dias",
+    "diffDays": 104,
+    "timeAgo": "há 104 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 126,
+    "id": 151,
+    "title": "fix: Resolve Windows build errors by removing broken windowed flag, e…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/e131f4c1e4c95cb5698c3a46f4298b0fc6890e28",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell"
+    ],
+    "date": "2026-06-16",
+    "diffDays": 104,
+    "timeAgo": "há 104 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 152,
     "title": "fix: Resolve Windows build errors by removing broken windowed flag, e…",
     "type": "fix",
     "category": "fix",
@@ -2533,13 +3020,33 @@
       "JavaScript"
     ],
     "date": "2026-06-16",
-    "diffDays": 84,
-    "timeAgo": "há 84 dias",
+    "diffDays": 104,
+    "timeAgo": "há 104 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 127,
+    "id": 153,
+    "title": "docs: Format screenshots side-by-side",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/3ac9080e11f5a478f418a65f013a00e76fa4ee96",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "DOCS"
+    ],
+    "date": "2026-06-15",
+    "diffDays": 105,
+    "timeAgo": "há 105 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 154,
     "title": "docs: Format screenshots side-by-side",
     "type": "docs",
     "category": "infra",
@@ -2553,13 +3060,33 @@
       "DOCS"
     ],
     "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "diffDays": 105,
+    "timeAgo": "há 105 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 128,
+    "id": 155,
+    "title": "docs: Add second screenshot showing conversion in action",
+    "type": "docs",
+    "category": "infra",
+    "isPrivate": false,
+    "repoName": "khat-mark-and-json",
+    "repoUrl": "https://github.com/bramosjr/khat-mark-and-json",
+    "commitUrl": "https://github.com/bramosjr/khat-mark-and-json/commit/0ea410d601c40ea2b39d63b39e0bd9c7a6d2b3f1",
+    "repoAlias": "bramosjr/khat-mark-and-json",
+    "tags": [
+      "Shell",
+      "DOCS"
+    ],
+    "date": "2026-06-15",
+    "diffDays": 105,
+    "timeAgo": "há 105 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 156,
     "title": "docs: Add second screenshot showing conversion in action",
     "type": "docs",
     "category": "infra",
@@ -2573,13 +3100,13 @@
       "DOCS"
     ],
     "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "diffDays": 105,
+    "timeAgo": "há 105 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 129,
+    "id": 157,
     "title": "docs: Add Pix donation details and GitHub Sponsors button",
     "type": "docs",
     "category": "infra",
@@ -2593,13 +3120,13 @@
       "DOCS"
     ],
     "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "diffDays": 105,
+    "timeAgo": "há 105 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 130,
+    "id": 158,
     "title": "security: Add internal authorization token and fix temporary file leaks",
     "type": "feat",
     "category": "feat",
@@ -2612,13 +3139,13 @@
       "JavaScript"
     ],
     "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "diffDays": 105,
+    "timeAgo": "há 105 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 131,
+    "id": 159,
     "title": "docs: Highlight extended support for .ods and .odt",
     "type": "docs",
     "category": "infra",
@@ -2632,13 +3159,13 @@
       "DOCS"
     ],
     "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "diffDays": 105,
+    "timeAgo": "há 105 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 132,
+    "id": 160,
     "title": "feat: Add native support for .odt files via odfpy extraction",
     "type": "feat",
     "category": "feat",
@@ -2651,359 +3178,85 @@
       "JavaScript"
     ],
     "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "diffDays": 105,
+    "timeAgo": "há 105 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   },
   {
-    "id": 133,
-    "title": "feat: Add native support for .ods files via pandas interception",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/da9e1895f6ba151ce9e3977aae5137ce5b6319df",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 134,
-    "title": "docs: Restore missing screenshot in README",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/ee006d439794c4edd93222071a55aa6011b4c1f5",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript",
-      "DOCS"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 135,
-    "title": "docs: Update README screenshot",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/a4b63a638e2fe2e0075d1682cfeefe03cce0348e",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript",
-      "DOCS"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 136,
-    "title": "chore: Rename application to Khat MarkItDown",
-    "type": "infra",
-    "category": "infra",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/0b6bf079dc3a5fbc8d7beb06444250bdcc426396",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript",
-      "INFRA"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 137,
-    "title": "docs: Add origin story of Khat to README",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/65599c0ef48e2a499088853041d2e309e4f77e09",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript",
-      "DOCS"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 138,
-    "title": "chore: Update email and version to 1.0.3",
-    "type": "infra",
-    "category": "infra",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/ff93c9625eb8015d208f0d19014c792d317ccdc6",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript",
-      "INFRA"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 139,
-    "title": "fix: Add repository field to package.json",
+    "id": 161,
+    "title": "fix: add missing build script to package.json",
     "type": "fix",
     "category": "fix",
     "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/46074a4111518444b7a269ba2354693110c413e0",
-    "repoAlias": "bramosjr/khat",
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/ee4046c7fefc91b707f156de6f5ee17663cec742",
+    "repoAlias": "bramosjr/bramos",
     "tags": [
-      "JavaScript"
+      "Astro"
     ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "date": "2026-05-09",
+    "diffDays": 142,
+    "timeAgo": "há 142 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 140,
-    "title": "fix: Add CI flatpak support",
+    "id": 162,
+    "title": "fix: update CI to Node 24 and force javascript actions to node 24",
     "type": "fix",
     "category": "fix",
     "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/5755056714450f1383be93bb0d5d78a67e6369f3",
-    "repoAlias": "bramosjr/khat",
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/99a5b85dc674b2df4e70e1c08f111098edfb383f",
+    "repoAlias": "bramosjr/bramos",
     "tags": [
-      "JavaScript"
+      "Astro"
     ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "date": "2026-05-09",
+    "diffDays": 142,
+    "timeAgo": "há 142 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 141,
-    "title": "ci: Add GitHub Actions workflow for cross-platform releases",
+    "id": 163,
+    "title": "chore: ignore node_modules and dist",
     "type": "infra",
     "category": "infra",
     "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/9026f69bcbabb2e039f07a6207f13dc189a57ddb",
-    "repoAlias": "bramosjr/khat",
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/84a18c88b86b8c4586e225e7e2cced99fca58520",
+    "repoAlias": "bramosjr/bramos",
     "tags": [
-      "JavaScript",
+      "Astro",
       "INFRA"
     ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "date": "2026-05-09",
+    "diffDays": 142,
+    "timeAgo": "há 142 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 142,
-    "title": "docs: Add application screenshot to README",
-    "type": "docs",
-    "category": "infra",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/ee9f4b622385c8a2c4f56e30654921760dee1aad",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript",
-      "DOCS"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 143,
-    "title": "chore: Update application icon to new icone.png",
-    "type": "infra",
-    "category": "infra",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/31166ae49c8d962eaa5d312d908b8c9b0f4d726a",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript",
-      "INFRA"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 144,
-    "title": "style: Revert UI layout to original clean state without background wa…",
+    "id": 164,
+    "title": "feat: initial site structure with Astro, professional design and CI/C…",
     "type": "feat",
     "category": "feat",
     "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/fe223f4319d8590a50dcae4dc12cb76292d9024c",
-    "repoAlias": "bramosjr/khat",
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/b33918019466746f8dc157b7d745aa5a51bb154c",
+    "repoAlias": "bramosjr/bramos",
     "tags": [
-      "JavaScript"
+      "Astro"
     ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 145,
-    "title": "style: Use colored SVG as left-aligned background watermark",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/2b53dbdae2c55d53a96e343b294722dc8c9b8a20",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 146,
-    "title": "style: Move app logo to background watermark and restore original ico…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/a1ffe06b180378101a07fe11e114515bd4205a67",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 147,
-    "title": "fix: Make app icon background transparent",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/09be8542ef155421b01f350389b96dd05243d542",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 148,
-    "title": "feat: Add app logo to header and configure Gnome .desktop integration",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/f9d26a1682e00bb9fa3a2ada46cc8cc872bcb72b",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 149,
-    "title": "chore: Set custom application icon",
-    "type": "infra",
-    "category": "infra",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/e1896134c985ea63765f6e8a44a51abc741a5215",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript",
-      "INFRA"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 150,
-    "title": "feat: Initial implementation of MarkItDown GUI with Electron and FastAPI",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": false,
-    "repoName": "khat",
-    "repoUrl": "https://github.com/bramosjr/khat",
-    "commitUrl": "https://github.com/bramosjr/khat/commit/7c1bcbd9e54f5b32a4b9e9b36773e9a35a7b4fc6",
-    "repoAlias": "bramosjr/khat",
-    "tags": [
-      "JavaScript"
-    ],
-    "date": "2026-06-15",
-    "diffDays": 85,
-    "timeAgo": "há 85 dias",
+    "date": "2026-05-09",
+    "diffDays": 142,
+    "timeAgo": "há 142 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
     "isMajor": true
   }

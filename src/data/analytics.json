@@ -1,9 +1,31 @@
 {
-  "updatedAt": "2026-09-08T20:28:42.476Z",
+  "updatedAt": "2026-09-28T23:06:14.075Z",
   "userLogin": "bramosjr",
-  "totalReposCount": 20,
-  "privateReposCount": 19,
+  "totalReposCount": 28,
+  "privateReposCount": 25,
   "publicRepositories": [
+    {
+      "name": "bramos",
+      "fullName": "bramosjr/bramos",
+      "url": "https://github.com/bramosjr/bramos",
+      "description": "site institucional do projeto, com foco em apresentação comercial do aplicativo, captação de contatos e disponibilização de documentação pública",
+      "primaryLanguage": "Astro",
+      "languageColor": "#ff5a03",
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "pushedAt": "2026-09-22T02:06:28Z"
+    },
+    {
+      "name": "khat-mark-and-json",
+      "fullName": "bramosjr/khat-mark-and-json",
+      "url": "https://github.com/bramosjr/khat-mark-and-json",
+      "description": "Projeto de código aberto rastreado no GitHub.",
+      "primaryLanguage": "Shell",
+      "languageColor": "#89e051",
+      "stargazerCount": 0,
+      "forkCount": 0,
+      "pushedAt": "2026-09-10T00:43:10Z"
+    },
     {
       "name": "khat",
       "fullName": "bramosjr/khat",
@@ -13,7 +35,7 @@
       "languageColor": "#f1e05a",
       "stargazerCount": 1,
       "forkCount": 0,
-      "pushedAt": "2026-08-05T06:39:31Z"
+      "pushedAt": "2026-09-09T16:35:09Z"
     }
   ],
   "languages": {
@@ -21,15 +43,15 @@
       "HTML",
       "JavaScript",
       "Rust",
-      "Shell",
+      "Python",
       "Outras"
     ],
     "percentages": [
-      36,
-      36,
-      10,
+      37,
+      35,
+      9,
       7,
-      11
+      12
     ]
   },
   "commitTypes": {
@@ -41,11 +63,11 @@
       "docs"
     ],
     "counts": [
-      384,
-      139,
+      283,
+      99,
       3,
-      36,
-      55
+      22,
+      35
     ]
   },
   "weeklyCadence": {
@@ -56,10 +78,10 @@
       "Semana 4"
     ],
     "counts": [
-      10,
-      9,
-      86,
-      92
+      29,
+      77,
+      16,
+      30
     ]
   },
   "cadencePeriods": {
@@ -71,10 +93,10 @@
         "Semana 4"
       ],
       "counts": [
-        10,
-        9,
-        86,
-        92
+        29,
+        77,
+        16,
+        30
       ]
     },
     "8w": {
@@ -89,14 +111,14 @@
         "Sem 8"
       ],
       "counts": [
-        56,
-        71,
-        3,
+        27,
+        12,
+        7,
+        29,
+        29,
         77,
-        10,
-        9,
-        86,
-        92
+        16,
+        30
       ]
     },
     "12w": {
@@ -115,23 +137,22 @@
         "Sem 12"
       ],
       "counts": [
-        4,
         0,
+        28,
+        73,
         0,
+        27,
         12,
-        56,
-        71,
-        3,
+        7,
+        29,
+        29,
         77,
-        10,
-        9,
-        86,
-        92
+        16,
+        30
       ]
     },
     "all": {
       "labels": [
-        "mai S1",
         "mai S2",
         "mai S3",
         "mai S4",
@@ -148,29 +169,34 @@
         "ago S2",
         "ago S3",
         "ago S4",
+        "ago S5",
         "set S1",
-        "set S2"
+        "set S2",
+        "set S3",
+        "set S4"
       ],
       "counts": [
-        2,
-        9,
-        7,
-        45,
         5,
-        51,
-        78,
-        4,
+        0,
+        23,
+        1,
+        36,
+        41,
+        8,
         0,
         0,
+        0,
+        28,
+        73,
+        0,
+        27,
         12,
-        56,
-        71,
-        3,
+        7,
+        29,
+        29,
         77,
-        10,
-        9,
-        86,
-        92
+        16,
+        30
       ]
     }
   }
