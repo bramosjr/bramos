@@ -1,6 +1,225 @@
 [
   {
     "id": 1,
+    "title": "Fix: desacopla sincronizacao de repositorios publicos e commits para …",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": false,
+    "repoName": "bramos",
+    "repoUrl": "https://github.com/bramosjr/bramos",
+    "commitUrl": "https://github.com/bramosjr/bramos/commit/849c0c96d041ee567ec0e3fad24d362b1b1e144f",
+    "repoAlias": "bramosjr/bramos",
+    "tags": [
+      "Astro"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório público com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 2,
+    "title": "fix(store): backup pre-migracao le atraves do WAL; teste real de fech…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 3,
+    "title": "feat(store): concorrencia, API reexportada e migracao na subida do se…",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 4,
+    "title": "feat(store): logos e config",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 5,
+    "title": "feat(store): inventario de hardware",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 6,
+    "title": "feat(store): varreduras e verificacoes",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 7,
+    "title": "feat(store): criacao e listagem de eventos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 8,
+    "title": "feat(store): CRUD de items",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 9,
+    "title": "fix(store): corrige atomicidade das migrações",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 10,
+    "title": "feat(store): esquema versionado e migrações com cópia de segurança",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 11,
+    "title": "feat(store): caminho do banco e conexao com PRAGMAs",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-28",
+    "diffDays": 0,
+    "timeAgo": "hoje",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 12,
     "title": "docs: plano de implementacao da Issue #2 (armazenamento sqlite)",
     "type": "docs",
     "category": "infra",
@@ -21,7 +240,7 @@
     "isMajor": false
   },
   {
-    "id": 2,
+    "id": 13,
     "title": "docs: design de instalacao limpa, varredura, relato de erros e logotipos",
     "type": "docs",
     "category": "infra",
@@ -42,7 +261,7 @@
     "isMajor": false
   },
   {
-    "id": 3,
+    "id": 14,
     "title": "feat(pacote): metainfo AppStream com descricao, capturas de tela e de…",
     "type": "feat",
     "category": "feat",
@@ -62,7 +281,7 @@
     "isMajor": true
   },
   {
-    "id": 4,
+    "id": 15,
     "title": "docs(painel): DEV-16 aponta para o pacote 0.0.1",
     "type": "docs",
     "category": "infra",
@@ -83,7 +302,7 @@
     "isMajor": false
   },
   {
-    "id": 5,
+    "id": 16,
     "title": "chore: versao do pacote 0.0.1",
     "type": "infra",
     "category": "infra",
@@ -104,7 +323,7 @@
     "isMajor": false
   },
   {
-    "id": 6,
+    "id": 17,
     "title": "fix(chat): escrita nao bloqueante no agente, texto do Claude sem perd…",
     "type": "fix",
     "category": "fix",
@@ -124,7 +343,7 @@
     "isMajor": false
   },
   {
-    "id": 7,
+    "id": 18,
     "title": "feat(chat): opcao 'Enviar com Enter' e aviso claro para limite de uso…",
     "type": "feat",
     "category": "feat",
@@ -144,7 +363,7 @@
     "isMajor": true
   },
   {
-    "id": 8,
+    "id": 19,
     "title": "fix(chat): encerramento seguro do grupo, leitor robusto, guarda de co…",
     "type": "fix",
     "category": "fix",
@@ -164,7 +383,7 @@
     "isMajor": false
   },
   {
-    "id": 9,
+    "id": 20,
     "title": "docs: README avisa que a edicao da interface pelo chat nao funciona n…",
     "type": "docs",
     "category": "infra",
@@ -185,7 +404,7 @@
     "isMajor": false
   },
   {
-    "id": 10,
+    "id": 21,
     "title": "docs(painel): atualiza carimbo, Projetos, Manutencao e Historico ate …",
     "type": "docs",
     "category": "infra",
@@ -206,7 +425,7 @@
     "isMajor": false
   },
   {
-    "id": 11,
+    "id": 22,
     "title": "feat(chat): markdown, streaming e ferramentas na interface do chat",
     "type": "feat",
     "category": "feat",
@@ -226,7 +445,7 @@
     "isMajor": true
   },
   {
-    "id": 12,
+    "id": 23,
     "title": "feat(chat): streaming do Claude, eventos de ferramenta, um agente por…",
     "type": "feat",
     "category": "feat",
@@ -246,7 +465,7 @@
     "isMajor": true
   },
   {
-    "id": 13,
+    "id": 24,
     "title": "feat(chat): agentes editam a interface; encerrar derruba so o grupo d…",
     "type": "feat",
     "category": "feat",
@@ -266,7 +485,7 @@
     "isMajor": true
   },
   {
-    "id": 14,
+    "id": 25,
     "title": "feat(chat): bolhas com gradiente da marca; UI reinicia quando o agent…",
     "type": "feat",
     "category": "feat",
@@ -286,7 +505,7 @@
     "isMajor": true
   },
   {
-    "id": 15,
+    "id": 26,
     "title": "fix(chat): shutdown grava transcripts, item_id, botao encerrar, PATH …",
     "type": "fix",
     "category": "fix",
@@ -306,207 +525,7 @@
     "isMajor": false
   },
   {
-    "id": 16,
-    "title": "fix(chat): revisao final -- Origin check, conversa presa quando o pro…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-27",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 17,
-    "title": "fix(chat): unifica preferencia de layout do chat entre os dois agentes",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-27",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 18,
-    "title": "fix(chat): botao \"perguntar\" nao funcionava; add favicon; novo icone",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-27",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 19,
-    "title": "feat(chat): interface do chat embutido -- bolhas, janela, streaming, …",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-27",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 20,
-    "title": "fix(chat): AgentProcess nunca capturava o conversation_id real",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-27",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
-    "id": 21,
-    "title": "feat(chat): rotas /api/chat/status e websocket /ws/chat/{agent}",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-27",
-    "diffDays": 1,
-    "timeAgo": "há 1 dia",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 22,
-    "title": "feat(chat): ChatManager -- uma conversa ativa por agente, historico e…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-25",
-    "diffDays": 3,
-    "timeAgo": "há 3 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 23,
-    "title": "feat(chat): grava transcript de conversas encerradas em ~/.local/shar…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-25",
-    "diffDays": 3,
-    "timeAgo": "há 3 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 24,
-    "title": "feat(chat): AgentProcess -- subprocesso vivo com thread leitora norma…",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-25",
-    "diffDays": 3,
-    "timeAgo": "há 3 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 25,
-    "title": "feat(chat): protocolo de comando e normalizacao de eventos por agente",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-25",
-    "diffDays": 3,
-    "timeAgo": "há 3 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 26,
+    "id": 27,
     "title": "Fix: corrige pagina de artigo de docs (docs/[slug]) que renderizava s…",
     "type": "fix",
     "category": "fix",
@@ -525,7 +544,7 @@
     "isMajor": false
   },
   {
-    "id": 27,
+    "id": 28,
     "title": "Fix: atualiza Astro 4.16.18 para 7.3.3 e migra Tailwind 3 para 4 (via…",
     "type": "fix",
     "category": "fix",
@@ -544,7 +563,7 @@
     "isMajor": false
   },
   {
-    "id": 28,
+    "id": 29,
     "title": "Fix: atualiza actions do deploy para versoes com suporte nativo a Nod…",
     "type": "fix",
     "category": "fix",
@@ -563,7 +582,7 @@
     "isMajor": false
   },
   {
-    "id": 29,
+    "id": 30,
     "title": "Feat: implementa nova identidade cromatica terracota + carvao (issue …",
     "type": "feat",
     "category": "feat",
@@ -582,7 +601,7 @@
     "isMajor": true
   },
   {
-    "id": 30,
+    "id": 31,
     "title": "Fix: renomeia repositorio para bramos, torna publico, habilita GitHub…",
     "type": "fix",
     "category": "fix",
@@ -601,7 +620,7 @@
     "isMajor": false
   },
   {
-    "id": 31,
+    "id": 32,
     "title": "Atualiza caminhos antigos de /mnt/2TBML para ~/Projetos",
     "type": "feat",
     "category": "feat",
@@ -612,25 +631,6 @@
     "repoAlias": "Projeto Privado: Solução em Python",
     "tags": [
       "Python",
-      "NDA"
-    ],
-    "date": "2026-09-17",
-    "diffDays": 11,
-    "timeAgo": "há 11 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": true
-  },
-  {
-    "id": 32,
-    "title": "Atualiza caminhos antigos de /mnt/2TBML para ~/Projetos",
-    "type": "feat",
-    "category": "feat",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em Software",
-    "tags": [
       "NDA"
     ],
     "date": "2026-09-17",
@@ -667,6 +667,25 @@
     "repoName": null,
     "repoUrl": null,
     "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em Software",
+    "tags": [
+      "NDA"
+    ],
+    "date": "2026-09-17",
+    "diffDays": 11,
+    "timeAgo": "há 11 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": true
+  },
+  {
+    "id": 35,
+    "title": "Atualiza caminhos antigos de /mnt/2TBML para ~/Projetos",
+    "type": "feat",
+    "category": "feat",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
     "repoAlias": "Projeto Privado: Solução em Rust",
     "tags": [
       "Rust",
@@ -679,7 +698,7 @@
     "isMajor": true
   },
   {
-    "id": 35,
+    "id": 36,
     "title": "Atualiza caminhos de /mnt/HD320 para ~/Projetos",
     "type": "feat",
     "category": "feat",
@@ -699,7 +718,7 @@
     "isMajor": true
   },
   {
-    "id": 36,
+    "id": 37,
     "title": "Atualiza caminhos de /mnt/HD320 para ~/Projetos",
     "type": "feat",
     "category": "feat",
@@ -719,7 +738,7 @@
     "isMajor": true
   },
   {
-    "id": 37,
+    "id": 38,
     "title": "Atualiza caminhos de /mnt/HD320 para ~/Projetos",
     "type": "feat",
     "category": "feat",
@@ -739,7 +758,7 @@
     "isMajor": true
   },
   {
-    "id": 38,
+    "id": 39,
     "title": "Script de início usa o pm2 do próprio projeto",
     "type": "feat",
     "category": "feat",
@@ -759,7 +778,7 @@
     "isMajor": true
   },
   {
-    "id": 39,
+    "id": 40,
     "title": "Corrige caminhos do atalho e do script de início após a mudança de pasta",
     "type": "feat",
     "category": "feat",
@@ -779,7 +798,7 @@
     "isMajor": true
   },
   {
-    "id": 40,
+    "id": 41,
     "title": "Usa ~/Projetos como raiz padrão em vez do antigo /mnt/HD320",
     "type": "feat",
     "category": "feat",
@@ -799,7 +818,7 @@
     "isMajor": true
   },
   {
-    "id": 41,
+    "id": 42,
     "title": "Ignora suporte/ e arquivos de apoio dos agentes",
     "type": "feat",
     "category": "feat",
@@ -819,7 +838,7 @@
     "isMajor": true
   },
   {
-    "id": 42,
+    "id": 43,
     "title": "Ignora suporte/, adiciona entrada e atalho do SyncEscriba e move imag…",
     "type": "feat",
     "category": "feat",
@@ -839,7 +858,7 @@
     "isMajor": true
   },
   {
-    "id": 43,
+    "id": 44,
     "title": "Adiciona plano de implementação e .gitignore",
     "type": "feat",
     "category": "feat",
@@ -858,7 +877,7 @@
     "isMajor": true
   },
   {
-    "id": 44,
+    "id": 45,
     "title": "Commit inicial do Pesquisa de Preços (Google Apps Script)",
     "type": "feat",
     "category": "feat",
@@ -878,7 +897,7 @@
     "isMajor": true
   },
   {
-    "id": 45,
+    "id": 46,
     "title": "Commit inicial do TuDum (Rust + GTK4)",
     "type": "feat",
     "category": "feat",
@@ -898,7 +917,7 @@
     "isMajor": true
   },
   {
-    "id": 46,
+    "id": 47,
     "title": "Adiciona código-fonte, testes e empacotamento do CanopiSync (Python)",
     "type": "feat",
     "category": "feat",
@@ -918,7 +937,7 @@
     "isMajor": true
   },
   {
-    "id": 47,
+    "id": 48,
     "title": "Docs: reestrutura e sanitiza guia de deploy no README com notas de ro…",
     "type": "docs",
     "category": "infra",
@@ -939,28 +958,8 @@
     "isMajor": false
   },
   {
-    "id": 48,
-    "title": "Fix: ajusta banner superior e reposiciona foto no Modelo 5 de exporta…",
-    "type": "fix",
-    "category": "fix",
-    "isPrivate": true,
-    "repoName": null,
-    "repoUrl": null,
-    "commitUrl": null,
-    "repoAlias": "Projeto Privado: Solução em HTML",
-    "tags": [
-      "HTML",
-      "NDA"
-    ],
-    "date": "2026-09-10",
-    "diffDays": 17,
-    "timeAgo": "há 17 dias",
-    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
-    "isMajor": false
-  },
-  {
     "id": 49,
-    "title": "Fix: imuniza capas contra adblock, corrige persistencia de BannerId n…",
+    "title": "Fix: ajusta banner superior e reposiciona foto no Modelo 5 de exporta…",
     "type": "fix",
     "category": "fix",
     "isPrivate": true,
@@ -980,6 +979,26 @@
   },
   {
     "id": 50,
+    "title": "Fix: imuniza capas contra adblock, corrige persistencia de BannerId n…",
+    "type": "fix",
+    "category": "fix",
+    "isPrivate": true,
+    "repoName": null,
+    "repoUrl": null,
+    "commitUrl": null,
+    "repoAlias": "Projeto Privado: Solução em HTML",
+    "tags": [
+      "HTML",
+      "NDA"
+    ],
+    "date": "2026-09-10",
+    "diffDays": 18,
+    "timeAgo": "há 18 dias",
+    "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
+    "isMajor": false
+  },
+  {
+    "id": 51,
     "title": "Feat: ajusta escala e cantos arredondados da foto de perfil no banner…",
     "type": "feat",
     "category": "feat",
@@ -999,7 +1018,7 @@
     "isMajor": true
   },
   {
-    "id": 51,
+    "id": 52,
     "title": "Fix: desacopla rolagem da sidebar e fixa no viewport em /adform (Clos…",
     "type": "fix",
     "category": "fix",
@@ -1019,7 +1038,7 @@
     "isMajor": false
   },
   {
-    "id": 52,
+    "id": 53,
     "title": "Fix: adiciona metadados AppStream e copyright DEP-5 para exibição de …",
     "type": "fix",
     "category": "fix",
@@ -1038,7 +1057,7 @@
     "isMajor": false
   },
   {
-    "id": 53,
+    "id": 54,
     "title": "Feat: Scaffolding inicial do Auditnow e da Norma Excellentiae",
     "type": "feat",
     "category": "feat",
@@ -1058,7 +1077,7 @@
     "isMajor": true
   },
   {
-    "id": 54,
+    "id": 55,
     "title": "Initial commit",
     "type": "feat",
     "category": "feat",
@@ -1078,7 +1097,7 @@
     "isMajor": true
   },
   {
-    "id": 55,
+    "id": 56,
     "title": "fix(packaging): canonical hicolor icons, WM_CLASS sync and MIT license",
     "type": "fix",
     "category": "fix",
@@ -1097,7 +1116,7 @@
     "isMajor": false
   },
   {
-    "id": 56,
+    "id": 57,
     "title": "chore(release): bump versão para 0.1.0",
     "type": "infra",
     "category": "infra",
@@ -1117,7 +1136,7 @@
     "isMajor": false
   },
   {
-    "id": 57,
+    "id": 58,
     "title": "Feat: novo icone do aplicativo baseado no Conceito C",
     "type": "feat",
     "category": "feat",
@@ -1136,7 +1155,7 @@
     "isMajor": true
   },
   {
-    "id": 58,
+    "id": 59,
     "title": "Feat: adiciona suporte a multiplos provedores llm e parsers offline",
     "type": "feat",
     "category": "feat",
@@ -1155,7 +1174,7 @@
     "isMajor": true
   },
   {
-    "id": 59,
+    "id": 60,
     "title": "feat: tela Sobre com versão do app e do markitdown",
     "type": "release",
     "category": "release",
@@ -1175,7 +1194,7 @@
     "isMajor": true
   },
   {
-    "id": 60,
+    "id": 61,
     "title": "feat: banner de atualização disponível do markitdown",
     "type": "feat",
     "category": "feat",
@@ -1194,7 +1213,7 @@
     "isMajor": true
   },
   {
-    "id": 61,
+    "id": 62,
     "title": "feat: hook useUpdateStatus para consumir versão e status de atualização",
     "type": "release",
     "category": "release",
@@ -1214,7 +1233,7 @@
     "isMajor": true
   },
   {
-    "id": 62,
+    "id": 63,
     "title": "feat: expor versão e status de atualização do markitdown no preload",
     "type": "release",
     "category": "release",
@@ -1234,7 +1253,7 @@
     "isMajor": true
   },
   {
-    "id": 63,
+    "id": 64,
     "title": "feat: checagem de atualização do markitdown e IPC no processo principal",
     "type": "feat",
     "category": "feat",
@@ -1253,7 +1272,7 @@
     "isMajor": true
   },
   {
-    "id": 64,
+    "id": 65,
     "title": "feat: checagem semanal de atualização do markitdown via PyPI",
     "type": "feat",
     "category": "feat",
@@ -1272,7 +1291,7 @@
     "isMajor": true
   },
   {
-    "id": 65,
+    "id": 66,
     "title": "feat: comparador de versão semver para checagem de atualização",
     "type": "release",
     "category": "release",
@@ -1292,7 +1311,7 @@
     "isMajor": true
   },
   {
-    "id": 66,
+    "id": 67,
     "title": "feat: fixar versão do markitdown e gerar version-info.json no build",
     "type": "release",
     "category": "release",
@@ -1312,7 +1331,7 @@
     "isMajor": true
   },
   {
-    "id": 67,
+    "id": 68,
     "title": "chore: ignorar diretorio .worktrees/ usado para isolamento de trabalho",
     "type": "infra",
     "category": "infra",
@@ -1332,7 +1351,7 @@
     "isMajor": false
   },
   {
-    "id": 68,
+    "id": 69,
     "title": "chore(release): bump versão para 0.1.4",
     "type": "infra",
     "category": "infra",
@@ -1353,7 +1372,7 @@
     "isMajor": false
   },
   {
-    "id": 69,
+    "id": 70,
     "title": "feat: contornar main_branch checked-out em outro worktree no run_flow",
     "type": "feat",
     "category": "feat",
@@ -1373,7 +1392,7 @@
     "isMajor": true
   },
   {
-    "id": 70,
+    "id": 71,
     "title": "chore: ignorar diretorio .worktrees/ usado para isolamento de trabalho",
     "type": "infra",
     "category": "infra",
@@ -1394,7 +1413,7 @@
     "isMajor": false
   },
   {
-    "id": 71,
+    "id": 72,
     "title": "Feat: preenche descrição do AppStream (GNOME Software) e sobe para v0…",
     "type": "feat",
     "category": "feat",
@@ -1414,7 +1433,7 @@
     "isMajor": true
   },
   {
-    "id": 72,
+    "id": 73,
     "title": "feat(appstream): screenshots, categorias, keywords e content_rating p…",
     "type": "feat",
     "category": "feat",
@@ -1434,7 +1453,7 @@
     "isMajor": true
   },
   {
-    "id": 73,
+    "id": 74,
     "title": "feat(packaging): cross-build para arm64/aarch64 (.deb/.rpm/.pkg.tar.zst)",
     "type": "feat",
     "category": "feat",
@@ -1454,7 +1473,7 @@
     "isMajor": true
   },
   {
-    "id": 74,
+    "id": 75,
     "title": "feat(packaging): gera pacote Arch/pacman (.pkg.tar.zst) além de .deb/…",
     "type": "feat",
     "category": "feat",
@@ -1474,7 +1493,7 @@
     "isMajor": true
   },
   {
-    "id": 75,
+    "id": 76,
     "title": "fix(gui): janela redimensionável com tamanho dinâmico (corta conteúdo)",
     "type": "fix",
     "category": "fix",
@@ -1494,7 +1513,7 @@
     "isMajor": false
   },
   {
-    "id": 76,
+    "id": 77,
     "title": "Merge branch 'worktree-fix-issue-2-aviso-nova-versao'",
     "type": "feat",
     "category": "feat",
@@ -1514,7 +1533,7 @@
     "isMajor": true
   },
   {
-    "id": 77,
+    "id": 78,
     "title": "fix: address final review findings for update-check feature (issue #2)",
     "type": "fix",
     "category": "fix",
@@ -1534,7 +1553,7 @@
     "isMajor": false
   },
   {
-    "id": 78,
+    "id": 79,
     "title": "docs: adiciona plano de implementação da issue #2 (aviso de nova versão)",
     "type": "docs",
     "category": "infra",
@@ -1555,7 +1574,7 @@
     "isMajor": false
   },
   {
-    "id": 79,
+    "id": 80,
     "title": "feat(gui): banner de nova versão disponível + toggle de opt-out no Sobre",
     "type": "release",
     "category": "release",
@@ -1576,7 +1595,7 @@
     "isMajor": true
   },
   {
-    "id": 80,
+    "id": 81,
     "title": "fix: adicionar autor na tela Sobre e script de teste no package.json",
     "type": "fix",
     "category": "fix",
@@ -1595,7 +1614,7 @@
     "isMajor": false
   },
   {
-    "id": 81,
+    "id": 82,
     "title": "feat(update_check): estado persistido (opt-out, intervalo, versão dis…",
     "type": "release",
     "category": "release",
@@ -1616,7 +1635,7 @@
     "isMajor": true
   },
   {
-    "id": 82,
+    "id": 83,
     "title": "fix(update_check): handle UnicodeDecodeError and http.client.HTTPExce…",
     "type": "fix",
     "category": "fix",
@@ -1636,7 +1655,7 @@
     "isMajor": false
   },
   {
-    "id": 83,
+    "id": 84,
     "title": "feat(update_check): parsing/comparação de versão e chamada HTTP injet…",
     "type": "release",
     "category": "release",
@@ -1657,7 +1676,7 @@
     "isMajor": true
   },
   {
-    "id": 84,
+    "id": 85,
     "title": "fix: reservar espaço do banner para os dois botões de toggle",
     "type": "fix",
     "category": "fix",
@@ -1676,7 +1695,7 @@
     "isMajor": false
   },
   {
-    "id": 85,
+    "id": 86,
     "title": "chore: corrige versão para 0.1.3 (0.2.0 foi enviado por engano)",
     "type": "infra",
     "category": "infra",
@@ -1697,7 +1716,7 @@
     "isMajor": false
   },
   {
-    "id": 86,
+    "id": 87,
     "title": "fix(i18n): usa settings.py compartilhado, corrige overwrite de settin…",
     "type": "fix",
     "category": "fix",
@@ -1717,7 +1736,7 @@
     "isMajor": false
   },
   {
-    "id": 87,
+    "id": 88,
     "title": "feat: tela Sobre com versão do app e do markitdown",
     "type": "release",
     "category": "release",
@@ -1737,7 +1756,7 @@
     "isMajor": true
   },
   {
-    "id": 88,
+    "id": 89,
     "title": "feat(settings): módulo de configuração local compartilhada, merge-safe",
     "type": "feat",
     "category": "feat",
@@ -1757,7 +1776,7 @@
     "isMajor": true
   },
   {
-    "id": 89,
+    "id": 90,
     "title": "docs(appstream): preenche histórico de releases (0.1.0 a 0.2.0) no me…",
     "type": "docs",
     "category": "infra",
@@ -1778,7 +1797,7 @@
     "isMajor": false
   },
   {
-    "id": 90,
+    "id": 91,
     "title": "feat: banner de atualização disponível do markitdown",
     "type": "feat",
     "category": "feat",
@@ -1797,7 +1816,7 @@
     "isMajor": true
   },
   {
-    "id": 91,
+    "id": 92,
     "title": "feat: hook useUpdateStatus para consumir versão e status de atualização",
     "type": "release",
     "category": "release",
@@ -1817,7 +1836,7 @@
     "isMajor": true
   },
   {
-    "id": 92,
+    "id": 93,
     "title": "Feat: aviso de nova versão disponível (CLI stderr + banner GUI, checa…",
     "type": "release",
     "category": "release",
@@ -1838,7 +1857,7 @@
     "isMajor": true
   },
   {
-    "id": 93,
+    "id": 94,
     "title": "feat: expor versão e status de atualização do markitdown no preload",
     "type": "release",
     "category": "release",
@@ -1858,7 +1877,7 @@
     "isMajor": true
   },
   {
-    "id": 94,
+    "id": 95,
     "title": "feat: checagem de atualização do markitdown e IPC no processo principal",
     "type": "feat",
     "category": "feat",
@@ -1877,7 +1896,7 @@
     "isMajor": true
   },
   {
-    "id": 95,
+    "id": 96,
     "title": "fix: preservar sinal de atualização do cache quando o fetch falha",
     "type": "fix",
     "category": "fix",
@@ -1896,7 +1915,7 @@
     "isMajor": false
   },
   {
-    "id": 96,
+    "id": 97,
     "title": "feat: checagem semanal de atualização do markitdown via PyPI",
     "type": "feat",
     "category": "feat",
@@ -1915,7 +1934,7 @@
     "isMajor": true
   },
   {
-    "id": 97,
+    "id": 98,
     "title": "Style: expande layout para ocupar toda a largura da tela com paddings…",
     "type": "feat",
     "category": "feat",
@@ -1934,7 +1953,7 @@
     "isMajor": true
   },
   {
-    "id": 98,
+    "id": 99,
     "title": "feat: comparador de versão semver para checagem de atualização",
     "type": "release",
     "category": "release",
@@ -1954,7 +1973,7 @@
     "isMajor": true
   },
   {
-    "id": 99,
+    "id": 100,
     "title": "feat: fixar versão do markitdown e gerar version-info.json no build",
     "type": "release",
     "category": "release",
@@ -1974,7 +1993,7 @@
     "isMajor": true
   },
   {
-    "id": 100,
+    "id": 101,
     "title": "chore: bump versão para 0.2.0",
     "type": "infra",
     "category": "infra",
@@ -1995,7 +2014,7 @@
     "isMajor": false
   },
   {
-    "id": 101,
+    "id": 102,
     "title": "Feat: adiciona vitrine de repositorios publicos, filtros condicionais…",
     "type": "feat",
     "category": "feat",
@@ -2014,7 +2033,7 @@
     "isMajor": true
   },
   {
-    "id": 102,
+    "id": 103,
     "title": "Feat: atualiza favicon, identidade visual, layout de graficos e filtr…",
     "type": "feat",
     "category": "feat",
@@ -2033,7 +2052,7 @@
     "isMajor": true
   },
   {
-    "id": 103,
+    "id": 104,
     "title": "docs: documenta --delete-remote-branch nos GITNOW*.md (5 idiomas)",
     "type": "docs",
     "category": "infra",
@@ -2054,7 +2073,7 @@
     "isMajor": false
   },
   {
-    "id": 104,
+    "id": 105,
     "title": "Feat: integra ingestao de dados reais do github via graphql com sanit…",
     "type": "feat",
     "category": "feat",
@@ -2073,7 +2092,7 @@
     "isMajor": true
   },
   {
-    "id": 105,
+    "id": 106,
     "title": "Feat: implementa portal de atividades github e guia arquitetural com …",
     "type": "feat",
     "category": "feat",
@@ -2092,7 +2111,7 @@
     "isMajor": true
   },
   {
-    "id": 106,
+    "id": 107,
     "title": "Fix: trata resíduos de ano e marca da issue 197 ",
     "type": "fix",
     "category": "fix",
@@ -2112,7 +2131,7 @@
     "isMajor": false
   },
   {
-    "id": 107,
+    "id": 108,
     "title": "feat(gui): checkbox opcional para remover branch remota após o merge",
     "type": "feat",
     "category": "feat",
@@ -2132,7 +2151,7 @@
     "isMajor": true
   },
   {
-    "id": 108,
+    "id": 109,
     "title": "feat(cli): adiciona --delete-remote-branch (opt-in, desligado por pad…",
     "type": "feat",
     "category": "feat",
@@ -2152,7 +2171,7 @@
     "isMajor": true
   },
   {
-    "id": 109,
+    "id": 110,
     "title": "feat(core): run_flow aceita delete_remote_branch opcional (best-effort)",
     "type": "feat",
     "category": "feat",
@@ -2172,7 +2191,7 @@
     "isMajor": true
   },
   {
-    "id": 110,
+    "id": 111,
     "title": "docs: documenta --issue com múltiplas issues nos GITNOW*.md e README*…",
     "type": "docs",
     "category": "infra",
@@ -2193,7 +2212,7 @@
     "isMajor": false
   },
   {
-    "id": 111,
+    "id": 112,
     "title": "Feat: ícones multirresolução no empacotamento e metadados AppStream",
     "type": "feat",
     "category": "feat",
@@ -2213,7 +2232,7 @@
     "isMajor": true
   },
   {
-    "id": 112,
+    "id": 113,
     "title": "feat: empacotamento .deb/.rpm (issue #5) — packaging/build.sh, tagnow…",
     "type": "feat",
     "category": "feat",
@@ -2233,7 +2252,7 @@
     "isMajor": true
   },
   {
-    "id": 113,
+    "id": 114,
     "title": "docs: README em 5 idiomas (pt/en/es/zh/ru), mesmo padrão do Gitnow",
     "type": "docs",
     "category": "infra",
@@ -2254,7 +2273,7 @@
     "isMajor": false
   },
   {
-    "id": 114,
+    "id": 115,
     "title": "feat: implementa i18n do app nos mesmos 5 idiomas do Gitnow (pt/en/es…",
     "type": "feat",
     "category": "feat",
@@ -2274,7 +2293,7 @@
     "isMajor": true
   },
   {
-    "id": 115,
+    "id": 116,
     "title": "feat: link do repositório em Sobre vira hiperlink clicável (abre no n…",
     "type": "feat",
     "category": "feat",
@@ -2294,7 +2313,7 @@
     "isMajor": true
   },
   {
-    "id": 116,
+    "id": 117,
     "title": "feat: renderiza AJUDA.md como Markdown de verdade na janela de Ajuda …",
     "type": "feat",
     "category": "feat",
@@ -2314,7 +2333,7 @@
     "isMajor": true
   },
   {
-    "id": 117,
+    "id": 118,
     "title": "docs: indica onde encontrar o TAGNOW.md (raiz do repo, caminho instal…",
     "type": "docs",
     "category": "infra",
@@ -2335,7 +2354,7 @@
     "isMajor": false
   },
   {
-    "id": 118,
+    "id": 119,
     "title": "docs: traz de volta pro AJUDA.md o contexto esclarecedor removido do …",
     "type": "docs",
     "category": "infra",
@@ -2356,7 +2375,7 @@
     "isMajor": false
   },
   {
-    "id": 119,
+    "id": 120,
     "title": "docs: enxuga TAGNOW.md no mesmo espírito direto do GITNOW.md",
     "type": "docs",
     "category": "infra",
@@ -2377,7 +2396,7 @@
     "isMajor": false
   },
   {
-    "id": 120,
+    "id": 121,
     "title": "feat: botão 'Baixar TAGNOW.md' em Configuração, com busca em local in…",
     "type": "feat",
     "category": "feat",
@@ -2397,7 +2416,7 @@
     "isMajor": true
   },
   {
-    "id": 121,
+    "id": 122,
     "title": "feat: menu de Ajuda na GUI, TAGNOW.md (protocolo p/ IA) e AJUDA.md (u…",
     "type": "feat",
     "category": "feat",
@@ -2417,7 +2436,7 @@
     "isMajor": true
   },
   {
-    "id": 122,
+    "id": 123,
     "title": "fix: adiciona rótulos (Arquivo/Valor a trocar/Placeholder) ao mini-fo…",
     "type": "fix",
     "category": "fix",
@@ -2437,7 +2456,7 @@
     "isMajor": false
   },
   {
-    "id": 123,
+    "id": 124,
     "title": "fix: correções da revisão final da GUI (plan robusto, log de auditori…",
     "type": "fix",
     "category": "fix",
@@ -2451,13 +2470,13 @@
       "NDA"
     ],
     "date": "2026-09-07",
-    "diffDays": 20,
-    "timeAgo": "há 20 dias",
+    "diffDays": 21,
+    "timeAgo": "há 21 dias",
     "summary": "Registro de atividade técnica sanitizada em repositório privado sob protocolo NDA com foco em entregas contínuas.",
     "isMajor": false
   },
   {
-    "id": 124,
+    "id": 125,
     "title": "feat: telas de Configuração e Sobre, entry point tagnow-gui e docs",
     "type": "feat",
     "category": "feat",
@@ -2477,7 +2496,7 @@
     "isMajor": true
   },
   {
-    "id": 125,
+    "id": 126,
     "title": "feat: fluxo apply() com confirmação, resultado e tratamento de exceções",
     "type": "feat",
     "category": "feat",
@@ -2497,7 +2516,7 @@
     "isMajor": true
   },
   {
-    "id": 126,
+    "id": 127,
     "title": "feat: fluxo plan() com relatório, erro e confirmação de origem na GUI",
     "type": "feat",
     "category": "feat",
@@ -2517,7 +2536,7 @@
     "isMajor": true
   },
   {
-    "id": 127,
+    "id": 128,
     "title": "feat: formulário e tabela de substituições na GUI",
     "type": "feat",
     "category": "feat",
@@ -2537,7 +2556,7 @@
     "isMajor": true
   },
   {
-    "id": 128,
+    "id": 129,
     "title": "fix: fixa ttkbootstrap na faixa 1.x para casar com o Gitnow e evitar …",
     "type": "fix",
     "category": "fix",
@@ -2557,7 +2576,7 @@
     "isMajor": false
   },
   {
-    "id": 129,
+    "id": 130,
     "title": "feat: App principal com campos de repositório, origem e cliente",
     "type": "feat",
     "category": "feat",
@@ -2577,7 +2596,7 @@
     "isMajor": true
   },
   {
-    "id": 130,
+    "id": 131,
     "title": "feat: scaffolding da GUI (ttkbootstrap, ícone, funções puras de forma…",
     "type": "feat",
     "category": "feat",
@@ -2597,7 +2616,7 @@
     "isMajor": true
   },
   {
-    "id": 131,
+    "id": 132,
     "title": "feat: persistência de preferências da GUI (tagnow/config.py)",
     "type": "feat",
     "category": "feat",
@@ -2617,7 +2636,7 @@
     "isMajor": true
   },
   {
-    "id": 132,
+    "id": 133,
     "title": "chore: ignora .superpowers (workspace do SDD movido para suporte/Tagn…",
     "type": "infra",
     "category": "infra",
@@ -2638,7 +2657,7 @@
     "isMajor": false
   },
   {
-    "id": 133,
+    "id": 134,
     "title": "Feat: Adiciona o Conectoma Cognitivo 3D (Bloco 2 da issue #13) — pági…",
     "type": "feat",
     "category": "feat",
@@ -2658,7 +2677,7 @@
     "isMajor": true
   },
   {
-    "id": 134,
+    "id": 135,
     "title": "Feat: Adiciona campo opcional Eixo Cognitivo às 14 seções de lista do…",
     "type": "feat",
     "category": "feat",
@@ -2678,7 +2697,7 @@
     "isMajor": true
   },
   {
-    "id": 135,
+    "id": 136,
     "title": "Feat: adiciona linha neon amber-400 nos itens do menu de navegacao po…",
     "type": "feat",
     "category": "feat",
@@ -2698,7 +2717,7 @@
     "isMajor": true
   },
   {
-    "id": 136,
+    "id": 137,
     "title": "chore: remove traces of old repository url",
     "type": "infra",
     "category": "infra",
@@ -2718,7 +2737,7 @@
     "isMajor": false
   },
   {
-    "id": 137,
+    "id": 138,
     "title": "fix: bust github image cache",
     "type": "fix",
     "category": "fix",
@@ -2737,7 +2756,7 @@
     "isMajor": false
   },
   {
-    "id": 138,
+    "id": 139,
     "title": "Update UI layout, add JSON support, and update screenshots",
     "type": "feat",
     "category": "feat",
@@ -2756,7 +2775,7 @@
     "isMajor": true
   },
   {
-    "id": 139,
+    "id": 140,
     "title": "security: Pass tag/repo via env vars in release.yml to avoid template…",
     "type": "feat",
     "category": "feat",
@@ -2775,7 +2794,7 @@
     "isMajor": true
   },
   {
-    "id": 140,
+    "id": 141,
     "title": "security: Pass tag/repo via env vars in release.yml to avoid template…",
     "type": "feat",
     "category": "feat",
@@ -2794,7 +2813,7 @@
     "isMajor": true
   },
   {
-    "id": 141,
+    "id": 142,
     "title": "fix: Prevent duplicate draft releases in matrix build",
     "type": "fix",
     "category": "fix",
@@ -2813,7 +2832,7 @@
     "isMajor": false
   },
   {
-    "id": 142,
+    "id": 143,
     "title": "fix: Prevent duplicate draft releases in matrix build",
     "type": "fix",
     "category": "fix",
@@ -2832,7 +2851,7 @@
     "isMajor": false
   },
   {
-    "id": 143,
+    "id": 144,
     "title": "chore: bump version to 1.2.5",
     "type": "infra",
     "category": "infra",
@@ -2852,7 +2871,7 @@
     "isMajor": false
   },
   {
-    "id": 144,
+    "id": 145,
     "title": "feat: disable sandbox for Linux development and remove white backgrou…",
     "type": "feat",
     "category": "feat",
@@ -2871,7 +2890,7 @@
     "isMajor": true
   },
   {
-    "id": 145,
+    "id": 146,
     "title": "chore: bump version to 1.2.5",
     "type": "infra",
     "category": "infra",
@@ -2891,7 +2910,7 @@
     "isMajor": false
   },
   {
-    "id": 146,
+    "id": 147,
     "title": "feat: disable sandbox for Linux development and remove white backgrou…",
     "type": "feat",
     "category": "feat",
@@ -2910,7 +2929,7 @@
     "isMajor": true
   },
   {
-    "id": 147,
+    "id": 148,
     "title": "Atualizar o README.md",
     "type": "docs",
     "category": "infra",
@@ -2930,7 +2949,7 @@
     "isMajor": false
   },
   {
-    "id": 148,
+    "id": 149,
     "title": "Atualizar o README.md",
     "type": "docs",
     "category": "infra",
@@ -2950,7 +2969,7 @@
     "isMajor": false
   },
   {
-    "id": 149,
+    "id": 150,
     "title": "fix: Collect magika ML models and markitdown internal data for PyInst…",
     "type": "fix",
     "category": "fix",
@@ -2969,7 +2988,7 @@
     "isMajor": false
   },
   {
-    "id": 150,
+    "id": 151,
     "title": "fix: Collect magika ML models and markitdown internal data for PyInst…",
     "type": "fix",
     "category": "fix",
@@ -2988,7 +3007,7 @@
     "isMajor": false
   },
   {
-    "id": 151,
+    "id": 152,
     "title": "fix: Resolve Windows build errors by removing broken windowed flag, e…",
     "type": "fix",
     "category": "fix",
@@ -3007,7 +3026,7 @@
     "isMajor": false
   },
   {
-    "id": 152,
+    "id": 153,
     "title": "fix: Resolve Windows build errors by removing broken windowed flag, e…",
     "type": "fix",
     "category": "fix",
@@ -3026,7 +3045,7 @@
     "isMajor": false
   },
   {
-    "id": 153,
+    "id": 154,
     "title": "docs: Format screenshots side-by-side",
     "type": "docs",
     "category": "infra",
@@ -3046,7 +3065,7 @@
     "isMajor": false
   },
   {
-    "id": 154,
+    "id": 155,
     "title": "docs: Format screenshots side-by-side",
     "type": "docs",
     "category": "infra",
@@ -3066,7 +3085,7 @@
     "isMajor": false
   },
   {
-    "id": 155,
+    "id": 156,
     "title": "docs: Add second screenshot showing conversion in action",
     "type": "docs",
     "category": "infra",
@@ -3086,7 +3105,7 @@
     "isMajor": false
   },
   {
-    "id": 156,
+    "id": 157,
     "title": "docs: Add second screenshot showing conversion in action",
     "type": "docs",
     "category": "infra",
@@ -3106,7 +3125,7 @@
     "isMajor": false
   },
   {
-    "id": 157,
+    "id": 158,
     "title": "docs: Add Pix donation details and GitHub Sponsors button",
     "type": "docs",
     "category": "infra",
@@ -3126,7 +3145,7 @@
     "isMajor": false
   },
   {
-    "id": 158,
+    "id": 159,
     "title": "security: Add internal authorization token and fix temporary file leaks",
     "type": "feat",
     "category": "feat",
@@ -3145,7 +3164,7 @@
     "isMajor": true
   },
   {
-    "id": 159,
+    "id": 160,
     "title": "docs: Highlight extended support for .ods and .odt",
     "type": "docs",
     "category": "infra",
@@ -3165,7 +3184,7 @@
     "isMajor": false
   },
   {
-    "id": 160,
+    "id": 161,
     "title": "feat: Add native support for .odt files via odfpy extraction",
     "type": "feat",
     "category": "feat",
@@ -3184,7 +3203,7 @@
     "isMajor": true
   },
   {
-    "id": 161,
+    "id": 162,
     "title": "fix: add missing build script to package.json",
     "type": "fix",
     "category": "fix",
@@ -3203,7 +3222,7 @@
     "isMajor": false
   },
   {
-    "id": 162,
+    "id": 163,
     "title": "fix: update CI to Node 24 and force javascript actions to node 24",
     "type": "fix",
     "category": "fix",
@@ -3222,7 +3241,7 @@
     "isMajor": false
   },
   {
-    "id": 163,
+    "id": 164,
     "title": "chore: ignore node_modules and dist",
     "type": "infra",
     "category": "infra",
@@ -3242,7 +3261,7 @@
     "isMajor": false
   },
   {
-    "id": 164,
+    "id": 165,
     "title": "feat: initial site structure with Astro, professional design and CI/C…",
     "type": "feat",
     "category": "feat",
