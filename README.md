@@ -73,6 +73,12 @@ Grade dinâmica com os projetos de código aberto mantidos por [@bramosjr](https
 
 ---
 
+### Contador de Visitantes
+
+A `Navbar` exibe um selo com as **visitas totais** e os **visitantes únicos** do site, lidos em tempo de execução do endpoint público do [GoatCounter](https://www.goatcounter.com) (`/counter/TOTAL.json`). A contagem é anônima, sem cookies e sem rastreamento individual; a coleta é feita pelo script `count.js` carregado em `Layout.astro`. O selo nasce oculto e só aparece quando o serviço responde, então um bloqueio por adblocker ou uma indisponibilidade não quebram o layout. O código do site no GoatCounter fica centralizado em `src/config.ts`.
+
+---
+
 ### 4. Dashboard Analítico de Produção
 
 Painel analítico renderizado via Chart.js contendo:
@@ -181,6 +187,7 @@ gitpages/
 │   │   ├── Hero.astro
 │   │   ├── Navbar.astro
 │   │   └── PublicRepos.astro
+│   ├── config.ts               # SSOT dos identificadores externos (código do GoatCounter)
 │   ├── data/                   # Datasets gerados em tempo de compilação
 │   │   ├── activities.json     # Histórico de atividades sanitizadas
 │   │   └── analytics.json      # Métricas de cadência, linguagens e repositórios
